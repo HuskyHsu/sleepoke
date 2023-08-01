@@ -1,12 +1,31 @@
 import json
 import os
 
+import requests
+
 def is_number(s):
     try:
         int(s)
         return True
     except ValueError:
         return False
+
+def download_images(data, output_folder):
+    image_list_column = 'image_list'
+
+    for item in data:
+        if image_list_column in item:
+            image_list = item[image_list_column]
+            for index, image_url in enumerate(image_list, start=1):
+                image_filename = f"image_{index}.jpg"
+                image_filepath = os.path.join(output_folder, image_filename)
+                download_image(image_url, image_filepath)
+
+def download_image(url, filepath):
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open(filepath, 'wb') as f:
+            f.write(response.content)
 
 def csv_to_json(csv_data):
     lines = csv_data.strip().split('\n')
@@ -33,6 +52,14 @@ def csv_to_json(csv_data):
                         obj[col] = int(column_value) if is_number(column_value) else column_value
                 else:
                     obj[col] = int(column_value) if is_number(column_value) else column_value
+            else:
+                if col == 'image_list':
+                    download_image(column_value, f"../public/image/pmList/{values[0][-3:]}.png")
+                elif col == 'image':
+                    download_image(column_value, f"../public/image/pm/{values[0][-3:]}.png")
+                elif col == 'image_shiny':
+                    download_image(column_value, f"../public/image/pm/{values[0][-3:]}_s.png")
+
 
         data.append(obj)
 
@@ -47,7 +74,7 @@ if __name__ == "__main__":
         json_data = csv_to_json(csv_data)
         # print(json_data)
 
-    output_folder = '../public/data/'  # 請替換成您要輸出的資料夾路徑
+    output_folder = '../src/data/'
 
 
     output_file_path = os.path.join(output_folder, 'pmList.json')
