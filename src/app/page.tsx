@@ -1,6 +1,7 @@
-/* eslint-disable import/extensions */
+// eslint-disable-next-line import/extensions
+import dataList from '@/data/pmList.json';
 import Image from 'next/image';
-import data from '@/data/pmList.json';
+import Link from 'next/link';
 import clsx from 'clsx';
 
 type PmItemType = {
@@ -46,7 +47,7 @@ export default function Home() {
         'h-full max-w-[800px]',
       )}>
         {
-          data.map((
+          dataList.map((
             item: PmItemType,
             index: number,
           ) => (
@@ -66,6 +67,12 @@ export default function Home() {
               </div>
               <h3>{item.name}</h3>
               <p>{item.sleep_type}</p>
+              <Link
+                className="text-gray-700 hover:text-blue-500"
+                href={`/pm/${item.pid.slice(-3)}`}
+              >
+                link to {item.pid}
+              </Link>
             </li>
           ))
         }
