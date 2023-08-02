@@ -1,5 +1,7 @@
+/* eslint-disable import/extensions */
 import Image from 'next/image';
 import data from '@/data/pmList.json';
+import clsx from 'clsx';
 
 type PmItemType = {
   pid: string;
@@ -21,19 +23,53 @@ type PmItemType = {
 };
 
 export default function Home() {
+  const imgSrc = (pid: string) => `/image/pmList/${pid.slice(-3)}.png`;
+
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      {data.map((pm) => (
-        <li key={pm.pid}>
-          <Image
-            src={`/image/pmList/${pm.pid.slice(-3)}.png`}
-            alt={pm.name}
-            width={100}
-            height={100}
-            priority
-          />
-        </li>
-      ))}
+    <main className="my-[50px] max-w-[1100px] px-7">
+      <h1 className="text-3xl">SleePoke</h1>
+
+      <hr />
+
+      <div className="flex justify-between py-3">
+        <h2>Pokemon List</h2>
+        <div className="flex gap-3">
+          <p>search</p>
+          <p>filter</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <ul className={clsx(
+        'mx-auto flex flex-wrap gap-y-3',
+        'h-full max-w-[800px]',
+      )}>
+        {
+          data.map((
+            item: PmItemType,
+            index: number,
+          ) => (
+            <li
+              className={clsx(
+                'basis-1/6 px-2 text-center',
+                'border border-solid border-red-300',
+              )}
+              key={index}
+            >
+              <div className="relative mx-auto h-[64px] w-[64px]">
+                <Image
+                  src={imgSrc(item.pid)}
+                  alt={item.name}
+                  fill={true}
+                />
+              </div>
+              <h3>{item.name}</h3>
+              <p>{item.sleep_type}</p>
+            </li>
+          ))
+        }
+      </ul>
     </main>
   );
 }
