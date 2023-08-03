@@ -1,27 +1,6 @@
 import Image from 'next/image';
 
-import { Pokemon } from '@/types';
-
-enum Berry {
-  '靛莓果' = 'belueberry',
-  '墨莓果' = 'blukberry',
-  '櫻子果' = 'cheriberry',
-  '零餘果' = 'chestoberry',
-  '金枕果' = 'durinberry',
-  '勿花果' = 'figyberry',
-  '萄葡果' = 'grepaberry',
-  '蘋野果' = 'leppaberry',
-  '木子果' = 'lumberry',
-  '芒芒果' = 'magoberry',
-  '橙橙果' = 'oranberry',
-  '椰木果' = 'pamtreberry',
-  '桃桃果' = 'pechaberry',
-  '柿仔果' = 'persimberry',
-  '莓莓果' = 'rawstberry',
-  '文柚果' = 'sitrusberry',
-  '異奇果' = 'wikiberry',
-  '番荔果' = 'yacheberry',
-}
+import { Pokemon, Berrys, Ingredients } from '@/types';
 
 export function PmImage({ pm }: { pm: Pokemon }) {
   const imgSrc = (pid: string) => `/image/pm/${pid.slice(-3)}.png`;
@@ -48,7 +27,20 @@ export function BerryIcon({ name }: { name: string }) {
   return (
     <Image
       className="inline"
-      src={imgSrc(Berry[name as keyof typeof Berry])}
+      src={imgSrc(Berrys[name as keyof typeof Berrys])}
+      alt={name}
+      fill={true}
+      sizes="(max-width: 768px) 100vw, 100vw"
+    />
+  );
+}
+
+export function IngredientIcon({ name }: { name: string }) {
+  const imgSrc = (fileName: string) => `/image/ingredients/${fileName}.png`;
+  return (
+    <Image
+      className="inline"
+      src={imgSrc(Ingredients[name as keyof typeof Ingredients])}
       alt={name}
       fill={true}
       sizes="(max-width: 768px) 100vw, 100vw"

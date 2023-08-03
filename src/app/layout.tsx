@@ -1,6 +1,7 @@
-import './globals.css';
+import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -13,7 +14,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="zh-Hant">
       <body className={inter.className}>
-        <main className="container mx-auto my-8 px-4 md:px-0">
+        <main className="container mx-auto my-8 max-w-4xl px-4 text-slate-800 md:px-0" style={{
+          scrollbarGutter: 'stable',
+        }}>
           <h1 className="text-3xl">SleePoke</h1>
           <hr />
           {children}
