@@ -1,9 +1,0 @@
-{
-  "arrowParens": "always",
-  "jsxSingleQuote": false,
-  "printWidth": 100,
-  "singleQuote": true,
-  "tabWidth": 2,
-  "trailingComma": "es5",
-  "tailwindConfig": "./tailwind.config.js"
-}

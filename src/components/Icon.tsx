@@ -23,7 +23,7 @@ enum Berry {
   '番荔果' = 'yacheberry',
 }
 
-function PmImage({ pm }: { pm: Pokemon }) {
+export function PmImage({ pm }: { pm: Pokemon }) {
   const imgSrc = (pid: string) => `/image/pm/${pid.slice(-3)}.png`;
   return <Image src={imgSrc(pm.pid)} alt={pm.name} width={64} height={58} />;
 }
@@ -34,7 +34,7 @@ export function PmIcon({ pm }: { pm: Pokemon }) {
 }
 
 export function BerryIcon({ name }: { name: string }) {
-  const imgSrc = (name: string) => `/image/berries/${name}.png`;
+  const imgSrc = (fileName: string) => `/image/berries/${fileName}.png`;
   return (
     <Image
       className="inline"

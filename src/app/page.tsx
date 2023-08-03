@@ -35,15 +35,19 @@ export default function Home() {
 
       <hr />
 
-      <ul className={clsx('mx-auto flex flex-wrap justify-between gap-3', 'h-full')}>
+      <ul
+        className={clsx(
+          'mx-auto flex flex-wrap justify-between gap-3',
+          'h-full',
+        )}
+      >
         {dataList.map((pm: Pokemon) => (
-          <Link href={`/pm/${pm.pid.slice(-3)}`}>
+          <Link href={`/pm/${pm.pid.slice(-3)}`} key={pm.pid}>
             <li
               className={clsx(
-                'flex w-32 flex-col items-center text-center gap-1',
-                'border border-solid border-red-300'
+                'flex w-32 flex-col items-center gap-1 text-center',
+                'border border-solid border-red-300',
               )}
-              key={pm.pid}
             >
               <BaseInfo pm={pm} />
             </li>
