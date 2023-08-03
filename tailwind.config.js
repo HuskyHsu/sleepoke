@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         list: 'repeat(auto-fill, 8rem)',
-        'list-mobile': 'repeat(auto-fill, 25%)',
+        'list-mobile': 'repeat(auto-fill, 30%)',
       },
     },
   },

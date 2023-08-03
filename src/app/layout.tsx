@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="zh-Hant">
       <body className={inter.className}>
-        <main className="container mx-auto my-[50px] px-7">
+        <main className="container mx-auto my-8 px-4 md:px-0">
           <h1 className="text-3xl">SleePoke</h1>
           <hr />
           {children}

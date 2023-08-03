@@ -3,20 +3,28 @@ import dataList from '@/data/pmList.json';
 import Link from 'next/link';
 import clsx from 'clsx';
 
-import { Pokemon } from '@/models';
+import { Pokemon } from '@/types';
 import { PmIcon, BerryIcon } from '@/components';
 
 function BaseInfo({ pm }: { pm: Pokemon }) {
   return (
     <>
       <p className="font-bold">No. {pm.pid.slice(-3)}</p>
-      <PmIcon pm={pm} />
+      <div className={clsx(
+        'relative h-16 w-16 overflow-hidden rounded-full',
+        'border-2 border-solid border-red-300',
+      )}>
+        <PmIcon pm={pm} />
+      </div>
       <p className="text-base">{pm.name}</p>
       <p className="flex items-center text-xs">
         {pm.sleep_type} - {pm.specialty}
       </p>
-      <p>
-        <BerryIcon name={pm.berry} />:{pm.berry_quantity}
+      <p className="flex">
+        <div className="relative h-8 w-8">
+          <BerryIcon name={pm.berry} />
+        </div>
+        <div className="leading-8">:{pm.berry_quantity}</div>
       </p>
     </>
   );
@@ -37,7 +45,7 @@ export default function Home() {
 
       <ul
         className={clsx(
-          'mx-auto grid grid-cols-list-mobile justify-around gap-3 md:grid-cols-list',
+          '-mx-4 grid grid-cols-list-mobile justify-around gap-3 md:mx-auto md:grid-cols-list',
           'h-full',
         )}
       >

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Pokemon } from '@/models';
+import { Pokemon } from '@/types';
 
 enum Berry {
   '靛莓果' = 'belueberry',
@@ -25,12 +25,22 @@ enum Berry {
 
 export function PmImage({ pm }: { pm: Pokemon }) {
   const imgSrc = (pid: string) => `/image/pm/${pid.slice(-3)}.png`;
-  return <Image src={imgSrc(pm.pid)} alt={pm.name} width={64} height={58} />;
+  return <Image
+    src={imgSrc(pm.pid)}
+    alt={pm.name}
+    fill={true}
+    sizes="(max-width: 768px) 100vw, 100vw"
+  />;
 }
 
 export function PmIcon({ pm }: { pm: Pokemon }) {
   const imgSrc = (pid: string) => `/image/pmIcon/${pid.slice(-3)}.png`;
-  return <Image className="inline" src={imgSrc(pm.pid)} alt={pm.name} width={64} height={64} />;
+  return <Image
+    src={imgSrc(pm.pid)}
+    alt={pm.name}
+    fill={true}
+    sizes="(max-width: 768px) 100vw, 100vw"
+  />;
 }
 
 export function BerryIcon({ name }: { name: string }) {
@@ -40,8 +50,8 @@ export function BerryIcon({ name }: { name: string }) {
       className="inline"
       src={imgSrc(Berry[name as keyof typeof Berry])}
       alt={name}
-      width={32}
-      height={32}
+      fill={true}
+      sizes="(max-width: 768px) 100vw, 100vw"
     />
   );
 }
