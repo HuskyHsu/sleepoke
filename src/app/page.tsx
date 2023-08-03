@@ -37,7 +37,7 @@ export default function Home() {
 
       <ul
         className={clsx(
-          'mx-auto flex flex-wrap justify-between gap-3',
+          'mx-auto grid grid-cols-list-mobile justify-around gap-3 md:grid-cols-list',
           'h-full',
         )}
       >
