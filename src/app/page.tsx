@@ -84,7 +84,12 @@ export default function Home() {
             <BaseInfo pm={pm} />
             <Link
               className={'stretchedLink'}
-              href={`/pm/${pm.pid.slice(-3)}`}
+              href={{
+                pathname: '/pm',
+                query: {
+                  id: pm.pid,
+                },
+              }}
             />
           </li>
         ))}
