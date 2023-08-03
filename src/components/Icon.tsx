@@ -1,7 +1,7 @@
 import { Pokemon, Berrys, Ingredients } from '@/types';
 
-export function PmImage({ pm }: { pm: Pokemon }) {
-  const imgSrc = (pid: string) => `${process.env.PUBLIC_URL}/image/pm/${pid.slice(-3)}.png`;
+export function PmImage({ pm, shiny=false }: { pm: Pokemon, shiny: boolean }) {
+  const imgSrc = (pid: string) => `${process.env.PUBLIC_URL}/image/pm/${pid.slice(-3)}${shiny ? '_s' : ''}.png`;
   return <img
     src={imgSrc(pm.pid)}
     alt={pm.name}
