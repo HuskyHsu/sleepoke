@@ -49,17 +49,24 @@ export default function Home() {
           'h-full',
         )}
       >
-        {dataList.map((pm: Pokemon) => (
-          <Link href={`/pm/${pm.pid.slice(-3)}`} key={pm.pid}>
-            <li
-              className={clsx(
-                'flex w-32 flex-col items-center gap-1 text-center',
-                'border border-solid border-red-300',
-              )}
-            >
-              <BaseInfo pm={pm} />
-            </li>
-          </Link>
+        {dataList.map((
+          pm: Pokemon,
+          index: number,
+        ) => (
+          <li
+            className={clsx(
+              'relative',
+              'flex w-32 flex-col items-center gap-1 text-center',
+              'border border-solid border-red-300',
+            )}
+            key={index}
+          >
+            <BaseInfo pm={pm} />
+            <Link
+              className="stretchedLink"
+              href={`/pm/${pm.pid.slice(-3)}`}
+            />
+          </li>
         ))}
       </ul>
     </>
