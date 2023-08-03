@@ -34,14 +34,13 @@ function List() {
           <li
             className={clsx(
               'relative',
-              'text-center',
-              'rounded-xl',
+              'rounded-xl text-center',
+              'transition-all duration-300',
+              'shadow-list-items hover:shadow-list-items--hover',
+              'hover:translate-x-[-0.25rem] hover:translate-y-[-0.25rem]',
               SleepTypeBgClass[pm.sleep_type as keyof typeof SleepTypeBgClass],
             )}
             key={index}
-            style={{
-              boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset'
-            }}
           >
             <Card pm={pm} />
             <Link
