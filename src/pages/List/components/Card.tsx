@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 import { Pokemon, Type, TypeBgClass } from '@/types';
-import { PmIcon, BerryIcon, IngredientIcon } from '@/components';
+import { Icon } from '@/components';
 
 export function Card({ pm }: { pm: Pokemon }) {
     return (
@@ -12,7 +12,7 @@ export function Card({ pm }: { pm: Pokemon }) {
           'outline outline-2 outline-white',
           TypeBgClass[Type[pm.type as keyof typeof Type] as keyof typeof TypeBgClass],
         )}>
-          <PmIcon pm={pm} />
+          <Icon.Game.Pm pm={pm} />
         </div>
         <p className="text-base">{pm.name}</p>
         <p className="flex items-center text-xs">
@@ -23,14 +23,14 @@ export function Card({ pm }: { pm: Pokemon }) {
             new Array(pm.berry_quantity)
               .fill(0)
               .map((_, index) => <span className="relative h-8 w-8" key={index}>
-                  <BerryIcon name={pm.berry} />
+                  <Icon.Game.Berry name={pm.berry} />
                 </span>)
           }</>
         </p>
         {
           pm.ingredients.length > 0 && <p className="flex">
             {
-              pm.ingredients.map((ingredient) => <span className="relative h-8 w-8" key={ingredient}><IngredientIcon name={ingredient}/></span>)
+              pm.ingredients.map((ingredient) => <span className="relative h-8 w-8" key={ingredient}><Icon.Game.Ingredient name={ingredient}/></span>)
             }
           </p>
         }

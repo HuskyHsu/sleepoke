@@ -2,27 +2,33 @@ import clsx from 'clsx';
 import { Link } from "react-router-dom";
 
 import { Pokemon, SleepTypeBgClass } from '@/types';
-import { Card } from './components';
+import { Card, SearchBar } from './components';
 
 import dataList from '@/data/pmList.json'
 
 function List() {
   return (
-    <>
-      <div className="flex justify-between py-3">
+    <div className='flex flex-col'>
+      <div className="flex items-center justify-between py-3">
         <h2>Pokemon List</h2>
-        <div className="flex gap-3">
-          <p>search</p>
-          <p>filter</p>
-          <p>group</p>
+        <div className="flex items-center gap-3">
+          <SearchBar/>
         </div>
       </div>
 
       <hr />
 
+      <div>
+      filter
+      </div>
+
+      <div>
+      group
+      </div>
+
       <ul
         className={clsx(
-          'mt-4 grid grid-cols-list-mobile justify-between gap-y-4',
+          'grid grid-cols-list-mobile justify-between justify-items-center gap-y-4',
           'md:mx-0 md:grid-cols-list md:gap-x-4',
           'h-full',
         )}
@@ -33,7 +39,7 @@ function List() {
         ) => (
           <li
             className={clsx(
-              'relative',
+              'relative w-32',
               'rounded-xl text-center',
               'transition-all duration-300',
               'shadow-list-items hover:shadow-list-items--hover',
@@ -50,7 +56,7 @@ function List() {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 

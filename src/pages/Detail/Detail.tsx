@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import clsx from 'clsx';
 import { Pokemon, SleepTypeBgClass } from '@/types';
-import { PmImage } from '@/components';
+import { Icon } from '@/components';
 import dataList from '@/data/pmList.json'
 
 function Moves() {
@@ -17,11 +17,11 @@ function Moves() {
         )}>
             <div className="space-y-1">
                 <p className="md:text-lg">正常色</p>
-                <PmImage pm={pm} shiny={false}/>
+                <Icon.Game.PmFull pm={pm} shiny={false}/>
             </div>
             <div className="space-y-1">
                 <p className="md:text-lg">異色</p>
-                <PmImage pm={pm} shiny={true}/>
+                <Icon.Game.PmFull pm={pm} shiny={true}/>
             </div>
         </div>
 
