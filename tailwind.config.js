@@ -26,12 +26,16 @@ module.exports = {
         },
       },
       gridTemplateColumns: {
+        18: 'repeat(18, minmax(0, 1fr))',
+        15: 'repeat(15, minmax(0, 1fr))',
         list: 'repeat(auto-fill, 8rem)',
         'list-mobile': 'repeat(auto-fill, 30%)',
       },
       boxShadow: {
-        'list-items': 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset',
-        'list-items--hover': 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 5px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 0px 0px inset',
+        'list-items':
+          'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset',
+        'list-items--hover':
+          'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 5px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 0px 0px inset',
       },
     },
   },
