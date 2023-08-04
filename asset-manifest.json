@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/sleepoke/static/css/main.e9d2d79b.css",
-    "main.js": "/sleepoke/static/js/main.0602668c.js",
+    "main.css": "/sleepoke/static/css/main.953d7e42.css",
+    "main.js": "/sleepoke/static/js/main.811f65bb.js",
     "static/js/787.80b534a0.chunk.js": "/sleepoke/static/js/787.80b534a0.chunk.js",
     "index.html": "/sleepoke/index.html",
-    "main.e9d2d79b.css.map": "/sleepoke/static/css/main.e9d2d79b.css.map",
-    "main.0602668c.js.map": "/sleepoke/static/js/main.0602668c.js.map",
+    "static/media/Search.svg": "/sleepoke/static/media/Search.70618b7533946d2ab5e393dce8e77709.svg",
+    "main.953d7e42.css.map": "/sleepoke/static/css/main.953d7e42.css.map",
+    "main.811f65bb.js.map": "/sleepoke/static/js/main.811f65bb.js.map",
     "787.80b534a0.chunk.js.map": "/sleepoke/static/js/787.80b534a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9d2d79b.css",
-    "static/js/main.0602668c.js"
+    "static/css/main.953d7e42.css",
+    "static/js/main.811f65bb.js"
   ]
 }
