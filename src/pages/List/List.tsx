@@ -6,17 +6,50 @@ import { Icon } from '@/components';
 import dataList from '@/data/pmList.json'
 import { Card, SearchBar } from './components';
 
-function List() {
+function Button({icon, className}: {icon: JSX.Element, className?: string}) {
+  return <button className={className} type="button">{icon}</button>
+}
+
+function BerryButtons() {
   const berries = [
     "靛莓果", "墨莓果", "櫻子果", "零餘果", "金枕果", "勿花果", "萄葡果", "蘋野果",
     "木子果", "芒芒果", "橙橙果", "椰木果", "桃桃果", "柿仔果", "莓莓果", "文柚果",
     "異奇果", "番荔果",
   ]
 
+  return <div className={
+      clsx(
+        'grid w-full justify-items-center gap-4',
+        'grid-cols-6 md:grid-cols-9 xl:grid-cols-18'
+      )
+    }>
+    {
+      berries.map((berry) => <Button className={'h-12 w-12'} key={berry} icon={<Icon.Game.Berry name={berry}/>}/>)
+    }
+  </div>
+}
+
+function IngredientButtons() {
   const ingredients = [
     "粗枝大蔥", "品鮮蘑菇", "特選蛋", "窩心洋芋", "特選蘋果", "火辣香草", "豆製肉", "哞哞鮮奶",
     "甜甜蜜", "純粹油", "暖暖薑", "好眠番茄", "放鬆可可", "美味尾巴", "萌綠大豆",
   ]
+
+  return <div className={
+      clsx(
+        'grid w-full justify-items-center gap-4',
+        'grid-cols-6 md:grid-cols-9 xl:grid-cols-18'
+      )
+    }>
+    {
+      ingredients.map((ingredient) => <Button className={'h-12 w-12'} key={ingredient} icon={<Icon.Game.Ingredient name={ingredient}/>}/>)
+    }
+  </div>
+}
+
+function List() {
+
+
 
 
   return (
@@ -30,33 +63,15 @@ function List() {
 
       <hr />
 
-      <div className={
-        clsx(
-          'grid w-full gap-4',
-          'grid-cols-6 md:grid-cols-9 xl:grid-cols-18'
-        )
-      }>
-      {
-        berries.map((berry) => <span className='h-16 w-16' key={berry}><Icon.Game.Berry name={berry} /></span>)
-      }
-      </div>
+      <BerryButtons />
 
       <hr />
 
-      <div className={
-        clsx(
-          'grid w-full gap-4',
-          'grid-cols-5 xl:grid-cols-15'
-        )
-      }>
-      {
-        ingredients.map((ingredient) => <span className='h-16 w-16' key={ingredient}><Icon.Game.Ingredient name={ingredient} /></span>)
-      }
-      </div>
+      <IngredientButtons />
 
-      <div>
+      {/* <div>
       group by 睡覺分類，食材，樹果 or None
-      </div>
+      </div> */}
 
       <ul
         className={clsx(
