@@ -2,8 +2,9 @@ import clsx from 'clsx';
 import { Link } from "react-router-dom";
 
 import { Pokemon, SleepTypeBgClass } from '@/types';
-import { Icon } from '@/components';
+import { Icon, TitleSlide } from '@/components';
 import dataList from '@/data/pmList.json'
+
 import { Card, SearchBar } from './components';
 
 function Button({icon, className}: {icon: JSX.Element, className?: string}) {
@@ -24,7 +25,7 @@ function BerryButtons() {
       )
     }>
     {
-      berries.map((berry) => <Button className={'h-12 w-12'} key={berry} icon={<Icon.Game.Berry name={berry}/>}/>)
+      berries.map((berry) => <Button className='h-12 w-12' key={berry} icon={<Icon.Game.Berry name={berry}/>}/>)
     }
   </div>
 }
@@ -42,36 +43,32 @@ function IngredientButtons() {
       )
     }>
     {
-      ingredients.map((ingredient) => <Button className={'h-12 w-12'} key={ingredient} icon={<Icon.Game.Ingredient name={ingredient}/>}/>)
+      ingredients.map((ingredient) => <Button className='h-12 w-12' key={ingredient} icon={<Icon.Game.Ingredient name={ingredient}/>}/>)
     }
   </div>
 }
 
 function List() {
-
-
-
-
   return (
-    <div className='flex flex-col'>
-      <div className="flex items-center justify-between py-3">
+    <div className='flex flex-col gap-y-4'>
+      <div className="-mb-4 flex items-center justify-between py-3">
         <h2>Pokemon List</h2>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-0">
           <SearchBar/>
         </div>
       </div>
 
-      <hr />
-
+      <TitleSlide title='樹果篩選' />
       <BerryButtons />
-
-      <hr />
-
+      
+      <TitleSlide title='食材篩選' />
       <IngredientButtons />
 
       {/* <div>
       group by 睡覺分類，食材，樹果 or None
       </div> */}
+
+      <TitleSlide title='清單' />
 
       <ul
         className={clsx(

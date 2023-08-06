@@ -1,27 +1,9 @@
 import { Link, useParams } from 'react-router-dom';
 import clsx from 'clsx';
 import { Pokemon, SleepTypeBgClass } from '@/types';
-import { Icon } from '@/components';
+import { Icon, TitleSlide } from '@/components';
 import dataList from '@/data/pmList.json'
 
-function TitleSlide(props: {
-    title:string,
-}) {
-    const { title } = props;
-
-    return (
-        <div className='relative w-full bg-green-600  pl-2'>
-            <div className='absolute -left-3 h-full w-2 bg-green-600' />
-            <h3 className='text-white'>{title}</h3>
-            <div className={clsx(
-                'absolute right-0 top-0',
-                'h-0 w-0',
-                'border-solid border-transparent border-b-white',
-                'border-b-[24px] border-l-[8px]',
-            )}/>
-        </div>
-    )
-}
 
 function Moves() {
   const { link = '001' } = useParams();
