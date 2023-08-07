@@ -6,7 +6,7 @@ export function TitleSlide({title}: {
 }) {
 
     return (
-        <div className='relative ml-4 box-content w-full bg-green-600'>
+        <div className='relative box-content w-full bg-green-600'>
             <div className='absolute -left-4 h-full w-2 bg-green-600' />
             <h3 className='ml-2 text-white'>{title}</h3>
             <div className={clsx(
