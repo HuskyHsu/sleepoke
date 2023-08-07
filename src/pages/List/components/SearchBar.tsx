@@ -2,7 +2,12 @@ import clsx from 'clsx';
 
 import { Icon } from '@/components';
 
-export function SearchBar() {
+type Props = {
+  value: string, 
+  onChange: React.ChangeEventHandler<HTMLInputElement>
+}
+
+export function SearchBar({value, onChange}: Props) {
   return (
     <>
       <div className="relative">
@@ -16,8 +21,8 @@ export function SearchBar() {
             'bg-gray-50 p-2 pl-10 text-sm text-gray-900'
           )}
           placeholder="搜尋名稱/樹果/食材"
-          value={''}
-          onChange={(e) => e}
+          value={value}
+          onChange={onChange}
         />
       </div>
     </>
