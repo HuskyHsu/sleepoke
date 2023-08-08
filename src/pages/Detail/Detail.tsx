@@ -4,11 +4,44 @@ import { Pokemon, SleepTypeBgClass } from '@/types';
 import { Icon, TitleSlide } from '@/components';
 import dataList from '@/data/pmList.json'
 
-
 function Moves() {
   const { link = '001' } = useParams();
   const pm = dataList.find((pm: Pokemon) => pm.pid === `#${link.padStart(4, '0')}`) || dataList[0]
   const sleepTypeBgClass = SleepTypeBgClass[pm.sleep_type as keyof typeof SleepTypeBgClass];
+  const renderData = [
+    {
+        title: '名稱',
+        content: pm.name,
+    },
+    {
+        title: '分類',
+        content: pm.sleep_type,
+    },
+    {
+        title: '屬性',
+        content: pm.type,
+    },
+    {
+        title: '專長',
+        content: pm.specialty,
+    },
+    {
+        title: '樹果',
+        content: `${pm.berry}x${pm.berry_quantity}`,
+    },
+    {
+        title: '食材',
+        content: pm.ingredients.join(', '),
+    },
+    {
+        title: '主技能',
+        content: pm.skill,
+    },
+    {
+        title: '主技能描述',
+        content: pm.skill_description,
+    },
+  ]
 
   return (
     <section className='space-y-4'>
@@ -87,7 +120,69 @@ function Moves() {
                 <dd className="text-lg font-semibold">{pm.skill_description}</dd>
             </div>
         </dl>
-        <Link to={'/'}>Back</Link>
+        
+        <hr />
+
+        <ul className='flex flex-col gap-5'>
+            {
+                renderData.map((data, renderIndex) => (
+                    <li
+                        className='flex items-center gap-5'
+                        key={renderIndex}
+                    >
+                        <div className={clsx(
+                            'py-px',
+                            'shrink-0 grow-0 basis-[30%]',
+                            'border-2 border-solid border-green-600',
+                            'rounded-full text-center text-black',
+                        )}>{data.title}</div>
+
+                        {
+                            data.title === '樹果' ? (
+                                <ul className='flex w-full gap-6'>
+                                    {
+                                        new Array(pm.berry_quantity)
+                                        .fill(0)
+                                        .map((_, index) => (
+                                            <li className="flex items-center" key={index}>
+                                                <div className='w-12'>
+                                                    <Icon.Game.Berry name={pm.berry} />
+                                                </div>
+                                                <span className='text-xs'>{pm.berry}</span>
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            ) : data.title === '食材' ? (
+                                <ul className='flex w-full gap-6'>
+                                    {
+                                        pm.ingredients.map((ingredient) => (
+                                            <li className="flex items-center" key={ingredient}>
+                                                <div className='w-12'>
+                                                    <Icon.Game.Ingredient name={ingredient} />
+                                                </div>
+                                                <span className='text-xs'>{ingredient}</span>
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            ) : (
+                                <span className='flex-1'>{data.content}</span>
+                            )
+                        }
+                    </li>
+                ))
+            }
+        </ul>
+
+        <Link
+            className={clsx(
+                'inline-block px-3 py-1',
+                'transition-all duration-300',
+                'shadow-list-items hover:shadow-list-items--hover'
+            )}
+            to={'/'}
+        >返回</Link>
     </section>
   );
 }
