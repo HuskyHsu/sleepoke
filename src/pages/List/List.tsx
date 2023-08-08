@@ -8,7 +8,7 @@ import pmList from '@/data/pmList.json'
 import berries from '@/data/berries.json'
 import ingredients from '@/data/ingredients.json'
 
-import { Card, SearchBar, Buttons } from './components';
+import { Card, SearchBar, Buttons, Filter } from './components';
 
 type Filter = {
   keyword: string;
@@ -61,16 +61,31 @@ function List() {
     });
   };
 
+  const filterPm = (pm: Pokemon) => {
+    let display = filter.keyword === ''
+  
+    if (filter.keyword != '') {
+      display = pm.name.includes(filter.keyword)
+    }
+  
+    if (display && filter.berries.size > 0) {
+      display = filter.berries.has(pm.berry)
+    }
+  
+    if (display && filter.ingredients.size > 0) {
+      display = pm.ingredients.find((ingredient) => filter.ingredients.has(ingredient)) !== undefined
+    }
+  
+    return display
+  }
+
   return (
     <div className='flex flex-col gap-y-4'>
       <div className="-mb-4 flex items-center justify-between py-3">
         <h2>Pokemon List</h2>
         <div className="flex items-center gap-x-3">
           <SearchBar value={filter.keyword} onChange={handleInputChange}/>
-          <input type="checkbox" name={'filter'} id={'filter'} className='hidden' checked={filter.displayFilter} onChange={handleFilterChange}/>
-          <label htmlFor={'filter'} className='flex cursor-pointer flex-col items-center'>
-            <Icon.Filter className="h-6 w-6" />
-          </label>
+          <Filter checked={filter.displayFilter} onChange={handleFilterChange}/>
         </div>
       </div>
 
@@ -104,43 +119,28 @@ function List() {
           'h-full',
         )}
       >
-        {pmList.filter((pm: Pokemon) => {
-          let display = filter.keyword === ''
-
-          if (filter.keyword != '') {
-            display = pm.name.includes(filter.keyword)
-          }
-
-          if (display && filter.berries.size > 0) {
-            display = filter.berries.has(pm.berry)
-          }
-
-          if (display && filter.ingredients.size > 0) {
-            display = pm.ingredients.find((ingredient) => filter.ingredients.has(ingredient)) !== undefined
-          }
-
-          return display
-        }).map((
-          pm: Pokemon,
-        ) => (
-          <li
-            className={clsx(
-              'relative w-32',
-              'rounded-xl text-center',
-              'transition-all duration-300',
-              'shadow-list-items hover:shadow-list-items--hover',
-              'hover:translate-x-[-0.2rem] hover:translate-y-[-0.2rem]',
-              SleepTypeBgClass[pm.sleep_type as keyof typeof SleepTypeBgClass],
-            )}
-            key={pm.pid}
-          >
-            <Card pm={pm} />
-            <Link
-              className={'stretchedLink'}
-              to={`/pm/${pm.pid.slice(-3)}`}
-            />
-          </li>
-        ))}
+        {
+          pmList.filter(filterPm)
+            .map((pm: Pokemon) => (
+              <li
+                className={clsx(
+                  'relative w-32',
+                  'rounded-xl text-center',
+                  'transition-all duration-300',
+                  'shadow-list-items hover:shadow-list-items--hover',
+                  'hover:translate-x-[-0.2rem] hover:translate-y-[-0.2rem]',
+                  SleepTypeBgClass[pm.sleep_type as keyof typeof SleepTypeBgClass],
+                )}
+                key={pm.pid}
+              >
+                <Card pm={pm} />
+                <Link
+                  className={'stretchedLink'}
+                  to={`/pm/${pm.pid.slice(-3)}`}
+                />
+              </li>
+            ))
+        }
       </ul>
     </div>
   );
