@@ -14,6 +14,7 @@ type Filter = {
   keyword: string;
   berries: Set<string>;
   ingredients: Set<string>;
+  displayFilter: boolean;
 }
 
 function List() {
@@ -21,6 +22,7 @@ function List() {
     keyword: '',
     berries: new Set<string>(),
     ingredients: new Set<string>(),
+    displayFilter: false
   })
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -48,30 +50,46 @@ function List() {
     });
   };
 
+  const handleFilterChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { checked } = event.target;
+
+    setFilter(prevSearch => {
+      return {
+        ...prevSearch,
+        displayFilter: checked
+      }
+    });
+  };
+
   return (
     <div className='flex flex-col gap-y-4'>
       <div className="-mb-4 flex items-center justify-between py-3">
         <h2>Pokemon List</h2>
-        <div className="flex items-center gap-0">
+        <div className="flex items-center gap-x-3">
           <SearchBar value={filter.keyword} onChange={handleInputChange}/>
+          <input type="checkbox" name={'filter'} id={'filter'} className='hidden' checked={filter.displayFilter} onChange={handleFilterChange}/>
+          <label htmlFor={'filter'} className='flex cursor-pointer flex-col items-center'>
+            <Icon.Filter className="h-6 w-6" />
+          </label>
         </div>
       </div>
 
-      <TitleSlide title='樹果篩選' />
-      <Buttons 
-        list={berries} 
-        Icon={Icon.Game.Berry}
-        checkSet={filter.berries}
-        handleChange={handleChickChange('berries')}
-      />
-
-      <TitleSlide title='食材篩選' />
-      <Buttons 
-        list={ingredients} 
-        Icon={Icon.Game.Ingredient}
-        checkSet={filter.ingredients}
-        handleChange={handleChickChange('ingredients')}
-      />
+      {filter.displayFilter && <>
+        <TitleSlide title='樹果篩選' />
+        <Buttons 
+          list={berries} 
+          Icon={Icon.Game.Berry}
+          checkSet={filter.berries}
+          handleChange={handleChickChange('berries')}
+        />
+        <TitleSlide title='食材篩選' />
+        <Buttons 
+          list={ingredients} 
+          Icon={Icon.Game.Ingredient}
+          checkSet={filter.ingredients}
+          handleChange={handleChickChange('ingredients')}
+        />
+      </>}
 
       {/* <div>
       group by 睡覺分類，食材，樹果 or None
@@ -111,7 +129,7 @@ function List() {
               'rounded-xl text-center',
               'transition-all duration-300',
               'shadow-list-items hover:shadow-list-items--hover',
-              'hover:translate-x-[-0.25rem] hover:translate-y-[-0.25rem]',
+              'hover:translate-x-[-0.2rem] hover:translate-y-[-0.2rem]',
               SleepTypeBgClass[pm.sleep_type as keyof typeof SleepTypeBgClass],
             )}
             key={pm.pid}

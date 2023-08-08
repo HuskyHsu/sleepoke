@@ -30,7 +30,9 @@ export function Card({ pm }: { pm: Pokemon }) {
         {
           pm.ingredients.length > 0 && <p className="flex">
             {
-              pm.ingredients.map((ingredient) => <span className="relative h-8 w-8" key={ingredient}><Icon.Game.Ingredient name={ingredient}/></span>)
+              pm.ingredients.map((ingredient) => <span className="relative h-8 w-8" key={ingredient}>
+                <Icon.Game.Ingredient name={ingredient}/>
+              </span>)
             }
           </p>
         }

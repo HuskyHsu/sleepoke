@@ -20,7 +20,7 @@ export function SearchBar({value, onChange}: Props) {
             'block w-full rounded-lg border border-gray-300',
             'bg-gray-50 p-2 pl-10 text-sm text-gray-900'
           )}
-          placeholder="搜尋名稱/樹果/食材"
+          placeholder="搜尋名稱"
           value={value}
           onChange={onChange}
         />

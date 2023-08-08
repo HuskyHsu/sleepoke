@@ -1,6 +1,6 @@
 import { Pokemon, Berrys, Ingredients } from '@/types';
 
-function PmFull({ pm, shiny=false }: { pm: Pokemon, shiny: boolean }) {
+function PmFull({ pm, shiny=false }: { pm: Pokemon, shiny?: boolean }) {
   const imgSrc = (pid: string) => `${process.env.PUBLIC_URL}/image/pm/${pid.slice(-3)}${shiny ? '_s' : ''}.png`;
   return <img
     src={imgSrc(pm.pid)}
