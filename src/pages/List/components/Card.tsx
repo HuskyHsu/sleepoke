@@ -19,13 +19,13 @@ export function Card({ pm }: { pm: Pokemon }) {
           {pm.sleep_type} - {pm.specialty}
         </p>
         <p className="flex">
-          <>{
+          {
             new Array(pm.berry_quantity)
               .fill(0)
               .map((_, index) => <span className="relative h-8 w-8" key={index}>
                   <Icon.Game.Berry name={pm.berry} />
                 </span>)
-          }</>
+          }
         </p>
         {
           pm.ingredients.length > 0 && <p className="flex">

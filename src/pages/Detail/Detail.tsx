@@ -14,7 +14,7 @@ function Moves() {
     <section className='space-y-4'>
         <div className='relative flex justify-center'>
             <div className="z-10 space-y-1 text-center">
-                <Icon.Game.PmFull pm={pm} shiny={false}/>
+                <Icon.Game.PmFull pm={pm}/>
                 <p className="md:text-lg">正常色</p>
             </div>
             <div className="z-10 space-y-1 text-center">
@@ -53,11 +53,30 @@ function Moves() {
             </div>
             <div className="flex flex-col py-3">
                 <dt className="mb-1 md:text-lg">樹果</dt>
-                <dd className="text-lg font-semibold">{pm.berry}x{pm.berry_quantity}</dd>
+                <dd className="flex gap-x-4 text-lg font-semibold">
+                    {
+                        new Array(pm.berry_quantity)
+                        .fill(0)
+                        .map((_, index) => <span className="flex h-12 w-12 flex-col items-center justify-center" key={index}>
+                                <Icon.Game.Berry name={pm.berry} />
+                                <span className='text-xs'>{pm.berry}</span>
+                            </span>
+                        )
+                    }
+                </dd>
             </div>
             <div className="flex flex-col py-3">
                 <dt className="mb-1 md:text-lg">食材</dt>
-                <dd className="text-lg font-semibold">{pm.ingredients.join(', ')}</dd>
+                <dd className="flex gap-x-4 text-lg font-semibold">
+                    {
+                        pm.ingredients
+                            .map((ingredient) => <span className="flex h-12 w-12 flex-col items-center justify-center" key={ingredient}>
+                                    <Icon.Game.Ingredient name={ingredient} />
+                                    <span className='text-xs'>{ingredient}</span>
+                                </span>
+                            )
+                    }
+                </dd>
             </div>
             <div className="flex flex-col py-3">
                 <dt className="mb-1 md:text-lg">主技能</dt>
