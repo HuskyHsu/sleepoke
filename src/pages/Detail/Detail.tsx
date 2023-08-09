@@ -43,6 +43,55 @@ function Moves() {
     },
   ]
 
+  const switchContentByTitle = (
+    propsTitle: string,
+    propsContent: string,
+  ) => {
+    const {
+        berry_quantity,
+        berry,
+        ingredients
+    } = pm;
+
+    switch (propsTitle) {
+        case '樹果':
+            return  (
+                <ul className='flex w-full gap-6'>
+                    {
+                        new Array(berry_quantity)
+                        .fill(0)
+                        .map((_, index) => (
+                            <li className="flex items-center" key={index}>
+                                <div className='w-12'>
+                                    <Icon.Game.Berry name={berry} />
+                                </div>
+                                <span className='text-xs'>{berry}</span>
+                            </li>
+                        ))
+                    }
+                </ul>
+            )
+        case '食材':
+            return (
+                <ul className='flex w-full gap-6'>
+                    {
+                        ingredients.map((item, index) => (
+                            <li className="flex items-center" key={index}>
+                                <div className='w-12'>
+                                    <Icon.Game.Ingredient name={item} />
+                                </div>
+                                <span className='text-xs'>{item}</span>
+                            </li>
+                        ))
+                    }
+                </ul>
+            )
+        default:
+            return  <span className='flex-1'>{propsContent}</span>
+    }
+  }
+
+
   return (
     <section className='space-y-4'>
         <div className='relative flex justify-center'>
@@ -137,39 +186,7 @@ function Moves() {
                             'rounded-full text-center text-black',
                         )}>{data.title}</div>
 
-                        {
-                            data.title === '樹果' ? (
-                                <ul className='flex w-full gap-6'>
-                                    {
-                                        new Array(pm.berry_quantity)
-                                        .fill(0)
-                                        .map((_, index) => (
-                                            <li className="flex items-center" key={index}>
-                                                <div className='w-12'>
-                                                    <Icon.Game.Berry name={pm.berry} />
-                                                </div>
-                                                <span className='text-xs'>{pm.berry}</span>
-                                            </li>
-                                        ))
-                                    }
-                                </ul>
-                            ) : data.title === '食材' ? (
-                                <ul className='flex w-full gap-6'>
-                                    {
-                                        pm.ingredients.map((ingredient) => (
-                                            <li className="flex items-center" key={ingredient}>
-                                                <div className='w-12'>
-                                                    <Icon.Game.Ingredient name={ingredient} />
-                                                </div>
-                                                <span className='text-xs'>{ingredient}</span>
-                                            </li>
-                                        ))
-                                    }
-                                </ul>
-                            ) : (
-                                <span className='flex-1'>{data.content}</span>
-                            )
-                        }
+                        { switchContentByTitle(data.title, data.content) }
                     </li>
                 ))
             }
