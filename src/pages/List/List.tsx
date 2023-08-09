@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
 import { Pokemon, SleepTypeBgClass } from '@/types';
-import { Icon, TitleSlide } from '@/components';
+import { Icon, SubTitleSlide, TitleSlide } from '@/components';
 import pmList from '@/data/pmList.json'
 import berries from '@/data/berries.json'
 import ingredients from '@/data/ingredients.json'
@@ -63,19 +63,19 @@ function List() {
 
   const filterPm = (pm: Pokemon) => {
     let display = filter.keyword === ''
-  
+
     if (filter.keyword != '') {
       display = pm.name.includes(filter.keyword)
     }
-  
+
     if (display && filter.berries.size > 0) {
       display = filter.berries.has(pm.berry)
     }
-  
+
     if (display && filter.ingredients.size > 0) {
       display = pm.ingredients.find((ingredient) => filter.ingredients.has(ingredient)) !== undefined
     }
-  
+
     return display
   }
 
@@ -90,16 +90,16 @@ function List() {
       </div>
 
       {filter.displayFilter && <>
-        <TitleSlide title='樹果篩選' />
-        <Buttons 
-          list={berries} 
+        <SubTitleSlide title='篩選：樹果' />
+        <Buttons
+          list={berries}
           Icon={Icon.Game.Berry}
           checkSet={filter.berries}
           handleChange={handleChickChange('berries')}
         />
-        <TitleSlide title='食材篩選' />
-        <Buttons 
-          list={ingredients} 
+        <SubTitleSlide title='篩選：食材' />
+        <Buttons
+          list={ingredients}
           Icon={Icon.Game.Ingredient}
           checkSet={filter.ingredients}
           handleChange={handleChickChange('ingredients')}
@@ -124,7 +124,7 @@ function List() {
             .map((pm: Pokemon) => (
               <li
                 className={clsx(
-                  'relative w-32',
+                  'relative w-28 md:w-32',
                   'rounded-xl text-center',
                   'transition-all duration-300',
                   'shadow-list-items hover:shadow-list-items--hover',

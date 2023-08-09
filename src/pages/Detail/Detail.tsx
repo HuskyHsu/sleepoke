@@ -75,8 +75,8 @@ function Moves() {
             return (
                 <ul className='flex w-full gap-6'>
                     {
-                        ingredients.map((item, index) => (
-                            <li className="flex items-center" key={index}>
+                        ingredients.map((item) => (
+                            <li className="flex items-center" key={item}>
                                 <div className='w-12'>
                                     <Icon.Game.Ingredient name={item} />
                                 </div>
@@ -127,7 +127,7 @@ function Moves() {
                             'py-px',
                             'shrink-0 grow-0 basis-[30%]',
                             'border-2 border-solid border-green-600',
-                            'rounded-full text-center text-black',
+                            'rounded-full text-center text-sm text-black',
                         )}>{data.title}</div>
 
                         { switchContentByTitle(data.title, data.content) }

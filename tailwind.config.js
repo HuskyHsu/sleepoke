@@ -24,6 +24,9 @@ module.exports = {
           steel: '#6EB0C7',
           water: '#339DDF',
         },
+        custom: {
+          green: '#65D077',
+        }
       },
       gridTemplateColumns: {
         18: 'repeat(18, minmax(0, 1fr))',
