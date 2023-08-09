@@ -9,10 +9,7 @@ function MainLayout() {
       'my-4 text-slate-800',
       'px-4 md:px-[10vw] lg:px-[15vw]',
     )}>
-      <div className='flex items-center gap-2'>
-        <Icon.Logo className="h-12 w-12 md:h-20 md:w-20" />
-        <h1 className="text-3xl md:text-5xl">SleePoke</h1>
-      </div>
+      <span className='flex w-full justify-center'><Icon.Logo className="h-[90px] w-[300px]" /></span>
       <hr />
       <Outlet />
     </main>
