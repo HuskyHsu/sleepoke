@@ -14,6 +14,9 @@
 6. 隊伍功能
    1. 恩，第二階段好惹
 
-## sample
+## todo list
 
-https://sleep-pm.glide.page/
+- [ ] auto format by prettier
+- [ ] select save to localStorage
+- [ ] 有一個可以把 hook 抽出來獨立一包的設計叫啥我忘了
+- [ ] refactor list html(?)
