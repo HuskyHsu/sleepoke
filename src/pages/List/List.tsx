@@ -26,7 +26,7 @@ function List() {
     ingredients: new Set<string>(),
     displayFilter: false,
     groupBy: null,
-    displayGroupBy: true,
+    displayGroupBy: false,
   })
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
