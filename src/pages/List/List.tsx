@@ -121,7 +121,12 @@ function List() {
         </div>
       </div>
 
-      {filter.displayFilter && <>
+      <div className={clsx(
+        'origin-top space-y-4 overflow-hidden transition-all duration-300',
+        filter.displayFilter
+          ? 'h-full scale-y-100 opacity-100'
+          : 'h-0 scale-y-0 opacity-0',
+      )}>
         <SubTitleSlide title='篩選：樹果' />
         <Buttons
           list={berries}
@@ -136,16 +141,21 @@ function List() {
           checkSet={filter.ingredients}
           handleChange={handleChickChange('ingredients')}
         />
-      </>}
+      </div>
 
-      {filter.displayGroupBy && <>
+      <div className={clsx(
+        'origin-top space-y-4 overflow-hidden transition-all duration-300',
+        filter.displayGroupBy
+          ? 'h-full scale-y-100 opacity-100'
+          : 'h-0 scale-y-0 opacity-0',
+      )}>
         <SubTitleSlide title='分組方式' />
         <TextButtons
           list={[{key: 'none', name: '無'}, {key: 'sleep_type', name: '睡眠分類'}, {key: 'berry', name: '樹果'}, {key: 'ingredients', name: '食材'}, {key: 'type', name: '屬性'}]}
           select={filter.groupBy}
           handleChange={handleGroupByChange}
         />
-      </>}
+      </div>
 
       <TitleSlide title='清單' />
       <div className='space-y-8'>
