@@ -18,6 +18,7 @@
 
 - [ ] auto format by prettier
 - [ ] select save to localStorage
+- [ ] 如果篩選跟分組功能有設定過東西，在圖示右上角顯示一個記號(小點之類的)
 - [ ] 有一個可以把 hook 抽出來獨立一包的設計叫啥我忘了
 - [ ] refactor list html(?)
 - [ ] bottom-navigation
