@@ -15,6 +15,7 @@ type Filter = {
   berries: Set<string>;
   ingredients: Set<string>;
   displayFilter: boolean;
+  groupBy: keyof Pick<Pokemon, 'sleep_type' | 'berry' | 'ingredients' | 'type'> | null;
 }
 
 function List() {
@@ -22,7 +23,8 @@ function List() {
     keyword: '',
     berries: new Set<string>(),
     ingredients: new Set<string>(),
-    displayFilter: false
+    displayFilter: false,
+    groupBy: null,
   })
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -79,6 +81,12 @@ function List() {
     return display
   }
 
+  let groupByList: string[] = ['']
+  if (filter.groupBy !== null) {
+    groupByList = pmList.map((pm: Pokemon) => pm[filter.groupBy as Extract<Filter['groupBy'], keyof Pokemon>]).flat()
+    groupByList = [...new Set(groupByList)]
+  }
+
   return (
     <div className='flex flex-col gap-y-4'>
       <div className="-mb-4 flex items-center justify-between py-3">
@@ -111,37 +119,54 @@ function List() {
       </div> */}
 
       <TitleSlide title='清單' />
-
-      <ul
-        className={clsx(
-          'grid grid-cols-list-mobile justify-between justify-items-center gap-y-4',
-          'md:mx-0 md:grid-cols-list md:gap-x-4',
-          'h-full',
-        )}
-      >
+      <div className='space-y-8'>
         {
-          pmList.filter(filterPm)
-            .map((pm: Pokemon) => (
-              <li
-                className={clsx(
-                  'relative w-28 md:w-32',
-                  'rounded-xl text-center',
-                  'transition-all duration-300',
-                  'shadow-list-items hover:shadow-list-items--hover',
-                  'hover:translate-x-[-0.2rem] hover:translate-y-[-0.2rem]',
-                  SleepTypeBgClass[pm.sleep_type as keyof typeof SleepTypeBgClass],
-                )}
-                key={pm.pid}
-              >
-                <Card pm={pm} />
-                <Link
-                  className={'stretchedLink'}
-                  to={`/pm/${pm.pid.slice(-3)}`}
-                />
-              </li>
-            ))
+          groupByList.map((groupBy: string) => {
+            return (
+              <div key={groupBy} className='space-y-2'>
+                {groupBy !== "" && <SubTitleSlide title={groupBy} />}
+                <ul
+                  className={clsx(
+                    'grid grid-cols-list-mobile justify-between justify-items-center gap-y-4',
+                    'md:mx-0 md:grid-cols-list md:gap-x-4',
+                    'h-full',
+                  )}
+                >
+                  {
+                    pmList.filter((pm: Pokemon) => {
+                      if (filter.groupBy === null) {
+                        return true
+                      } else if (Array.isArray(pm[filter.groupBy])) {
+                        return pm[filter.groupBy].includes(groupBy)
+                      }
+                      return pm[filter.groupBy] === groupBy
+                    }).filter(filterPm)
+                      .map((pm: Pokemon) => (
+                        <li
+                          className={clsx(
+                            'relative w-28 md:w-32',
+                            'rounded-xl text-center',
+                            'transition-all duration-300',
+                            'shadow-list-items hover:shadow-list-items--hover',
+                            'hover:translate-x-[-0.2rem] hover:translate-y-[-0.2rem]',
+                            SleepTypeBgClass[pm.sleep_type as keyof typeof SleepTypeBgClass],
+                          )}
+                          key={pm.pid}
+                        >
+                          <Card pm={pm} />
+                          <Link
+                            className={'stretchedLink'}
+                            to={`/pm/${pm.pid.slice(-3)}`}
+                          />
+                        </li>
+                      ))
+                  }
+                  </ul>
+                </div>
+            )
+          })
         }
-      </ul>
+      </div>
     </div>
   );
 }
