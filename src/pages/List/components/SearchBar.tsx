@@ -10,7 +10,7 @@ type Props = {
 export function SearchBar({value, onChange}: Props) {
   return (
     <>
-      <div className="relative">
+      <div className="relative w-full">
         <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
           <Icon.Search className="h-5 w-5" />
         </div>

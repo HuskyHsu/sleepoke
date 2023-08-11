@@ -1,13 +1,19 @@
 import { ChangeEvent } from 'react';
 import clsx from 'clsx';
 
-import { CheckboxItem } from '@/components';
+import { CheckboxItem, CheckboxTextItem } from '@/components';
 
 type Props = {
   checkSet: Set<string>,
   list: string[],
   handleChange: (event: ChangeEvent<HTMLInputElement>) => void,
   Icon: ({name}: {name: string}) => JSX.Element,
+}
+
+type TextProps = {
+  select: string | null,
+  list: {key: string, name: string}[],
+  handleChange: (event: ChangeEvent<HTMLInputElement>) => void,
 }
   
 export function Buttons({list, checkSet, Icon, handleChange}: Props) {
@@ -26,6 +32,23 @@ export function Buttons({list, checkSet, Icon, handleChange}: Props) {
       >
         <Icon name={item}/>
       </CheckboxItem>)
+    }
+  </div>
+}
+
+export function TextButtons({list, select, handleChange}: TextProps) {
+  return <div className={
+      clsx(
+        'flex w-full gap-x-4'
+      )
+    }>
+    {
+      list.map((item) => <CheckboxTextItem 
+        key={item.key} 
+        label={item}
+        checked={(select === null && item.key === 'none') || select === item.key}
+        onChange={handleChange}
+      />)
     }
   </div>
 }

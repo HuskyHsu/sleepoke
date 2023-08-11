@@ -8,7 +8,7 @@ import pmList from '@/data/pmList.json'
 import berries from '@/data/berries.json'
 import ingredients from '@/data/ingredients.json'
 
-import { Card, SearchBar, Buttons, Filter } from './components';
+import { Card, SearchBar, Buttons, Filter, Category, TextButtons } from './components';
 
 type Filter = {
   keyword: string;
@@ -16,6 +16,7 @@ type Filter = {
   ingredients: Set<string>;
   displayFilter: boolean;
   groupBy: keyof Pick<Pokemon, 'sleep_type' | 'berry' | 'ingredients' | 'type'> | null;
+  displayGroupBy: boolean;
 }
 
 function List() {
@@ -25,6 +26,7 @@ function List() {
     ingredients: new Set<string>(),
     displayFilter: false,
     groupBy: null,
+    displayGroupBy: true,
   })
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -48,6 +50,28 @@ function List() {
       return {
         ...prevSearch,
         [key]: prevSearch[key]
+      }
+    });
+  };
+
+  const handleGroupByChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { name } = event.target;
+
+    setFilter(prevSearch => {
+      return {
+        ...prevSearch,
+        groupBy: name !== 'none' ? name as Extract<Filter['groupBy'], keyof Pokemon> : null
+      }
+    });
+  };
+
+  const handleCategoryChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { checked } = event.target;
+
+    setFilter(prevSearch => {
+      return {
+        ...prevSearch,
+        displayGroupBy: checked
       }
     });
   };
@@ -89,11 +113,11 @@ function List() {
 
   return (
     <div className='flex flex-col gap-y-4'>
-      <div className="-mb-4 flex items-center justify-between py-3">
-        <h2>Pokemon List</h2>
-        <div className="flex items-center gap-x-3">
+      <div className="-mb-4 flex justify-end py-3">
+        <div className="flex w-full items-center gap-x-3">
           <SearchBar value={filter.keyword} onChange={handleInputChange}/>
           <Filter checked={filter.displayFilter} onChange={handleFilterChange}/>
+          <Category checked={filter.displayGroupBy} onChange={handleCategoryChange}/>
         </div>
       </div>
 
@@ -114,9 +138,14 @@ function List() {
         />
       </>}
 
-      {/* <div>
-      group by 睡覺分類，食材，樹果 or None
-      </div> */}
+      {filter.displayGroupBy && <>
+        <SubTitleSlide title='分組方式' />
+        <TextButtons
+          list={[{key: 'none', name: '無'}, {key: 'sleep_type', name: '睡眠分類'}, {key: 'berry', name: '樹果'}, {key: 'ingredients', name: '食材'}, {key: 'type', name: '屬性'}]}
+          select={filter.groupBy}
+          handleChange={handleGroupByChange}
+        />
+      </>}
 
       <TitleSlide title='清單' />
       <div className='space-y-8'>
