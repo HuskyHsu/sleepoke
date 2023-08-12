@@ -1,7 +1,7 @@
 export enum SleepTypeBgClass {
   '淺淺入夢' = 'bg-amber-400/60',
-  '安然入睡' ='bg-sky-400/60',
-  '深深入眠' ='bg-blue-500/60',
+  '安然入睡' = 'bg-sky-400/60',
+  '深深入眠' = 'bg-blue-500/60',
 }
 
 export enum TypeBgClass {

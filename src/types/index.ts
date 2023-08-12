@@ -1,2 +1,2 @@
 export * from './pokemon';
-export * from './style'
+export * from './style';
