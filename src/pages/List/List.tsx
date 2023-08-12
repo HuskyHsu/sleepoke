@@ -135,7 +135,7 @@ function List() {
         'origin-top space-y-4 overflow-hidden transition-all duration-300',
         filter.displayFilter
           ? 'h-full scale-y-100 opacity-100'
-          : 'h-0 scale-y-0 opacity-0',
+          : '-my-2 h-0 scale-y-0 opacity-0',
       )}>
         <SubTitleSlide title='篩選：樹果' />
         <Buttons
@@ -157,7 +157,7 @@ function List() {
         'origin-top space-y-4 overflow-hidden transition-all duration-300',
         filter.displayGroupBy
           ? 'h-full scale-y-100 opacity-100'
-          : 'h-0 scale-y-0 opacity-0',
+          : '-my-2 h-0 scale-y-0 opacity-0',
       )}>
         <SubTitleSlide title='分組方式' />
         <TextButtons
