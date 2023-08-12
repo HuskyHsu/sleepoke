@@ -3,15 +3,13 @@ import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
 import { Pokemon, SleepTypeBgClass } from '@/types';
-import { Icon, SubTitleSlide, TitleSlide } from '@/components';
+import { SubTitleSlide, TitleSlide } from '@/components';
 import pmList from '@/data/pmList.json';
-import berries from '@/data/berries.json';
-import ingredients from '@/data/ingredients.json';
-import skills from '@/data/skills.json';
 
-import { Card, SearchBar, Buttons, Filter, Category, TextButtons, Indicator } from './components';
+import { Card, SearchBar, Filter, Category, Indicator } from './components';
+import { ToolBar } from './ToolBar';
 
-type Filter = {
+export type Filter = {
   keyword: string;
   berries: Set<string>;
   ingredients: Set<string>;
@@ -116,16 +114,6 @@ function List() {
     return display;
   };
 
-  const groupBySelect = [
-    { key: 'none', name: '無' },
-    { key: 'sleep_type', name: '睡眠分類' },
-    { key: 'berry', name: '樹果' },
-    { key: 'ingredients', name: '食材' },
-    { key: 'specialty', name: '專長' },
-    { key: 'skill', name: '主技能' },
-    { key: 'type', name: '屬性' },
-  ];
-
   let groupByList: string[] = [''];
   if (filter.groupBy !== null) {
     groupByList = pmList
@@ -137,7 +125,7 @@ function List() {
   return (
     <div className='flex flex-col gap-y-4'>
       <div className='-mb-4 flex justify-end py-3'>
-        <div className='flex w-full items-center gap-x-3'>
+        <div className='flex w-full items-center gap-x-3 md:w-3/5 lg:w-1/3'>
           <SearchBar value={filter.keyword} onChange={handleInputChange} />
           <div className='relative'>
             <Filter checked={filter.displayFilter} onChange={handleFilterChange} />
@@ -152,49 +140,11 @@ function List() {
         </div>
       </div>
 
-      <div
-        className={clsx(
-          'origin-top space-y-4 overflow-hidden transition-all duration-300',
-          filter.displayFilter ? 'h-full scale-y-100 opacity-100' : '-my-2 h-0 scale-y-0 opacity-0',
-        )}
-      >
-        <SubTitleSlide title='篩選：樹果' />
-        <Buttons
-          list={berries}
-          Icon={Icon.Game.Berry}
-          checkSet={filter.berries}
-          handleChange={handleChickChange('berries')}
-        />
-        <SubTitleSlide title='篩選：食材' />
-        <Buttons
-          list={ingredients}
-          Icon={Icon.Game.Ingredient}
-          checkSet={filter.ingredients}
-          handleChange={handleChickChange('ingredients')}
-        />
-        <SubTitleSlide title='篩選：主技能' />
-        <Buttons
-          list={skills}
-          checkSet={filter.skills}
-          handleChange={handleChickChange('skills')}
-        />
-      </div>
-
-      <div
-        className={clsx(
-          'origin-top space-y-4 overflow-hidden transition-all duration-300',
-          filter.displayGroupBy
-            ? 'h-full scale-y-100 opacity-100'
-            : '-my-2 h-0 scale-y-0 opacity-0',
-        )}
-      >
-        <SubTitleSlide title='分組方式' />
-        <TextButtons
-          list={groupBySelect}
-          select={filter.groupBy}
-          handleChange={handleGroupByChange}
-        />
-      </div>
+      <ToolBar
+        filter={filter}
+        handleChickChange={handleChickChange}
+        handleGroupByChange={handleGroupByChange}
+      />
 
       <TitleSlide title='清單' />
       <div className='space-y-8'>
