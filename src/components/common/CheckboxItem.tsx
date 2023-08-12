@@ -31,7 +31,7 @@ export function CheckboxItem({ label, children, checked, onChange }: Props) {
 
 export function CheckboxTextItem({ label, checked, onChange }: TextProps) {
   return (
-    <div className={clsx('rounded-xl px-2 py-1', checked ? 'bg-amber-400': 'bg-amber-100')}>
+    <div className={clsx('whitespace-nowrap rounded-xl px-2 py-1', checked ? 'bg-amber-400': 'bg-amber-100')}>
       <input type="checkbox" name={label.key} id={label.key} className='hidden' checked={checked} onChange={onChange}/>
       <label htmlFor={label.key} className='flex cursor-pointer flex-col items-center'>
         {label.name}

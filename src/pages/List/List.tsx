@@ -15,7 +15,7 @@ type Filter = {
   berries: Set<string>;
   ingredients: Set<string>;
   displayFilter: boolean;
-  groupBy: keyof Pick<Pokemon, 'sleep_type' | 'berry' | 'ingredients' | 'type'> | null;
+  groupBy: keyof Pick<Pokemon, 'sleep_type' | 'berry' | 'ingredients' | 'type' | 'specialty' | 'skill'> | null;
   displayGroupBy: boolean;
 }
 
@@ -105,6 +105,16 @@ function List() {
     return display
   }
 
+  const groupBySelect = [
+    {key: 'none', name: '無'}, 
+    {key: 'sleep_type', name: '睡眠分類'}, 
+    {key: 'berry', name: '樹果'},
+    {key: 'ingredients', name: '食材'},
+    {key: 'specialty', name: '專長'},
+    {key: 'skill', name: '主技能'},
+    {key: 'type', name: '屬性'}
+  ]
+
   let groupByList: string[] = ['']
   if (filter.groupBy !== null) {
     groupByList = pmList.map((pm: Pokemon) => pm[filter.groupBy as Extract<Filter['groupBy'], keyof Pokemon>]).flat()
@@ -151,7 +161,7 @@ function List() {
       )}>
         <SubTitleSlide title='分組方式' />
         <TextButtons
-          list={[{key: 'none', name: '無'}, {key: 'sleep_type', name: '睡眠分類'}, {key: 'berry', name: '樹果'}, {key: 'ingredients', name: '食材'}, {key: 'type', name: '屬性'}]}
+          list={groupBySelect}
           select={filter.groupBy}
           handleChange={handleGroupByChange}
         />

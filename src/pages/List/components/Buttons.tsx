@@ -39,7 +39,7 @@ export function Buttons({list, checkSet, Icon, handleChange}: Props) {
 export function TextButtons({list, select, handleChange}: TextProps) {
   return <div className={
       clsx(
-        'flex w-full gap-x-4'
+        'flex w-full flex-wrap gap-4'
       )
     }>
     {
