@@ -8,7 +8,7 @@ import pmList from '@/data/pmList.json'
 import berries from '@/data/berries.json'
 import ingredients from '@/data/ingredients.json'
 
-import { Card, SearchBar, Buttons, Filter, Category, TextButtons } from './components';
+import { Card, SearchBar, Buttons, Filter, Category, TextButtons, Indicator } from './components';
 
 type Filter = {
   keyword: string;
@@ -126,8 +126,18 @@ function List() {
       <div className="-mb-4 flex justify-end py-3">
         <div className="flex w-full items-center gap-x-3">
           <SearchBar value={filter.keyword} onChange={handleInputChange}/>
-          <Filter checked={filter.displayFilter} onChange={handleFilterChange}/>
-          <Category checked={filter.displayGroupBy} onChange={handleCategoryChange}/>
+          <div className="relative">
+            <Filter checked={filter.displayFilter} onChange={handleFilterChange}/>
+            {
+              filter.berries.size + filter.ingredients.size > 0 && <Indicator />
+            }
+          </div>
+          <div className="relative">
+            <Category checked={filter.displayGroupBy} onChange={handleCategoryChange}/>
+            {
+              filter.groupBy !== null && <Indicator />
+            }
+          </div>
         </div>
       </div>
 

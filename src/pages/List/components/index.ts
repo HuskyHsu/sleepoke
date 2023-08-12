@@ -3,3 +3,4 @@ export * from './SearchBar';
 export * from './Buttons';
 export * from './Filter';
 export * from './Category';
+export * from './Indicator';
