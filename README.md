@@ -16,7 +16,7 @@
 
 ## todo list
 
-- [x] auto format by prettier
+- [x] auto format by prettier(https://ithelp.ithome.com.tw/articles/10298012)
 - [ ] select save to localStorage
 - [x] 如果篩選跟分組功能有設定過東西，在圖示右上角顯示一個記號(小點之類的)
 - [x] 篩選與分組加入主動技得清單
