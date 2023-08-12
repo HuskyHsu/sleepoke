@@ -7,7 +7,7 @@ type Props = {
   checkSet: Set<string>,
   list: string[],
   handleChange: (event: ChangeEvent<HTMLInputElement>) => void,
-  Icon: ({name}: {name: string}) => JSX.Element,
+  Icon?: ({name}: {name: string}) => JSX.Element,
 }
 
 type TextProps = {
@@ -19,8 +19,10 @@ type TextProps = {
 export function Buttons({list, checkSet, Icon, handleChange}: Props) {
   return <div className={
       clsx(
-        'grid w-full justify-items-center gap-y-2',
-        'grid-cols-6 md:grid-cols-9 xl:grid-cols-18'
+        'w-full gap-4',
+        Icon && 'grid justify-items-center gap-2',
+        Icon && 'grid-cols-6 md:grid-cols-9 xl:grid-cols-18',
+        !Icon && 'flex flex-wrap'
       )
     }>
     {
@@ -30,7 +32,7 @@ export function Buttons({list, checkSet, Icon, handleChange}: Props) {
         checked={checkSet.has(item)}
         onChange={handleChange}
       >
-        <Icon name={item}/>
+        {Icon && <Icon name={item}/>}
       </CheckboxItem>)
     }
   </div>
@@ -38,9 +40,7 @@ export function Buttons({list, checkSet, Icon, handleChange}: Props) {
 
 export function TextButtons({list, select, handleChange}: TextProps) {
   return <div className={
-      clsx(
-        'flex w-full flex-wrap gap-4'
-      )
+      clsx('flex w-full flex-wrap gap-4')
     }>
     {
       list.map((item) => <CheckboxTextItem 

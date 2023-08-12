@@ -7,6 +7,7 @@ import { Icon, SubTitleSlide, TitleSlide } from '@/components';
 import pmList from '@/data/pmList.json'
 import berries from '@/data/berries.json'
 import ingredients from '@/data/ingredients.json'
+import skills from '@/data/skills.json'
 
 import { Card, SearchBar, Buttons, Filter, Category, TextButtons, Indicator } from './components';
 
@@ -14,6 +15,7 @@ type Filter = {
   keyword: string;
   berries: Set<string>;
   ingredients: Set<string>;
+  skills: Set<string>;
   displayFilter: boolean;
   groupBy: keyof Pick<Pokemon, 'sleep_type' | 'berry' | 'ingredients' | 'type' | 'specialty' | 'skill'> | null;
   displayGroupBy: boolean;
@@ -24,6 +26,7 @@ function List() {
     keyword: '',
     berries: new Set<string>(),
     ingredients: new Set<string>(),
+    skills: new Set<string>(),
     displayFilter: false,
     groupBy: null,
     displayGroupBy: false,
@@ -37,7 +40,7 @@ function List() {
     }));
   };
 
-  const handleChickChange = (key: 'berries' | 'ingredients') => (event: ChangeEvent<HTMLInputElement>) => {
+  const handleChickChange = (key: 'berries' | 'ingredients' | 'skills') => (event: ChangeEvent<HTMLInputElement>) => {
     const { name, checked } = event.target;
 
     setFilter(prevSearch => {
@@ -102,6 +105,10 @@ function List() {
       display = pm.ingredients.find((ingredient) => filter.ingredients.has(ingredient)) !== undefined
     }
 
+    if (display && filter.skills.size > 0) {
+      display = filter.skills.has(pm.skill)
+    }
+
     return display
   }
 
@@ -129,7 +136,10 @@ function List() {
           <div className="relative">
             <Filter checked={filter.displayFilter} onChange={handleFilterChange}/>
             {
-              filter.berries.size + filter.ingredients.size > 0 && <Indicator />
+              filter.berries.size + 
+              filter.ingredients.size + 
+              filter.skills.size > 0 && 
+              <Indicator />
             }
           </div>
           <div className="relative">
@@ -160,6 +170,12 @@ function List() {
           Icon={Icon.Game.Ingredient}
           checkSet={filter.ingredients}
           handleChange={handleChickChange('ingredients')}
+        />
+        <SubTitleSlide title='篩選：主技能' />
+        <Buttons
+          list={skills}
+          checkSet={filter.skills}
+          handleChange={handleChickChange('skills')}
         />
       </div>
 

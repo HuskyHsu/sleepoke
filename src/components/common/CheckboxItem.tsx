@@ -16,14 +16,19 @@ type TextProps = {
 }
 
 export function CheckboxItem({ label, children, checked, onChange }: Props) {
+  const onlyText = children === undefined
+
   return (
-    <div className='mb-6 h-12 w-12'>
+    <div className={clsx('whitespace-nowrap', !onlyText && 'mb-6 h-12 w-12')}>
       <input type="checkbox" name={label} id={label} className='hidden' checked={checked} onChange={onChange}/>
-      <label htmlFor={label} className='flex cursor-pointer flex-col items-center'>
-        <div className={clsx('rounded-full p-1', checked ? 'bg-amber-400': 'bg-amber-100')}>
+      <label htmlFor={label} className={clsx(
+        'flex cursor-pointer flex-col items-center',
+        onlyText && (['rounded-xl px-2 py-1', checked ? 'bg-amber-400': 'bg-amber-100'])
+      )}>
+        {children && <div className={clsx('rounded-full p-1', checked ? 'bg-amber-400': 'bg-amber-100')}>
           {children}
-        </div>
-        <span className='text-xs'>{label}</span>
+        </div>}
+        <span className={clsx(!onlyText && 'text-xs')}>{label}</span>
       </label>
     </div>
   );
