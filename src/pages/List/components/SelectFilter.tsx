@@ -21,7 +21,7 @@ export function SelectFilter({ filter, handleChickChange }: Props) {
     <div
       className={clsx(
         'origin-top space-y-4 overflow-hidden transition-all duration-300',
-        filter.displayFilter ? 'h-full scale-y-100 opacity-100' : '-my-2 h-0 scale-y-0 opacity-0',
+        filter.displayFilter ? 'mb-4 h-full scale-y-100 opacity-100' : 'h-0 scale-y-0 opacity-0',
       )}
     >
       <SubTitleSlide title='篩選：樹果' />

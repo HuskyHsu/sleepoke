@@ -25,7 +25,7 @@ export function SelectGroup({ filter, handleGroupByChange }: Props) {
     <div
       className={clsx(
         'origin-top space-y-4 overflow-hidden transition-all duration-300',
-        filter.displayGroupBy ? 'h-full scale-y-100 opacity-100' : '-my-2 h-0 scale-y-0 opacity-0',
+        filter.displayGroupBy ? 'mb-4 h-full scale-y-100 opacity-100' : 'h-0 scale-y-0 opacity-0',
       )}
     >
       <SubTitleSlide title='分組方式' />

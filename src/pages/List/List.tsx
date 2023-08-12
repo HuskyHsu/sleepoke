@@ -123,8 +123,8 @@ function List() {
   }
 
   return (
-    <div className='flex flex-col gap-y-4'>
-      <div className='-mb-4 flex justify-end py-3'>
+    <div className='flex flex-col'>
+      <div className='flex justify-end py-3'>
         <div className='flex w-full items-center gap-x-3 md:w-3/5 lg:w-1/3'>
           <SearchBar value={filter.keyword} onChange={handleInputChange} />
           <div className='relative'>
@@ -147,7 +147,7 @@ function List() {
       />
 
       <TitleSlide title='清單' />
-      <div className='space-y-8'>
+      <div className='mt-4 space-y-8'>
         {groupByList.map((groupBy: string) => {
           return (
             <div key={groupBy} className='space-y-2'>
