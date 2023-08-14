@@ -14,8 +14,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 18,
     "recruit_shards": 39,
-    "ingredients": ["\u751c\u751c\u871c", "\u7aa9\u5fc3\u6d0b\u828b", "\u597d\u7720\u756a\u8304"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u7aa9\u5fc3\u6d0b\u828b",
+      "\u597d\u7720\u756a\u8304"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0002",
@@ -32,8 +41,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 116,
     "recruit_shards": 245,
-    "ingredients": ["\u751c\u751c\u871c", "\u7aa9\u5fc3\u6d0b\u828b", "\u597d\u7720\u756a\u8304"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u7aa9\u5fc3\u6d0b\u828b",
+      "\u597d\u7720\u756a\u8304"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0003",
@@ -50,8 +68,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 574,
     "recruit_shards": 1033,
-    "ingredients": ["\u751c\u751c\u871c", "\u7aa9\u5fc3\u6d0b\u828b", "\u597d\u7720\u756a\u8304"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u7aa9\u5fc3\u6d0b\u828b",
+      "\u597d\u7720\u756a\u8304"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0004",
@@ -68,8 +95,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 16,
     "recruit_shards": 42,
-    "ingredients": ["\u8c46\u88fd\u8089", "\u6696\u6696\u8591", "\u706b\u8fa3\u9999\u8349"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u8c46\u88fd\u8089",
+      "\u6696\u6696\u8591",
+      "\u706b\u8fa3\u9999\u8349"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0005",
@@ -86,8 +122,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 116,
     "recruit_shards": 245,
-    "ingredients": ["\u8c46\u88fd\u8089", "\u6696\u6696\u8591", "\u706b\u8fa3\u9999\u8349"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u8c46\u88fd\u8089",
+      "\u6696\u6696\u8591",
+      "\u706b\u8fa3\u9999\u8349"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0006",
@@ -104,8 +149,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 528,
     "recruit_shards": 1116,
-    "ingredients": ["\u8c46\u88fd\u8089", "\u6696\u6696\u8591", "\u706b\u8fa3\u9999\u8349"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u8c46\u88fd\u8089",
+      "\u6696\u6696\u8591",
+      "\u706b\u8fa3\u9999\u8349"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0007",
@@ -122,8 +176,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 18,
     "recruit_shards": 39,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0008",
@@ -140,8 +203,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 116,
     "recruit_shards": 245,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0009",
@@ -158,8 +230,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 528,
     "recruit_shards": 1116,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0010",
@@ -176,8 +257,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 11,
     "recruit_shards": 12,
-    "ingredients": ["\u751c\u751c\u871c", "\u597d\u7720\u756a\u8304", "\u840c\u7da0\u5927\u8c46"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u597d\u7720\u756a\u8304",
+      "\u840c\u7da0\u5927\u8c46"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0011",
@@ -194,8 +284,17 @@
     "friendship_points_needed": 7,
     "recruit_experience": 29,
     "recruit_shards": 31,
-    "ingredients": ["\u751c\u751c\u871c", "\u597d\u7720\u756a\u8304", "\u840c\u7da0\u5927\u8c46"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u597d\u7720\u756a\u8304",
+      "\u840c\u7da0\u5927\u8c46"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0012",
@@ -212,8 +311,17 @@
     "friendship_points_needed": 15,
     "recruit_experience": 397,
     "recruit_shards": 715,
-    "ingredients": ["\u751c\u751c\u871c", "\u597d\u7720\u756a\u8304", "\u840c\u7da0\u5927\u8c46"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u597d\u7720\u756a\u8304",
+      "\u840c\u7da0\u5927\u8c46"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0019",
@@ -230,8 +338,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 7,
     "recruit_shards": 20,
-    "ingredients": ["\u7279\u9078\u860b\u679c", "\u840c\u7da0\u5927\u8c46", "\u8c46\u88fd\u8089"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u7279\u9078\u860b\u679c",
+      "\u840c\u7da0\u5927\u8c46",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0020",
@@ -248,8 +365,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 60,
     "recruit_shards": 155,
-    "ingredients": ["\u7279\u9078\u860b\u679c", "\u840c\u7da0\u5927\u8c46", "\u8c46\u88fd\u8089"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u7279\u9078\u860b\u679c",
+      "\u840c\u7da0\u5927\u8c46",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0023",
@@ -266,8 +392,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 7,
     "recruit_shards": 19,
-    "ingredients": ["\u8c46\u88fd\u8089", "\u7279\u9078\u86cb", "\u706b\u8fa3\u9999\u8349"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u8c46\u88fd\u8089",
+      "\u7279\u9078\u86cb",
+      "\u706b\u8fa3\u9999\u8349"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0024",
@@ -284,8 +419,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 103,
     "recruit_shards": 268,
-    "ingredients": ["\u8c46\u88fd\u8089", "\u7279\u9078\u86cb", "\u706b\u8fa3\u9999\u8349"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u8c46\u88fd\u8089",
+      "\u7279\u9078\u86cb",
+      "\u706b\u8fa3\u9999\u8349"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0025",
@@ -302,8 +446,17 @@
     "friendship_points_needed": 7,
     "recruit_experience": 7,
     "recruit_shards": 20,
-    "ingredients": ["\u7279\u9078\u860b\u679c", "\u7279\u9078\u86cb", "\u6696\u6696\u8591"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u7279\u9078\u860b\u679c",
+      "\u7279\u9078\u86cb",
+      "\u6696\u6696\u8591"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0026",
@@ -320,8 +473,17 @@
     "friendship_points_needed": 18,
     "recruit_experience": 326,
     "recruit_shards": 844,
-    "ingredients": ["\u7279\u9078\u860b\u679c", "\u7279\u9078\u86cb", "\u6696\u6696\u8591"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7279\u9078\u860b\u679c",
+      "\u7279\u9078\u86cb",
+      "\u6696\u6696\u8591"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0039",
@@ -338,8 +500,17 @@
     "friendship_points_needed": 7,
     "recruit_experience": 23,
     "recruit_shards": 24,
-    "ingredients": ["\u751c\u751c\u871c", "\u7d14\u7cb9\u6cb9", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u7d14\u7cb9\u6cb9",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0040",
@@ -356,8 +527,17 @@
     "friendship_points_needed": 16,
     "recruit_experience": 253,
     "recruit_shards": 273,
-    "ingredients": ["\u751c\u751c\u871c", "\u7d14\u7cb9\u6cb9", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u7d14\u7cb9\u6cb9",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0050",
@@ -374,8 +554,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 7,
     "recruit_shards": 20,
-    "ingredients": ["\u597d\u7720\u756a\u8304", "\u7c97\u679d\u5927\u8525"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u597d\u7720\u756a\u8304",
+      "\u7c97\u679d\u5927\u8525",
+      "\u840c\u7da0\u5927\u8c46"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0051",
@@ -392,8 +581,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 95,
     "recruit_shards": 284,
-    "ingredients": ["\u597d\u7720\u756a\u8304", "\u7c97\u679d\u5927\u8525"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u597d\u7720\u756a\u8304",
+      "\u7c97\u679d\u5927\u8525",
+      "\u840c\u7da0\u5927\u8c46"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0052",
@@ -410,8 +608,16 @@
     "friendship_points_needed": 5,
     "recruit_experience": 8,
     "recruit_shards": 17,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u8c46\u88fd\u8089"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0053",
@@ -428,8 +634,16 @@
     "friendship_points_needed": 12,
     "recruit_experience": 116,
     "recruit_shards": 245,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u8c46\u88fd\u8089"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0054",
@@ -446,8 +660,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 9,
     "recruit_shards": 16,
-    "ingredients": ["\u653e\u9b06\u53ef\u53ef", "\u54c1\u9bae\u8611\u83c7", "\u8c46\u88fd\u8089"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0055",
@@ -464,8 +687,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 126,
     "recruit_shards": 227,
-    "ingredients": ["\u653e\u9b06\u53ef\u53ef", "\u54c1\u9bae\u8611\u83c7", "\u8c46\u88fd\u8089"],
-    "location": ["False", "True", "True", "False"]
+    "ingredients": [
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "False",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0056",
@@ -482,8 +714,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 7,
     "recruit_shards": 19,
-    "ingredients": ["\u8c46\u88fd\u8089", "\u54c1\u9bae\u8611\u83c7", "\u751c\u751c\u871c"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u8c46\u88fd\u8089",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u751c\u751c\u871c"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0057",
@@ -500,8 +741,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 116,
     "recruit_shards": 245,
-    "ingredients": ["\u8c46\u88fd\u8089", "\u54c1\u9bae\u8611\u83c7", "\u751c\u751c\u871c"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u8c46\u88fd\u8089",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u751c\u751c\u871c"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0058",
@@ -518,8 +768,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 9,
     "recruit_shards": 16,
-    "ingredients": ["\u706b\u8fa3\u9999\u8349", "\u8c46\u88fd\u8089", "\u54de\u54de\u9bae\u5976"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u706b\u8fa3\u9999\u8349",
+      "\u8c46\u88fd\u8089",
+      "\u54de\u54de\u9bae\u5976"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0059",
@@ -536,8 +795,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 666,
     "recruit_shards": 1199,
-    "ingredients": ["\u706b\u8fa3\u9999\u8349", "\u8c46\u88fd\u8089", "\u54de\u54de\u9bae\u5976"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u706b\u8fa3\u9999\u8349",
+      "\u8c46\u88fd\u8089",
+      "\u54de\u54de\u9bae\u5976"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0069",
@@ -559,7 +827,12 @@
       "\u7aa9\u5fc3\u6d0b\u828b",
       "\u7c97\u679d\u5927\u8525"
     ],
-    "location": ["True", "True", "True", "False"]
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0070",
@@ -581,7 +854,12 @@
       "\u7aa9\u5fc3\u6d0b\u828b",
       "\u7c97\u679d\u5927\u8525"
     ],
-    "location": ["True", "True", "True", "False"]
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0071",
@@ -603,7 +881,12 @@
       "\u7aa9\u5fc3\u6d0b\u828b",
       "\u7c97\u679d\u5927\u8525"
     ],
-    "location": ["True", "False", "False", "False"]
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0074",
@@ -620,8 +903,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 7,
     "recruit_shards": 19,
-    "ingredients": ["\u840c\u7da0\u5927\u8c46", "\u54c1\u9bae\u8611\u83c7"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u840c\u7da0\u5927\u8c46",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u7aa9\u5fc3\u6d0b\u828b"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0075",
@@ -638,8 +930,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 67,
     "recruit_shards": 141,
-    "ingredients": ["\u840c\u7da0\u5927\u8c46", "\u54c1\u9bae\u8611\u83c7"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u840c\u7da0\u5927\u8c46",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u7aa9\u5fc3\u6d0b\u828b"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0076",
@@ -656,8 +957,17 @@
     "friendship_points_needed": 22,
     "recruit_experience": 574,
     "recruit_shards": 1033,
-    "ingredients": ["\u840c\u7da0\u5927\u8c46", "\u54c1\u9bae\u8611\u83c7"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u840c\u7da0\u5927\u8c46",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u7aa9\u5fc3\u6d0b\u828b"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0079",
@@ -679,7 +989,12 @@
       "\u7f8e\u5473\u5c3e\u5df4",
       "\u597d\u7720\u756a\u8304"
     ],
-    "location": ["True", "True", "True", "False"]
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0080",
@@ -701,7 +1016,12 @@
       "\u7f8e\u5473\u5c3e\u5df4",
       "\u597d\u7720\u756a\u8304"
     ],
-    "location": ["True", "True", "True", "False"]
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0081",
@@ -718,8 +1038,16 @@
     "friendship_points_needed": 5,
     "recruit_experience": 7,
     "recruit_shards": 20,
-    "ingredients": ["\u7d14\u7cb9\u6cb9", "\u706b\u8fa3\u9999\u8349"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u706b\u8fa3\u9999\u8349"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0082",
@@ -736,8 +1064,16 @@
     "friendship_points_needed": 12,
     "recruit_experience": 95,
     "recruit_shards": 284,
-    "ingredients": ["\u7d14\u7cb9\u6cb9", "\u706b\u8fa3\u9999\u8349"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u706b\u8fa3\u9999\u8349"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0084",
@@ -754,8 +1090,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 7,
     "recruit_shards": 20,
-    "ingredients": ["\u840c\u7da0\u5927\u8c46", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u840c\u7da0\u5927\u8c46",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0085",
@@ -772,8 +1117,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 60,
     "recruit_shards": 155,
-    "ingredients": ["\u840c\u7da0\u5927\u8c46", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u840c\u7da0\u5927\u8c46",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0092",
@@ -790,8 +1144,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 7,
     "recruit_shards": 20,
-    "ingredients": ["\u706b\u8fa3\u9999\u8349", "\u54c1\u9bae\u8611\u83c7", "\u7d14\u7cb9\u6cb9"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u706b\u8fa3\u9999\u8349",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u7d14\u7cb9\u6cb9"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0093",
@@ -808,8 +1171,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 62,
     "recruit_shards": 186,
-    "ingredients": ["\u706b\u8fa3\u9999\u8349", "\u54c1\u9bae\u8611\u83c7", "\u7d14\u7cb9\u6cb9"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u706b\u8fa3\u9999\u8349",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u7d14\u7cb9\u6cb9"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0094",
@@ -826,8 +1198,17 @@
     "friendship_points_needed": 22,
     "recruit_experience": 431,
     "recruit_shards": 1291,
-    "ingredients": ["\u706b\u8fa3\u9999\u8349", "\u54c1\u9bae\u8611\u83c7", "\u7d14\u7cb9\u6cb9"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u706b\u8fa3\u9999\u8349",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u7d14\u7cb9\u6cb9"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0104",
@@ -844,8 +1225,16 @@
     "friendship_points_needed": 5,
     "recruit_experience": 9,
     "recruit_shards": 16,
-    "ingredients": ["\u6696\u6696\u8591", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u6696\u6696\u8591",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0105",
@@ -862,8 +1251,16 @@
     "friendship_points_needed": 12,
     "recruit_experience": 93,
     "recruit_shards": 197,
-    "ingredients": ["\u6696\u6696\u8591", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u6696\u6696\u8591",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0115",
@@ -880,8 +1277,17 @@
     "friendship_points_needed": 16,
     "recruit_experience": 416,
     "recruit_shards": 449,
-    "ingredients": ["\u6696\u6696\u8591", "\u7aa9\u5fc3\u6d0b\u828b", "\u840c\u7da0\u5927\u8c46"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u6696\u6696\u8591",
+      "\u7aa9\u5fc3\u6d0b\u828b",
+      "\u840c\u7da0\u5927\u8c46"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0127",
@@ -898,8 +1304,16 @@
     "friendship_points_needed": 16,
     "recruit_experience": 235,
     "recruit_shards": 608,
-    "ingredients": ["\u751c\u751c\u871c", "\u8c46\u88fd\u8089"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0132",
@@ -916,8 +1330,17 @@
     "friendship_points_needed": 16,
     "recruit_experience": 219,
     "recruit_shards": 394,
-    "ingredients": [],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u7c97\u679d\u5927\u8525",
+      "\u7f8e\u5473\u5c3e\u5df4"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0133",
@@ -934,8 +1357,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 20,
     "recruit_shards": 36,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0134",
@@ -952,8 +1384,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 675,
     "recruit_shards": 729,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["False", "True", "True", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "False",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0135",
@@ -970,8 +1411,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 443,
     "recruit_shards": 1147,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0136",
@@ -988,8 +1438,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 443,
     "recruit_shards": 1147,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0152",
@@ -1006,8 +1465,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 18,
     "recruit_shards": 39,
-    "ingredients": ["\u653e\u9b06\u53ef\u53ef", "\u751c\u751c\u871c", "\u7c97\u679d\u5927\u8525"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u751c\u751c\u871c",
+      "\u7c97\u679d\u5927\u8525"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0153",
@@ -1024,8 +1492,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 116,
     "recruit_shards": 245,
-    "ingredients": ["\u653e\u9b06\u53ef\u53ef", "\u751c\u751c\u871c", "\u7c97\u679d\u5927\u8525"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u751c\u751c\u871c",
+      "\u7c97\u679d\u5927\u8525"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0154",
@@ -1042,8 +1519,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 574,
     "recruit_shards": 1033,
-    "ingredients": ["\u653e\u9b06\u53ef\u53ef", "\u751c\u751c\u871c", "\u7c97\u679d\u5927\u8525"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u751c\u751c\u871c",
+      "\u7c97\u679d\u5927\u8525"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0155",
@@ -1060,8 +1546,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 16,
     "recruit_shards": 42,
-    "ingredients": ["\u6696\u6696\u8591", "\u706b\u8fa3\u9999\u8349", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u6696\u6696\u8591",
+      "\u706b\u8fa3\u9999\u8349",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0156",
@@ -1078,8 +1573,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 116,
     "recruit_shards": 245,
-    "ingredients": ["\u6696\u6696\u8591", "\u706b\u8fa3\u9999\u8349", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u6696\u6696\u8591",
+      "\u706b\u8fa3\u9999\u8349",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0157",
@@ -1096,8 +1600,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 528,
     "recruit_shards": 1116,
-    "ingredients": ["\u6696\u6696\u8591", "\u706b\u8fa3\u9999\u8349", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u6696\u6696\u8591",
+      "\u706b\u8fa3\u9999\u8349",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0158",
@@ -1114,8 +1627,16 @@
     "friendship_points_needed": 5,
     "recruit_experience": 20,
     "recruit_shards": 36,
-    "ingredients": ["\u8c46\u88fd\u8089", "\u7d14\u7cb9\u6cb9"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u8c46\u88fd\u8089",
+      "\u7d14\u7cb9\u6cb9"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0159",
@@ -1132,8 +1653,16 @@
     "friendship_points_needed": 12,
     "recruit_experience": 126,
     "recruit_shards": 227,
-    "ingredients": ["\u8c46\u88fd\u8089", "\u7d14\u7cb9\u6cb9"],
-    "location": ["False", "True", "True", "False"]
+    "ingredients": [
+      "\u8c46\u88fd\u8089",
+      "\u7d14\u7cb9\u6cb9"
+    ],
+    "location": [
+      "False",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0160",
@@ -1150,8 +1679,16 @@
     "friendship_points_needed": 20,
     "recruit_experience": 574,
     "recruit_shards": 1033,
-    "ingredients": ["\u8c46\u88fd\u8089", "\u7d14\u7cb9\u6cb9"],
-    "location": ["False", "True", "True", "False"]
+    "ingredients": [
+      "\u8c46\u88fd\u8089",
+      "\u7d14\u7cb9\u6cb9"
+    ],
+    "location": [
+      "False",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0172",
@@ -1168,8 +1705,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 7,
     "recruit_shards": 20,
-    "ingredients": ["\u7279\u9078\u860b\u679c", "\u7279\u9078\u86cb", "\u6696\u6696\u8591"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7279\u9078\u860b\u679c",
+      "\u7279\u9078\u86cb",
+      "\u6696\u6696\u8591"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0174",
@@ -1186,8 +1732,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 11,
     "recruit_shards": 12,
-    "ingredients": ["\u751c\u751c\u871c", "\u7d14\u7cb9\u6cb9", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u7d14\u7cb9\u6cb9",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0175",
@@ -1204,8 +1759,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 18,
     "recruit_shards": 39,
-    "ingredients": ["\u7279\u9078\u86cb", "\u6696\u6696\u8591", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7279\u9078\u86cb",
+      "\u6696\u6696\u8591",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0176",
@@ -1222,8 +1786,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 76,
     "recruit_shards": 161,
-    "ingredients": ["\u7279\u9078\u86cb", "\u6696\u6696\u8591", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7279\u9078\u86cb",
+      "\u6696\u6696\u8591",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0179",
@@ -1240,8 +1813,16 @@
     "friendship_points_needed": 5,
     "recruit_experience": 11,
     "recruit_shards": 13,
-    "ingredients": ["\u706b\u8fa3\u9999\u8349", "\u7279\u9078\u86cb"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u706b\u8fa3\u9999\u8349",
+      "\u7279\u9078\u86cb"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0180",
@@ -1258,8 +1839,16 @@
     "friendship_points_needed": 12,
     "recruit_experience": 79,
     "recruit_shards": 121,
-    "ingredients": ["\u706b\u8fa3\u9999\u8349", "\u7279\u9078\u86cb"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u706b\u8fa3\u9999\u8349",
+      "\u7279\u9078\u86cb"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0181",
@@ -1276,8 +1865,16 @@
     "friendship_points_needed": 20,
     "recruit_experience": 397,
     "recruit_shards": 715,
-    "ingredients": ["\u706b\u8fa3\u9999\u8349", "\u7279\u9078\u86cb"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u706b\u8fa3\u9999\u8349",
+      "\u7279\u9078\u86cb"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0185",
@@ -1299,7 +1896,12 @@
       "\u54c1\u9bae\u8611\u83c7",
       "\u840c\u7da0\u5927\u8c46"
     ],
-    "location": ["True", "True", "True", "False"]
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0196",
@@ -1316,8 +1918,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 443,
     "recruit_shards": 1147,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0197",
@@ -1334,8 +1945,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 583,
     "recruit_shards": 894,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0199",
@@ -1357,7 +1977,12 @@
       "\u7f8e\u5473\u5c3e\u5df4",
       "\u597d\u7720\u756a\u8304"
     ],
-    "location": ["False", "True", "True", "False"]
+    "location": [
+      "False",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0202",
@@ -1374,8 +1999,17 @@
     "friendship_points_needed": 7,
     "recruit_experience": 29,
     "recruit_shards": 31,
-    "ingredients": ["\u7279\u9078\u860b\u679c", "\u7d14\u7cb9\u6cb9"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7279\u9078\u860b\u679c",
+      "\u7d14\u7cb9\u6cb9",
+      "\u54c1\u9bae\u8611\u83c7"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0214",
@@ -1392,8 +2026,16 @@
     "friendship_points_needed": 16,
     "recruit_experience": 286,
     "recruit_shards": 515,
-    "ingredients": ["\u751c\u751c\u871c", "\u54c1\u9bae\u8611\u83c7"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u54c1\u9bae\u8611\u83c7"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0228",
@@ -1410,8 +2052,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 8,
     "recruit_shards": 17,
-    "ingredients": ["\u706b\u8fa3\u9999\u8349", "\u6696\u6696\u8591", "\u7c97\u679d\u5927\u8525"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u706b\u8fa3\u9999\u8349",
+      "\u6696\u6696\u8591",
+      "\u7c97\u679d\u5927\u8525"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0229",
@@ -1428,8 +2079,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 144,
     "recruit_shards": 303,
-    "ingredients": ["\u706b\u8fa3\u9999\u8349", "\u6696\u6696\u8591", "\u7c97\u679d\u5927\u8525"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u706b\u8fa3\u9999\u8349",
+      "\u6696\u6696\u8591",
+      "\u7c97\u679d\u5927\u8525"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0246",
@@ -1446,8 +2106,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 30,
     "recruit_shards": 54,
-    "ingredients": ["\u6696\u6696\u8591", "\u840c\u7da0\u5927\u8c46", "\u8c46\u88fd\u8089"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u6696\u6696\u8591",
+      "\u840c\u7da0\u5927\u8c46",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0247",
@@ -1464,8 +2133,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 156,
     "recruit_shards": 281,
-    "ingredients": ["\u6696\u6696\u8591", "\u840c\u7da0\u5927\u8c46", "\u8c46\u88fd\u8089"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u6696\u6696\u8591",
+      "\u840c\u7da0\u5927\u8c46",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0248",
@@ -1482,8 +2160,17 @@
     "friendship_points_needed": 25,
     "recruit_experience": 1432,
     "recruit_shards": 2578,
-    "ingredients": ["\u6696\u6696\u8591", "\u840c\u7da0\u5927\u8c46", "\u8c46\u88fd\u8089"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u6696\u6696\u8591",
+      "\u840c\u7da0\u5927\u8c46",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0287",
@@ -1500,8 +2187,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 11,
     "recruit_shards": 12,
-    "ingredients": ["\u597d\u7720\u756a\u8304", "\u7279\u9078\u860b\u679c"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u597d\u7720\u756a\u8304",
+      "\u751c\u751c\u871c",
+      "\u7279\u9078\u860b\u679c"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0288",
@@ -1518,8 +2214,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 122,
     "recruit_shards": 187,
-    "ingredients": ["\u597d\u7720\u756a\u8304", "\u7279\u9078\u860b\u679c"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u597d\u7720\u756a\u8304",
+      "\u751c\u751c\u871c",
+      "\u7279\u9078\u860b\u679c"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0289",
@@ -1536,8 +2241,17 @@
     "friendship_points_needed": 22,
     "recruit_experience": 1108,
     "recruit_shards": 1196,
-    "ingredients": ["\u597d\u7720\u756a\u8304", "\u7279\u9078\u860b\u679c"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u597d\u7720\u756a\u8304",
+      "\u751c\u751c\u871c",
+      "\u7279\u9078\u860b\u679c"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0302",
@@ -1555,7 +2269,12 @@
     "recruit_experience": 180,
     "recruit_shards": 465,
     "ingredients": [],
-    "location": ["False", "False", "False", "False"]
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0316",
@@ -1572,8 +2291,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 11,
     "recruit_shards": 12,
-    "ingredients": ["\u840c\u7da0\u5927\u8c46", "\u54c1\u9bae\u8611\u83c7"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u840c\u7da0\u5927\u8c46",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u751c\u751c\u871c"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0317",
@@ -1590,8 +2318,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 158,
     "recruit_shards": 170,
-    "ingredients": ["\u840c\u7da0\u5927\u8c46", "\u54c1\u9bae\u8611\u83c7"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u840c\u7da0\u5927\u8c46",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u751c\u751c\u871c"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0333",
@@ -1608,8 +2345,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 8,
     "recruit_shards": 17,
-    "ingredients": ["\u7279\u9078\u86cb", "\u840c\u7da0\u5927\u8c46"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7279\u9078\u86cb",
+      "\u840c\u7da0\u5927\u8c46",
+      "\u7279\u9078\u860b\u679c"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0334",
@@ -1626,8 +2372,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 170,
     "recruit_shards": 306,
-    "ingredients": ["\u7279\u9078\u86cb", "\u840c\u7da0\u5927\u8c46"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u7279\u9078\u86cb",
+      "\u840c\u7da0\u5927\u8c46",
+      "\u7279\u9078\u860b\u679c"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0359",
@@ -1644,8 +2399,16 @@
     "friendship_points_needed": 16,
     "recruit_experience": 263,
     "recruit_shards": 556,
-    "ingredients": ["\u653e\u9b06\u53ef\u53ef", "\u54c1\u9bae\u8611\u83c7"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u54c1\u9bae\u8611\u83c7"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0360",
@@ -1662,8 +2425,16 @@
     "friendship_points_needed": 5,
     "recruit_experience": 11,
     "recruit_shards": 12,
-    "ingredients": ["\u7279\u9078\u860b\u679c", "\u54c1\u9bae\u8611\u83c7"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7279\u9078\u860b\u679c",
+      "\u54c1\u9bae\u8611\u83c7"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0363",
@@ -1680,8 +2451,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 11,
     "recruit_shards": 12,
-    "ingredients": ["\u7d14\u7cb9\u6cb9", "\u6696\u6696\u8591", "\u8c46\u88fd\u8089"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u6696\u6696\u8591",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0364",
@@ -1698,8 +2478,17 @@
     "friendship_points_needed": 12,
     "recruit_experience": 158,
     "recruit_shards": 170,
-    "ingredients": ["\u7d14\u7cb9\u6cb9", "\u6696\u6696\u8591", "\u8c46\u88fd\u8089"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u6696\u6696\u8591",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0365",
@@ -1716,8 +2505,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 468,
     "recruit_shards": 586,
-    "ingredients": ["\u7d14\u7cb9\u6cb9", "\u6696\u6696\u8591", "\u8c46\u88fd\u8089"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u6696\u6696\u8591",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0438",
@@ -1739,7 +2537,12 @@
       "\u54c1\u9bae\u8611\u83c7",
       "\u840c\u7da0\u5927\u8c46"
     ],
-    "location": ["True", "True", "True", "False"]
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0447",
@@ -1756,8 +2559,17 @@
     "friendship_points_needed": 5,
     "recruit_experience": 8,
     "recruit_shards": 17,
-    "ingredients": ["\u7d14\u7cb9\u6cb9", "\u7aa9\u5fc3\u6d0b\u828b", "\u7279\u9078\u86cb"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u7aa9\u5fc3\u6d0b\u828b",
+      "\u7279\u9078\u86cb"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0448",
@@ -1774,8 +2586,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 443,
     "recruit_shards": 1147,
-    "ingredients": ["\u7d14\u7cb9\u6cb9", "\u7aa9\u5fc3\u6d0b\u828b", "\u7279\u9078\u86cb"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u7aa9\u5fc3\u6d0b\u828b",
+      "\u7279\u9078\u86cb"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0453",
@@ -1792,8 +2613,16 @@
     "friendship_points_needed": 5,
     "recruit_experience": 9,
     "recruit_shards": 16,
-    "ingredients": ["\u7d14\u7cb9\u6cb9", "\u8c46\u88fd\u8089"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0454",
@@ -1810,8 +2639,16 @@
     "friendship_points_needed": 12,
     "recruit_experience": 126,
     "recruit_shards": 227,
-    "ingredients": ["\u7d14\u7cb9\u6cb9", "\u8c46\u88fd\u8089"],
-    "location": ["True", "True", "True", "False"]
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "True",
+      "True",
+      "False"
+    ]
   },
   {
     "pid": "#0462",
@@ -1828,8 +2665,16 @@
     "friendship_points_needed": 22,
     "recruit_experience": 546,
     "recruit_shards": 1415,
-    "ingredients": ["\u7d14\u7cb9\u6cb9", "\u706b\u8fa3\u9999\u8349"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u706b\u8fa3\u9999\u8349"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0468",
@@ -1846,8 +2691,17 @@
     "friendship_points_needed": 22,
     "recruit_experience": 722,
     "recruit_shards": 1300,
-    "ingredients": ["\u7279\u9078\u86cb", "\u6696\u6696\u8591", "\u653e\u9b06\u53ef\u53ef"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u7279\u9078\u86cb",
+      "\u6696\u6696\u8591",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0470",
@@ -1864,8 +2718,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 443,
     "recruit_shards": 1147,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0471",
@@ -1882,8 +2745,17 @@
     "friendship_points_needed": 20,
     "recruit_experience": 443,
     "recruit_shards": 1147,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["False", "False", "False", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "False",
+      "False",
+      "False",
+      "False"
+    ]
   },
   {
     "pid": "#0700",
@@ -1900,7 +2772,16 @@
     "friendship_points_needed": 20,
     "recruit_experience": 583,
     "recruit_shards": 894,
-    "ingredients": ["\u54de\u54de\u9bae\u5976", "\u653e\u9b06\u53ef\u53ef", "\u8c46\u88fd\u8089"],
-    "location": ["True", "False", "False", "False"]
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "location": [
+      "True",
+      "False",
+      "False",
+      "False"
+    ]
   }
 ]
