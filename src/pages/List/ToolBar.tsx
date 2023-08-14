@@ -40,7 +40,7 @@ export function ToolBar({ filter, handleChickChange, handleGroupByChange, remove
             : 'h-0 scale-y-0 opacity-0',
         )}
       >
-        <span className='px-2 py-1'>篩選項目：</span>
+        <span className='py-1 pl-2'>篩選項目：</span>
         {!filter.displayFilter &&
           filterList
             .filter(({ set }) => set.size > 0)
