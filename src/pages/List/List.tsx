@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 import { Pokemon, SleepTypeBgClass } from '@/types';
 import { SubTitleSlide, TitleSlide } from '@/components';
-import pmList from '@/data/pmList.json';
+import { pmList } from '@/data';
 
 import { Card, SearchBar, Filter, Category, Indicator } from './components';
 import { ToolBar } from './ToolBar';
@@ -14,6 +14,7 @@ export type Filter = {
   berries: Set<string>;
   ingredients: Set<string>;
   skills: Set<string>;
+  specialties: Set<string>;
   displayFilter: boolean;
   groupBy:
     | keyof Pick<Pokemon, 'sleep_type' | 'berry' | 'ingredients' | 'type' | 'specialty' | 'skill'>
@@ -27,6 +28,7 @@ function List() {
     berries: new Set<string>(),
     ingredients: new Set<string>(),
     skills: new Set<string>(),
+    specialties: new Set<string>(),
     displayFilter: false,
     groupBy: null,
     displayGroupBy: false,
@@ -41,7 +43,8 @@ function List() {
   };
 
   const handleChickChange =
-    (key: 'berries' | 'ingredients' | 'skills') => (event: ChangeEvent<HTMLInputElement>) => {
+    (key: 'berries' | 'ingredients' | 'skills' | 'specialties') =>
+    (event: ChangeEvent<HTMLInputElement>) => {
       const { name, checked } = event.target;
 
       setFilter((prevSearch) => {
@@ -111,6 +114,10 @@ function List() {
       display = filter.skills.has(pm.skill);
     }
 
+    if (display && filter.specialties.size > 0) {
+      display = filter.specialties.has(pm.specialty);
+    }
+
     return display;
   };
 
@@ -122,6 +129,10 @@ function List() {
     groupByList = [...new Set(groupByList)];
   }
 
+  const hasFilter = [filter.berries, filter.ingredients, filter.skills, filter.specialties].some(
+    (set) => set.size > 0,
+  );
+
   return (
     <div className='flex flex-col'>
       <div className='flex justify-end py-3'>
@@ -129,9 +140,7 @@ function List() {
           <SearchBar value={filter.keyword} onChange={handleInputChange} />
           <div className='relative'>
             <Filter checked={filter.displayFilter} onChange={handleFilterChange} />
-            {filter.berries.size + filter.ingredients.size + filter.skills.size > 0 && (
-              <Indicator />
-            )}
+            {hasFilter && <Indicator />}
           </div>
           <div className='relative'>
             <Category checked={filter.displayGroupBy} onChange={handleCategoryChange} />

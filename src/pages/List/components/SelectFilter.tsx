@@ -2,9 +2,8 @@ import { ChangeEvent } from 'react';
 import clsx from 'clsx';
 
 import { Icon, SubTitleSlide } from '@/components';
-import berries from '@/data/berries.json';
-import ingredients from '@/data/ingredients.json';
-import skills from '@/data/skills.json';
+
+import { berries, ingredients, skills, specialties } from '@/data';
 
 import { Buttons } from './Buttons';
 import { Filter } from '../List';
@@ -12,7 +11,7 @@ import { Filter } from '../List';
 type Props = {
   filter: Filter;
   handleChickChange: (
-    key: 'berries' | 'ingredients' | 'skills',
+    key: 'berries' | 'ingredients' | 'skills' | 'specialties',
   ) => (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -37,6 +36,12 @@ export function SelectFilter({ filter, handleChickChange }: Props) {
         Icon={Icon.Game.Ingredient}
         checkSet={filter.ingredients}
         handleChange={handleChickChange('ingredients')}
+      />
+      <SubTitleSlide title='篩選：專長' />
+      <Buttons
+        list={specialties}
+        checkSet={filter.specialties}
+        handleChange={handleChickChange('specialties')}
       />
       <SubTitleSlide title='篩選：主技能' />
       <Buttons list={skills} checkSet={filter.skills} handleChange={handleChickChange('skills')} />

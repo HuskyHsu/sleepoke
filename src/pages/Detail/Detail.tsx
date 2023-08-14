@@ -2,11 +2,11 @@ import { Link, useParams } from 'react-router-dom';
 import clsx from 'clsx';
 import { Pokemon, SleepTypeBgClass } from '@/types';
 import { Icon, TitleSlide } from '@/components';
-import dataList from '@/data/pmList.json';
+import { pmList } from '@/data';
 
 function Moves() {
   const { link = '001' } = useParams();
-  const pm = dataList.find((pm: Pokemon) => pm.pid === `#${link.padStart(4, '0')}`) || dataList[0];
+  const pm = pmList.find((pm: Pokemon) => pm.pid === `#${link.padStart(4, '0')}`) || pmList[0];
   const sleepTypeBgClass = SleepTypeBgClass[pm.sleep_type as keyof typeof SleepTypeBgClass];
   const renderData = [
     {
