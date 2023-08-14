@@ -61,6 +61,20 @@ function List() {
       });
     };
 
+  const removeFilter = (
+    key: 'berries' | 'ingredients' | 'skills' | 'specialties',
+    name: string,
+  ) => {
+    setFilter((prevSearch) => {
+      prevSearch[key].delete(name);
+
+      return {
+        ...prevSearch,
+        [key]: prevSearch[key],
+      };
+    });
+  };
+
   const handleGroupByChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name } = event.target;
 
@@ -153,6 +167,7 @@ function List() {
         filter={filter}
         handleChickChange={handleChickChange}
         handleGroupByChange={handleGroupByChange}
+        removeFilter={removeFilter}
       />
 
       <TitleSlide title='清單' />
