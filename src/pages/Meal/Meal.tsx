@@ -1,3 +1,4 @@
+import { Icon } from '@/components';
 import { meals } from '@/data';
 
 function Meal() {
@@ -16,13 +17,26 @@ function Meal() {
         })
         .map((meal) => {
           return (
-            <div key={meal.name} className='grid grid-cols-12 gap-2'>
+            <div key={meal.name} className='grid grid-cols-12 items-center gap-2'>
+              <div className='col-span-2'>
+                <Icon.Game.Meal name={meal.name} />
+              </div>
               <span className='col-span-3'>{meal.name}</span>
-              <span className='col-span-2'>{meal.type}</span>
-              <span className='col-span-6'>
-                {meal.ingredients.length > 0
-                  ? meal.ingredients.map(({ name, count }) => `${name}x${count}`).join(' ')
-                  : '不滿足其它食譜的任意食材'}
+              <span className='col-span-5'>
+                {meal.ingredients.length > 0 ? (
+                  <ul className='flex w-full gap-2'>
+                    {meal.ingredients.map(({ name, count }) => (
+                      <li className='flex items-center' key={name}>
+                        <div className='w-12'>
+                          <Icon.Game.Ingredient name={name} />
+                        </div>
+                        <span className='text-xs'>x{count}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  '任意食材'
+                )}
               </span>
               <span className='col-span-1'>
                 {meal.ingredients.reduce((acc, { count }) => acc + count, 0)}

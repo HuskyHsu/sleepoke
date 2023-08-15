@@ -1,4 +1,4 @@
-import { Pokemon, Berrys, Ingredients } from '@/types';
+import { Pokemon, Berrys, Ingredients, Meals } from '@/types';
 
 function PmFull({ pm, shiny = false }: { pm: Pokemon; shiny?: boolean }) {
   const imgSrc = (pid: string) =>
@@ -24,4 +24,9 @@ function Ingredient({ name }: { name: string }) {
   );
 }
 
-export { PmFull, Pm, Berry, Ingredient };
+function Meal({ name }: { name: string }) {
+  const imgSrc = (name: string) => `${process.env.PUBLIC_URL}/image/meals/${name}.png`;
+  return <img src={imgSrc(Meals[name as keyof typeof Meals])} alt={name} loading='lazy' />;
+}
+
+export { PmFull, Pm, Berry, Ingredient, Meal };
