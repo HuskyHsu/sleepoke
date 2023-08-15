@@ -60,8 +60,8 @@ function Meal() {
                                 <div className={clsx('h-10 w-10 rounded-full bg-amber-100 p-1')}>
                                   <Icon.Game.Ingredient name={name} />
                                 </div>
-                                <span className='absolute -right-1 bottom-0 text-xs font-medium'>
-                                  {count}
+                                <span className='absolute -bottom-1 -right-1 w-4 text-xs font-medium'>
+                                  ×{count}
                                 </span>
                               </li>
                             ))
