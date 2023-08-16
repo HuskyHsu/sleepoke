@@ -26,6 +26,8 @@ module.exports = {
         },
         custom: {
           green: '#65D077',
+          yellow: '#FFCB03',
+          brown: '#A16C41',
         },
       },
       gridTemplateColumns: {
