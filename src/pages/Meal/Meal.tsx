@@ -2,9 +2,9 @@ import { ChangeEvent, useState } from 'react';
 import clsx from 'clsx';
 
 import { meals, ingredients } from '@/data';
-import { Icon } from '@/components';
-import { SleepTypeBgClass } from '@/types';
+import { Icon, SubTitleSlide, TitleSlide } from '@/components';
 import { Buttons } from '../List/components';
+import { TextButtons } from './components';
 
 export type Filter = {
   type: string;
@@ -12,16 +12,27 @@ export type Filter = {
 };
 
 function Meal() {
+  const types = [{ name: '咖哩' }, { name: '沙拉' }, { name: '飲料、點心' }];
+
+  const ingredientMap = ingredients.reduce(
+    (acc, curr) => {
+      acc[curr.name] = curr.point;
+
+      return acc;
+    },
+    {} as Record<string, number>,
+  );
+
   const [filter, setFilter] = useState<Filter>({
     type: '咖哩',
     ingredients: new Set<string>(),
   });
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { value } = event.target;
+    const { name } = event.target;
     setFilter((prevSearch) => ({
       ...prevSearch,
-      type: value,
+      type: name,
     }));
   };
 
@@ -42,53 +53,14 @@ function Meal() {
     });
   };
 
-  const types = [
-    {
-      name: '咖哩',
-      color: SleepTypeBgClass['淺淺入夢'],
-    },
-    { name: '沙拉', color: SleepTypeBgClass['安然入睡'] },
-    { name: '飲料、點心', color: SleepTypeBgClass['深深入眠'] },
-  ];
-
-  const ingredientMap = ingredients.reduce(
-    (acc, curr) => {
-      acc[curr.name] = curr.point;
-
-      return acc;
-    },
-    {} as Record<string, number>,
-  );
-
   return (
-    <div className='flex flex-col gap-6'>
-      <ul className='grid w-full grid-cols-3 justify-around text-center'>
-        {types.map((type, i) => (
-          <div
-            key={type.name}
-            className={clsx(
-              'flex items-center justify-center gap-x-2 border-y-2 border-slate-300 py-4',
-              i === 0 && 'rounded-l-xl border-l-2',
-              i === types.length - 1 && 'rounded-r-xl border-r-2',
-              type.color,
-            )}
-          >
-            <input
-              id={type.name}
-              type='radio'
-              name='list-radio'
-              value={type.name}
-              checked={type.name === filter.type}
-              className='h-4 w-4 border-gray-300 bg-gray-100'
-              onChange={handleInputChange}
-            />
-            <label htmlFor={type.name} className=''>
-              {type.name}
-            </label>
-          </div>
-        ))}
-      </ul>
-      <div>
+    <div className='flex flex-col gap-6 pt-4'>
+      <div className={clsx('h-full space-y-4')}>
+        <SubTitleSlide title='料理種類' />
+        <TextButtons list={types} select={filter.type} handleChange={handleInputChange} />
+      </div>
+      <div className='space-y-4'>
+        <SubTitleSlide title='食材' />
         <Buttons
           list={ingredients.map((ingredient) => ingredient.name)}
           Icon={Icon.Game.Ingredient}
@@ -97,9 +69,15 @@ function Meal() {
         />
       </div>
       <div className='flex flex-col gap-y-4'>
+        <TitleSlide title='清單' />
         <ul className={clsx('gap-4', 'grid grid-cols-1', 'md:grid-cols-2')}>
           {meals
-            .filter((meals) => meals.type === filter.type)
+            .filter((meal) => {
+              if (meal.ingredients.length === 0 && filter.ingredients.size > 0) {
+                return false;
+              }
+              return meal.type === filter.type;
+            })
             .sort((a, b) => {
               if (filter.ingredients.size > 0) {
                 let aHas = a.ingredients.some((ingredient) =>
@@ -132,15 +110,25 @@ function Meal() {
               return a.ingredients.length - b.ingredients.length;
             })
             .map((meal) => {
+              const match = meal.ingredients.every((ingredient) =>
+                filter.ingredients.has(ingredient.name),
+              );
+
               return (
                 <li
                   key={meal.name}
                   className={clsx(
-                    'relative flex border-2 border-amber-300',
+                    'relative flex border-2',
                     'items-center gap-0 rounded-xl',
+                    match ? 'border-custom-green' : 'border-amber-300',
                   )}
                 >
-                  <div className={clsx('relative h-20 w-20 rounded-l-xl', 'bg-amber-100')}>
+                  <div
+                    className={clsx(
+                      'relative h-20 w-20 rounded-l-xl',
+                      match ? 'bg-custom-green/60' : 'bg-amber-100',
+                    )}
+                  >
                     <Icon.Game.Meal name={meal.name} />
                     <span className='absolute bottom-0 right-2 font-bold'>
                       {meal.ingredients.reduce((acc, { count }) => acc + count, 0)}
