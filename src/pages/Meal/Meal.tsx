@@ -8,6 +8,7 @@ import { TextButtons } from './components';
 
 export type Filter = {
   type: string;
+  size: number;
   ingredients: Set<string>;
 };
 
@@ -26,6 +27,7 @@ function Meal() {
   const [filter, setFilter] = useState<Filter>({
     type: '咖哩',
     ingredients: new Set<string>(),
+    size: 15,
   });
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -33,6 +35,13 @@ function Meal() {
     setFilter((prevSearch) => ({
       ...prevSearch,
       type: name,
+    }));
+  };
+
+  const handleSizeChange = (n: number) => {
+    setFilter((prevSearch) => ({
+      ...prevSearch,
+      size: Math.max(15, prevSearch.size + n),
     }));
   };
 
@@ -53,11 +62,42 @@ function Meal() {
     });
   };
 
+  const PlusMinus = ({
+    n,
+    handleSizeChange,
+  }: {
+    n: number;
+    handleSizeChange: (n: number) => void;
+  }) => {
+    return (
+      <button
+        type='button'
+        className='h-8 w-8 rounded-full bg-amber-300'
+        onClick={() => handleSizeChange(n)}
+      >
+        {n > 0 && '+'}
+        {n}
+      </button>
+    );
+  };
+
   return (
-    <div className='flex flex-col gap-6 pt-4'>
+    <div className='flex flex-col gap-4 pt-4'>
       <div className={clsx('h-full space-y-4')}>
         <SubTitleSlide title='料理種類' />
         <TextButtons list={types} select={filter.type} handleChange={handleInputChange} />
+      </div>
+      <div className='space-y-4'>
+        <SubTitleSlide title='鍋子大小' />
+        <div className='flex items-center gap-3 text-center font-bold'>
+          <PlusMinus n={-3} handleSizeChange={handleSizeChange} />
+          <PlusMinus n={-1} handleSizeChange={handleSizeChange} />
+          <p className='flex h-12 w-12 flex-col justify-center rounded-full bg-amber-100'>
+            <span>{filter.size}</span>
+          </p>
+          <PlusMinus n={1} handleSizeChange={handleSizeChange} />
+          <PlusMinus n={3} handleSizeChange={handleSizeChange} />
+        </div>
       </div>
       <div className='space-y-4'>
         <SubTitleSlide title='食材' />
@@ -110,9 +150,9 @@ function Meal() {
               return a.ingredients.length - b.ingredients.length;
             })
             .map((meal) => {
-              const match = meal.ingredients.every((ingredient) =>
-                filter.ingredients.has(ingredient.name),
-              );
+              const match =
+                meal.ingredients.every((ingredient) => filter.ingredients.has(ingredient.name)) &&
+                meal.ingredients.reduce((acc, curr) => acc + curr.count, 0) <= filter.size;
 
               return (
                 <li
