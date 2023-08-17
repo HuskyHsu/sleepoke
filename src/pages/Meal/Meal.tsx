@@ -4,7 +4,6 @@ import clsx from 'clsx';
 import { meals, ingredients } from '@/data';
 import { Icon, SubTitleSlide, TitleSlide } from '@/components';
 
-import { Buttons } from '../List/components';
 import { SelectCount, ToolBar } from './components';
 
 type IngredientsCount = {
@@ -122,17 +121,8 @@ function Meal() {
         filter={filter}
         handleInputChange={handleInputChange}
         handleSizeChange={handleSizeChange}
+        handleChickChange={handleChickChange}
       />
-      {/* ingredients */}
-      <div className='space-y-4'>
-        <SubTitleSlide title='食材' />
-        <Buttons
-          list={ingredients.map((ingredient) => ingredient.name)}
-          Icon={Icon.Game.Ingredient}
-          checkSet={filter.ingredients}
-          handleChange={handleChickChange}
-        />
-      </div>
       {/* ingredient count */}
       {filter.ingredients.size > 0 && (
         <div className='space-y-4'>
