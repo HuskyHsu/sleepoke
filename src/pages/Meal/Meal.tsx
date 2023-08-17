@@ -3,32 +3,77 @@ import clsx from 'clsx';
 
 import { meals, ingredients } from '@/data';
 import { Icon, SubTitleSlide, TitleSlide } from '@/components';
+
 import { Buttons } from '../List/components';
-import { TextButtons } from './components';
+import { SelectCount, ToolBar } from './components';
+
+type IngredientsCount = {
+  count: number; // -1 is not enough
+  list: number[];
+};
 
 export type Filter = {
   type: string;
   size: number;
   ingredients: Set<string>;
+  ingredientsCount: Record<string, number>;
 };
 
 function Meal() {
-  const types = [{ name: '咖哩' }, { name: '沙拉' }, { name: '飲料、點心' }];
+  // const ingredientMap = ingredients.reduce(
+  //   (acc, curr) => {
+  //     acc[curr.name] = curr.point;
 
-  const ingredientMap = ingredients.reduce(
-    (acc, curr) => {
-      acc[curr.name] = curr.point;
-
-      return acc;
-    },
-    {} as Record<string, number>,
-  );
+  //     return acc;
+  //   },
+  //   {} as Record<string, number>,
+  // );
 
   const [filter, setFilter] = useState<Filter>({
     type: '咖哩',
-    ingredients: new Set<string>(),
     size: 15,
+    ingredients: new Set<string>(),
+    ingredientsCount: {},
   });
+
+  const getCountList = (): Record<string, IngredientsCount> => {
+    return Object.fromEntries(
+      ingredients
+        .filter((ingredient) => filter.ingredients.has(ingredient.name))
+        .map((ingredient) => {
+          const countList = meals
+            .filter(
+              (meal) =>
+                meal.type === filter.type &&
+                meal.ingredients.reduce((sum, item) => sum + item.count, 0) <= filter.size &&
+                meal.ingredients.every((item) => filter.ingredients.has(item.name)),
+            )
+            .flatMap((meal) => meal.ingredients)
+            .filter((item) => item.name === ingredient.name)
+            .map((item) => item.count);
+
+          if (countList.length > 0) {
+            const list = [-1, ...new Set(countList)].sort((a, b) => a - b);
+            return [
+              ingredient.name,
+              {
+                count: list[list.length - 1],
+                list,
+              },
+            ];
+          }
+          return [
+            ingredient.name,
+            {
+              count: -1,
+              list: [],
+            },
+          ];
+        }),
+    );
+  };
+
+  const countList = getCountList();
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name } = event.target;
@@ -53,52 +98,32 @@ function Meal() {
         prevSearch.ingredients.add(name);
       } else {
         prevSearch.ingredients.delete(name);
+        delete prevSearch.ingredientsCount[name];
       }
 
       return {
         ...prevSearch,
         ingredients: prevSearch.ingredients,
+        ingredientsCount: prevSearch.ingredientsCount,
       };
     });
   };
 
-  const PlusMinus = ({
-    n,
-    handleSizeChange,
-  }: {
-    n: number;
-    handleSizeChange: (n: number) => void;
-  }) => {
-    return (
-      <button
-        type='button'
-        className='h-8 w-8 rounded-full bg-amber-300'
-        onClick={() => handleSizeChange(n)}
-      >
-        {n > 0 && '+'}
-        {n}
-      </button>
-    );
+  const handleCountChange = (name: string, count: number) => {
+    setFilter((prevSearch) => ({
+      ...prevSearch,
+      ingredientsCount: Object.assign(prevSearch.ingredientsCount, { [name]: count }),
+    }));
   };
 
   return (
     <div className='flex flex-col gap-4 pt-4'>
-      <div className={clsx('h-full space-y-4')}>
-        <SubTitleSlide title='料理種類' />
-        <TextButtons list={types} select={filter.type} handleChange={handleInputChange} />
-      </div>
-      <div className='space-y-4'>
-        <SubTitleSlide title='鍋子大小' />
-        <div className='flex items-center gap-3 text-center font-bold'>
-          <PlusMinus n={-3} handleSizeChange={handleSizeChange} />
-          <PlusMinus n={-1} handleSizeChange={handleSizeChange} />
-          <p className='flex h-12 w-12 flex-col justify-center rounded-full bg-amber-100'>
-            <span>{filter.size}</span>
-          </p>
-          <PlusMinus n={1} handleSizeChange={handleSizeChange} />
-          <PlusMinus n={3} handleSizeChange={handleSizeChange} />
-        </div>
-      </div>
+      <ToolBar
+        filter={filter}
+        handleInputChange={handleInputChange}
+        handleSizeChange={handleSizeChange}
+      />
+      {/* ingredients */}
       <div className='space-y-4'>
         <SubTitleSlide title='食材' />
         <Buttons
@@ -108,6 +133,42 @@ function Meal() {
           handleChange={handleChickChange}
         />
       </div>
+      {/* ingredient count */}
+      {filter.ingredients.size > 0 && (
+        <div className='space-y-4'>
+          <SubTitleSlide title='食材數量 (選至少滿足多少個)' />
+          <div className='grid grid-cols-1 md:grid-cols-2'>
+            {Object.entries(countList)
+              .sort((a, b) => b[1].list.length - a[1].list.length)
+              .map(([key, val]) => {
+                return (
+                  <div key={key} className='flex items-center gap-3'>
+                    <span className='h-12 w-12'>
+                      <Icon.Game.Ingredient name={key} />
+                    </span>
+                    {val.list.length === 0 && '未用到 / 尚缺其他食材 / 鍋子容量不夠'}
+                    {val.list.length > 0 &&
+                      val.list.map((count, i) => (
+                        <SelectCount
+                          name={key}
+                          key={count}
+                          n={count}
+                          min={val.list[1]}
+                          selected={
+                            filter.ingredientsCount[key] === undefined
+                              ? i === val.list.length - 1
+                              : filter.ingredientsCount[key] === count
+                          }
+                          handleCountChange={handleCountChange}
+                        />
+                      ))}
+                  </div>
+                );
+              })}
+          </div>
+        </div>
+      )}
+      {/* list */}
       <div className='flex flex-col gap-y-4'>
         <TitleSlide title='清單' />
         <ul className={clsx('gap-4', 'grid grid-cols-1', 'md:grid-cols-2')}>
@@ -138,6 +199,21 @@ function Meal() {
                 if (aHas !== bHas) {
                   return aHas ? -1 : 1;
                 }
+
+                aHas = a.ingredients.every((ingredient) =>
+                  filter.ingredientsCount[ingredient.name] === undefined
+                    ? true
+                    : filter.ingredientsCount[ingredient.name] >= ingredient.count,
+                );
+                bHas = b.ingredients.every((ingredient) =>
+                  filter.ingredientsCount[ingredient.name] === undefined
+                    ? true
+                    : filter.ingredientsCount[ingredient.name] >= ingredient.count,
+                );
+
+                if (aHas !== bHas) {
+                  return aHas ? -1 : 1;
+                }
               }
 
               const aCount = a.ingredients.reduce((acc, { count }) => acc + count, 0);
@@ -152,7 +228,12 @@ function Meal() {
             .map((meal) => {
               const match =
                 meal.ingredients.every((ingredient) => filter.ingredients.has(ingredient.name)) &&
-                meal.ingredients.reduce((acc, curr) => acc + curr.count, 0) <= filter.size;
+                meal.ingredients.reduce((acc, curr) => acc + curr.count, 0) <= filter.size &&
+                meal.ingredients.every((ingredient) =>
+                  filter.ingredientsCount[ingredient.name] === undefined
+                    ? true
+                    : filter.ingredientsCount[ingredient.name] >= ingredient.count,
+                );
 
               return (
                 <li
@@ -184,7 +265,12 @@ function Meal() {
                               <div
                                 className={clsx(
                                   'h-10 w-10 rounded-full p-1',
-                                  filter.ingredients.has(name) ? 'bg-amber-400' : 'bg-amber-100',
+                                  filter.ingredients.has(name) &&
+                                    (filter.ingredientsCount[name] === undefined
+                                      ? true
+                                      : filter.ingredientsCount[name] >= count)
+                                    ? 'bg-amber-400'
+                                    : 'bg-amber-100',
                                 )}
                               >
                                 <Icon.Game.Ingredient name={name} />
@@ -205,7 +291,7 @@ function Meal() {
                       </ul>
                     </div>
                   </div>
-                  <span
+                  {/* <span
                     className={clsx(
                       'absolute right-0 top-0 w-20 whitespace-nowrap',
                       'rounded-bl-[10px] rounded-tr-[10px]',
@@ -216,7 +302,7 @@ function Meal() {
                       (acc, { name, count }) => acc + ingredientMap[name] * count,
                       0,
                     )}
-                  </span>
+                  </span> */}
                 </li>
               );
             })}
