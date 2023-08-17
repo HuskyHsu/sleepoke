@@ -159,13 +159,13 @@ function Meal() {
                   key={meal.name}
                   className={clsx(
                     'relative flex border-2',
-                    'items-center gap-0 rounded-[12px]',
+                    'items-center gap-0 overflow-hidden rounded-[12px]',
                     match ? 'border-custom-green' : 'border-amber-300',
                   )}
                 >
                   <div
                     className={clsx(
-                      'relative h-20 w-20 rounded-l-[10px]',
+                      'relative h-20 w-20',
                       match ? 'bg-custom-green/60' : 'bg-amber-100',
                     )}
                   >
