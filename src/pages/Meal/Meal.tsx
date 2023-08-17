@@ -119,13 +119,13 @@ function Meal() {
                   key={meal.name}
                   className={clsx(
                     'relative flex border-2',
-                    'items-center gap-0 rounded-xl',
+                    'items-center gap-0 rounded-[12px]',
                     match ? 'border-custom-green' : 'border-amber-300',
                   )}
                 >
                   <div
                     className={clsx(
-                      'relative h-20 w-20 rounded-l-xl',
+                      'relative h-20 w-20 rounded-l-[10px]',
                       match ? 'bg-custom-green/60' : 'bg-amber-100',
                     )}
                   >
@@ -168,7 +168,7 @@ function Meal() {
                   <span
                     className={clsx(
                       'absolute right-0 top-0 w-20 whitespace-nowrap',
-                      'rounded-bl-xl rounded-tr-xl',
+                      'rounded-bl-[10px] rounded-tr-[10px]',
                       'bg-amber-100 px-2 py-1 text-center',
                     )}
                   >
