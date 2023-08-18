@@ -1,134 +1,138 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import clsx from 'clsx';
-import { Pokemon, SleepTypeBgClass } from '@/types';
+
+import { Pokemon } from '@/types';
 import { Icon, TitleSlide } from '@/components';
 import { pmList } from '@/data';
+
+type Render =
+  | {
+      title: string;
+      key: keyof Pokemon;
+      content?: never;
+    }
+  | {
+      title: string;
+      content: (pm: Pokemon) => JSX.Element;
+      key?: never;
+    };
+
+const renderData: Render[] = [
+  {
+    title: '分類',
+    key: 'sleep_type',
+  },
+  {
+    title: '分類',
+    key: 'type',
+  },
+  {
+    title: '專長',
+    key: 'specialty',
+  },
+  {
+    title: '樹果',
+    content: (pm: Pokemon) => (
+      <ul className='relative flex whitespace-nowrap'>
+        {new Array(pm.berry_quantity).fill(0).map((_, index) => (
+          <li className='w-12' key={index}>
+            <Icon.Game.Berry name={pm.berry} />
+          </li>
+        ))}
+        <li
+          className={clsx(
+            'absolute -right-8 bottom-0',
+            'rounded-full border-[1px] border-amber-300 bg-white px-2 py-1 text-xs',
+          )}
+        >
+          {pm.berry}
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: '食材',
+    content: (pm) => (
+      <ul className='mb-2 flex w-full gap-x-12 whitespace-nowrap'>
+        {pm.ingredients.map((item) => (
+          <li className='relative' key={item}>
+            <div className='w-10'>
+              <Icon.Game.Ingredient name={item} />
+            </div>
+            <span
+              className={clsx(
+                'absolute -bottom-2 left-4',
+                'rounded-full border-[1px] border-amber-300 bg-white px-2 py-1 text-xs',
+              )}
+            >
+              {item}
+            </span>
+          </li>
+        ))}
+      </ul>
+    ),
+  },
+  {
+    title: '主技能',
+    key: 'skill',
+  },
+  {
+    title: '主技能描述',
+    key: 'skill_description',
+  },
+];
 
 function Moves() {
   const { link = '001' } = useParams();
   const pm = pmList.find((pm: Pokemon) => pm.pid === `#${link.padStart(4, '0')}`) || pmList[0];
-  const sleepTypeBgClass = SleepTypeBgClass[pm.sleep_type as keyof typeof SleepTypeBgClass];
-  const renderData = [
-    {
-      title: '名稱',
-      content: pm.name,
-    },
-    {
-      title: '分類',
-      content: pm.sleep_type,
-    },
-    {
-      title: '屬性',
-      content: pm.type,
-    },
-    {
-      title: '專長',
-      content: pm.specialty,
-    },
-    {
-      title: '樹果',
-      content: `${pm.berry}x${pm.berry_quantity}`,
-    },
-    {
-      title: '食材',
-      content: pm.ingredients.join(', '),
-    },
-    {
-      title: '主技能',
-      content: pm.skill,
-    },
-    {
-      title: '主技能描述',
-      content: pm.skill_description,
-    },
-  ];
-
-  const switchContentByTitle = (propsTitle: string, propsContent: string) => {
-    const { berry_quantity, berry, ingredients } = pm;
-
-    switch (propsTitle) {
-      case '樹果':
-        return (
-          <ul className='flex w-full gap-6'>
-            {new Array(berry_quantity).fill(0).map((_, index) => (
-              <li className='flex items-center' key={index}>
-                <div className='w-12'>
-                  <Icon.Game.Berry name={berry} />
-                </div>
-                <span className='text-xs'>{berry}</span>
-              </li>
-            ))}
-          </ul>
-        );
-      case '食材':
-        return (
-          <ul className='flex w-full gap-6'>
-            {ingredients.map((item) => (
-              <li className='flex items-center' key={item}>
-                <div className='w-12'>
-                  <Icon.Game.Ingredient name={item} />
-                </div>
-                <span className='text-xs'>{item}</span>
-              </li>
-            ))}
-          </ul>
-        );
-      default:
-        return <span className='flex-1'>{propsContent}</span>;
-    }
-  };
 
   return (
     <section className='space-y-4'>
       <div className='relative flex justify-center'>
-        <div className='z-10 space-y-1 text-center'>
+        <div className='z-10 md:h-[273px]'>
           <Icon.Game.PmFull pm={pm} />
-          <p className='md:text-lg'>正常色</p>
         </div>
-        <div className='z-10 space-y-1 text-center'>
+        <div className='z-10 md:h-[273px]'>
           <Icon.Game.PmFull pm={pm} shiny={true} />
-          <p className='md:text-lg'>異色</p>
         </div>
 
         {/* bg banner */}
         <div
-          className={clsx('absolute inset-x-0 bottom-0 z-0 h-3/5', 'rounded-2xl', sleepTypeBgClass)}
+          className={clsx(
+            'absolute -inset-x-4 bottom-0 z-0 h-1/2 md:inset-x-0',
+            'md:rounded-2xl',
+            'bg-custom-green/60',
+          )}
         />
       </div>
 
-      <h2 className='text-center text-2xl'>{pm.name}</h2>
+      <h2 className='text-2xl'>
+        #{pm.pid.slice(2)} {pm.name}
+      </h2>
 
       <TitleSlide title='基本資訊' />
 
-      <ul className='flex flex-col gap-5'>
+      <ul className='grid grid-cols-2 gap-y-4'>
         {renderData.map((data, index) => (
-          <li className='flex items-center gap-5' key={index}>
-            <div
+          <li
+            className={clsx('flex h-10 items-center gap-x-2', index > 3 && 'col-span-2')}
+            key={index}
+          >
+            <span
               className={clsx(
                 'py-px',
                 'shrink-0 grow-0 basis-[30%]',
-                'border-2 border-solid border-green-600',
+                'border-2 border-solid border-custom-green',
                 'rounded-full text-center text-sm text-black',
               )}
             >
               {data.title}
-            </div>
+            </span>
 
-            {switchContentByTitle(data.title, data.content)}
+            {data.content ? data.content(pm) : (pm[data.key] as string)}
           </li>
         ))}
       </ul>
-
-      <Link
-        className={clsx(
-          'inline-block px-3 py-1',
-          'transition-all duration-300',
-          'shadow-list-items hover:shadow-list-items--hover',
-        )}
-        to={'/'}
-      >
-        返回
-      </Link>
     </section>
   );
 }
