@@ -32,11 +32,11 @@ export function CheckboxItem({ label, children, checked, onChange }: Props) {
         htmlFor={label}
         className={clsx(
           'flex cursor-pointer flex-col items-center',
-          onlyText && ['rounded-xl px-2 py-1', checked ? 'bg-amber-400' : 'bg-amber-100'],
+          onlyText && ['rounded-xl px-2 py-1', checked ? 'bg-amber-300' : 'bg-amber-100'],
         )}
       >
         {children && (
-          <div className={clsx('rounded-full p-1', checked ? 'bg-amber-400' : 'bg-amber-100')}>
+          <div className={clsx('rounded-full p-1', checked ? 'bg-amber-300' : 'bg-amber-100')}>
             {children}
           </div>
         )}
@@ -51,7 +51,7 @@ export function CheckboxTextItem({ label, checked, onChange }: TextProps) {
     <div
       className={clsx(
         'whitespace-nowrap rounded-xl px-2 py-1',
-        checked ? 'bg-amber-400' : 'bg-amber-100',
+        checked ? 'bg-amber-300' : 'bg-amber-100',
       )}
     >
       <input

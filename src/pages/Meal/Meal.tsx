@@ -259,7 +259,7 @@ function Meal() {
                                     (filter.ingredientsCount[name] === undefined
                                       ? true
                                       : filter.ingredientsCount[name] >= count)
-                                    ? 'bg-amber-400'
+                                    ? 'bg-amber-300'
                                     : 'bg-amber-100',
                                 )}
                               >
