@@ -229,14 +229,15 @@ function Meal() {
                 <li
                   key={meal.name}
                   className={clsx(
-                    'relative flex border-2',
+                    'relative flex border-[1px]',
                     'items-center gap-0 overflow-hidden rounded-[12px]',
                     match ? 'border-custom-green' : 'border-amber-300',
+                    'shadow-list-items',
                   )}
                 >
                   <div
                     className={clsx(
-                      'relative h-20 w-20',
+                      'relative flex h-full w-20 flex-col justify-center',
                       match ? 'bg-custom-green/60' : 'bg-amber-100',
                     )}
                   >
@@ -245,7 +246,7 @@ function Meal() {
                       {meal.ingredients.reduce((acc, { count }) => acc + count, 0)}
                     </span>
                   </div>
-                  <div className='flex flex-col justify-between gap-y-2 px-2'>
+                  <div className='flex flex-col justify-between gap-y-1 p-2 pb-4'>
                     <h4 className='font-bold'>{meal.name}</h4>
                     <div className='flex items-center gap-x-2'>
                       <ul className='flex w-full items-center gap-6'>
@@ -265,7 +266,13 @@ function Meal() {
                               >
                                 <Icon.Game.Ingredient name={name} />
                               </div>
-                              <span className='absolute -bottom-1 -right-1 w-4 text-xs font-medium'>
+                              <span
+                                className={clsx(
+                                  'absolute -bottom-1 -right-4 rounded-full',
+                                  'border-2 border-amber-300 bg-white px-1 text-xs font-medium',
+                                  'shadow-label',
+                                )}
+                              >
                                 ×{count}
                               </span>
                             </li>

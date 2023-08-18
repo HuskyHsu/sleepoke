@@ -11,7 +11,7 @@ type Props = {
 
 export function TextButtons({ list, select, handleChange }: Props) {
   return (
-    <div className={clsx('flex w-full flex-wrap gap-4')}>
+    <div className={clsx('flex w-full flex-wrap gap-4 pl-2')}>
       {list.map((item) => (
         <CheckboxTextItem
           key={item.name}
@@ -33,7 +33,7 @@ export function PlusMinus({ n, handleSizeChange }: PlusMinusProps) {
   return (
     <button
       type='button'
-      className='h-8 w-8 rounded-full bg-amber-100'
+      className='h-8 w-8 rounded-full bg-amber-100 shadow-list-items'
       onClick={() => handleSizeChange(n)}
     >
       {n > 0 && '+'}

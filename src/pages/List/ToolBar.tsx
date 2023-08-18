@@ -40,33 +40,36 @@ export function ToolBar({ filter, handleChickChange, handleGroupByChange, remove
             : 'h-0 scale-y-0 opacity-0',
         )}
       >
-        <span className='py-1 pl-2'>篩選項目：</span>
-        {!filter.displayFilter &&
-          filterList
-            .filter(({ set }) => set.size > 0)
-            .map(({ name, set, key }) => [...set].map((itemKey) => [name, itemKey, key]))
-            .flat()
-            .map((row) => {
-              const [name, itemKey, filterKey] = row;
-              const key = `${name}-${itemKey}`;
-              return (
-                <span
-                  key={key}
-                  className='flex items-center gap-x-2 rounded-xl bg-amber-100 px-2 py-1'
-                >
-                  {itemKey}
-                  <Icon.Close
-                    className='h-3 w-3'
-                    onClick={() => {
-                      removeFilter(
-                        filterKey as 'berries' | 'ingredients' | 'skills' | 'specialties',
-                        itemKey,
-                      );
-                    }}
-                  />
-                </span>
-              );
-            })}
+        {!filter.displayFilter && (
+          <>
+            <span className='py-1 pl-2'>篩選項目：</span>
+            {filterList
+              .filter(({ set }) => set.size > 0)
+              .map(({ name, set, key }) => [...set].map((itemKey) => [name, itemKey, key]))
+              .flat()
+              .map((row) => {
+                const [name, itemKey, filterKey] = row;
+                const key = `${name}-${itemKey}`;
+                return (
+                  <span
+                    key={key}
+                    className='flex items-center gap-x-2 rounded-xl bg-amber-100 px-2 py-1'
+                  >
+                    {itemKey}
+                    <Icon.Close
+                      className='h-3 w-3'
+                      onClick={() => {
+                        removeFilter(
+                          filterKey as 'berries' | 'ingredients' | 'skills' | 'specialties',
+                          itemKey,
+                        );
+                      }}
+                    />
+                  </span>
+                );
+              })}
+          </>
+        )}
       </div>
     </>
   );

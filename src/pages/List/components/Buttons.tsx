@@ -18,14 +18,7 @@ type TextProps = {
 
 export function Buttons({ list, checkSet, Icon, handleChange }: Props) {
   return (
-    <div
-      className={clsx(
-        'w-full gap-4',
-        Icon && 'grid justify-items-center gap-2',
-        Icon && 'grid-cols-6 md:grid-cols-9 xl:grid-cols-18',
-        !Icon && 'flex flex-wrap',
-      )}
-    >
+    <div className={clsx('flex w-full flex-wrap justify-items-center gap-x-4 gap-y-3 pb-2 pl-2')}>
       {list.map((item) => (
         <CheckboxItem key={item} label={item} checked={checkSet.has(item)} onChange={handleChange}>
           {Icon && <Icon name={item} />}
@@ -37,7 +30,7 @@ export function Buttons({ list, checkSet, Icon, handleChange }: Props) {
 
 export function TextButtons({ list, select, handleChange }: TextProps) {
   return (
-    <div className={clsx('flex w-full flex-wrap gap-4')}>
+    <div className={clsx('flex w-full flex-wrap gap-4 pb-2 pl-2')}>
       {list.map((item) => (
         <CheckboxTextItem
           key={item.key}
