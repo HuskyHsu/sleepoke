@@ -53,7 +53,10 @@ export function ToolBar({ filter, handleChickChange, handleGroupByChange, remove
                 return (
                   <span
                     key={key}
-                    className='flex items-center gap-x-2 rounded-xl bg-amber-100 px-2 py-1'
+                    className={clsx(
+                      'flex items-center gap-x-2',
+                      'rounded-xl bg-amber-100 px-2 py-1 shadow-list-items',
+                    )}
                   >
                     {itemKey}
                     <Icon.Close
