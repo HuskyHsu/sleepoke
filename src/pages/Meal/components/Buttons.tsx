@@ -54,7 +54,11 @@ export function SelectCount({ name, n, min, selected, handleCountChange }: Selec
   return (
     <button
       type='button'
-      className={clsx('h-8 w-8 rounded-full', selected ? 'bg-amber-300' : 'bg-amber-100')}
+      className={clsx(
+        'h-8 w-8 rounded-full',
+        'shadow-list-items',
+        selected ? 'bg-amber-300' : 'bg-amber-100',
+      )}
       onClick={() => handleCountChange(name, n)}
     >
       {n > 0 ? `${n}` : `<${min}`}

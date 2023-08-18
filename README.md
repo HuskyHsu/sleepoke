@@ -22,7 +22,7 @@
 - [x] 篩選與分組加入主動技得清單
 - [ ] 有一個可以把 hook 抽出來獨立一包的設計叫啥我忘了
 - [ ] refactor list html(?)
-- [ ] bottom-navigation
-- [ ] 料理頁面
+- [x] bottom-navigation
+- [x] 料理頁面
 - [ ] 詳細資料頁面左右滑(手機版) 前後按鈕(電腦版)
 - [ ] 卡比獸頁面
