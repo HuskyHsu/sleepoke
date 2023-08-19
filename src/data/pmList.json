@@ -2268,7 +2268,11 @@
     "friendship_points_needed": 16,
     "recruit_experience": 180,
     "recruit_shards": 465,
-    "ingredients": [],
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
     "location": [
       "False",
       "False",
@@ -2427,6 +2431,7 @@
     "recruit_shards": 12,
     "ingredients": [
       "\u7279\u9078\u860b\u679c",
+      "\u7d14\u7cb9\u6cb9",
       "\u54c1\u9bae\u8611\u83c7"
     ],
     "location": [
