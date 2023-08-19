@@ -29,7 +29,8 @@ def download_image(url, filepath):
     if response.status_code == 200:
         with open(filepath, "wb") as f:
             f.write(response.content)
-
+    else:
+        print(url, response.status_code)
 
 def csv_to_json(csv_data):
     lines = csv_data.strip().split("\n")
@@ -40,6 +41,7 @@ def csv_to_json(csv_data):
     data = []
     for line in lines[1:]:
         values = line.split(",")
+        print(values[0])
         obj = {}
 
         for i, col in enumerate(header):
@@ -63,19 +65,29 @@ def csv_to_json(csv_data):
                         int(column_value) if is_number(column_value) else column_value
                     )
             else:
-                continue
+                # continue
                 if col == "image_list":
                     download_image(
-                        column_value, f"../public/image/pmList/{values[0][-3:]}.png"
+                        f"https://www.serebii.net/pokemonsleep/pokemon/sleep/{int(values[0][-3:])}.png", 
+                        f"../public/image/sleep/{values[0][-3:]}.png"
                     )
-                elif col == "image":
+                if col == "image":
                     download_image(
-                        column_value, f"../public/image/pm/{values[0][-3:]}.png"
+                        f"https://www.serebii.net/pokemonsleep/pokemon/drowse/{int(values[0][-3:])}.png", 
+                        f"../public/image/drowse/{values[0][-3:]}.png"
                     )
-                elif col == "image_shiny":
-                    download_image(
-                        column_value, f"../public/image/pm/{values[0][-3:]}_s.png"
-                    )
+                # if col == "image_list":
+                #     download_image(
+                #         column_value, f"../public/image/pmList/{values[0][-3:]}.png"
+                #     )
+                # elif col == "image":
+                #     download_image(
+                #         column_value, f"../public/image/pm/{values[0][-3:]}.png"
+                #     )
+                # elif col == "image_shiny":
+                #     download_image(
+                #         column_value, f"../public/image/pm/{values[0][-3:]}_s.png"
+                #     )
 
         data.append(obj)
 
