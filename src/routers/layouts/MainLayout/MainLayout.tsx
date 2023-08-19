@@ -1,9 +1,28 @@
+import { useEffect } from 'react';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import clsx from 'clsx';
-import { Link, Outlet } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 
 import { Icon } from '@/components';
 
 function MainLayout() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    ReactGA.initialize('G-VX7N3PN01C');
+    ReactGA.send({
+      hitType: 'pageview',
+      page: location.pathname,
+    });
+    if (location.search) {
+      ReactGA.event({
+        category: location.pathname,
+        action: location.search,
+      });
+    }
+  }, [location, navigate]);
+
   return (
     <main
       className={clsx('my-4 text-slate-800', 'px-4 pb-[4.5rem] md:px-[10vw] md:pb-0 lg:px-[15vw]')}
