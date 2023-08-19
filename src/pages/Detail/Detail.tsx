@@ -5,34 +5,29 @@ import { Pokemon } from '@/types';
 import { Icon, TitleSlide } from '@/components';
 import { pmList } from '@/data';
 
-type Render =
-  | {
-      title: string;
-      key: keyof Pokemon;
-      content?: never;
-    }
-  | {
-      title: string;
-      content: (pm: Pokemon) => JSX.Element;
-      key?: never;
-    };
+type ContentProps = { pm: Pokemon };
+
+type Render = {
+  title: string;
+  Content: ({ pm }: ContentProps) => JSX.Element;
+};
 
 const renderData: Render[] = [
   {
     title: '分類',
-    key: 'sleep_type',
+    Content: ({ pm }: ContentProps) => <>{pm.sleep_type}</>,
   },
   {
     title: '分類',
-    key: 'type',
+    Content: ({ pm }: ContentProps) => <>{pm.type}</>,
   },
   {
     title: '專長',
-    key: 'specialty',
+    Content: ({ pm }: ContentProps) => <>{pm.specialty}</>,
   },
   {
     title: '樹果',
-    content: (pm: Pokemon) => (
+    Content: ({ pm }: ContentProps) => (
       <ul className='relative flex whitespace-nowrap'>
         {new Array(pm.berry_quantity).fill(0).map((_, index) => (
           <li className='w-12' key={index}>
@@ -52,7 +47,7 @@ const renderData: Render[] = [
   },
   {
     title: '食材',
-    content: (pm) => (
+    Content: ({ pm }: ContentProps) => (
       <ul className='mb-2 flex w-full gap-x-12 whitespace-nowrap'>
         {pm.ingredients.map((item) => (
           <li className='relative' key={item}>
@@ -74,15 +69,15 @@ const renderData: Render[] = [
   },
   {
     title: '主技能',
-    key: 'skill',
+    Content: ({ pm }: ContentProps) => <>{pm.skill}</>,
   },
   {
     title: '主技能描述',
-    key: 'skill_description',
+    Content: ({ pm }: ContentProps) => <>{pm.skill_description}</>,
   },
 ];
 
-function Moves() {
+function Detail() {
   const { link = '001' } = useParams();
   const pm = pmList.find((pm: Pokemon) => pm.pid === `#${link.padStart(4, '0')}`) || pmList[0];
 
@@ -129,7 +124,7 @@ function Moves() {
               {data.title}
             </span>
 
-            {data.content ? data.content(pm) : (pm[data.key] as string)}
+            <data.Content pm={pm} />
           </li>
         ))}
       </ul>
@@ -137,4 +132,4 @@ function Moves() {
   );
 }
 
-export default Moves;
+export default Detail;
