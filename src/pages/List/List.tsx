@@ -1,4 +1,4 @@
-import { useState, ChangeEvent } from 'react';
+import { useState, ChangeEvent, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
@@ -134,6 +134,10 @@ function List() {
 
     return display;
   };
+
+  useEffect(() => {
+    document.title = `Sleep Pokédex`;
+  }, []);
 
   let groupByList: string[] = [''];
   if (filter.groupBy !== null) {

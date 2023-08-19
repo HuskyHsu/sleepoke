@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import clsx from 'clsx';
 
@@ -80,6 +81,10 @@ const renderData: Render[] = [
 function Detail() {
   const { link = '001' } = useParams();
   const pm = pmList.find((pm: Pokemon) => pm.pid === `#${link.padStart(4, '0')}`) || pmList[0];
+
+  useEffect(() => {
+    document.title = `Sleep ${pm.name}`;
+  }, [pm]);
 
   return (
     <section className='space-y-4'>

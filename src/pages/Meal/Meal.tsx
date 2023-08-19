@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 import clsx from 'clsx';
 
 import { meals } from '@/data';
@@ -113,6 +113,10 @@ function Meal() {
 
     return a.ingredients.length - b.ingredients.length;
   };
+
+  useEffect(() => {
+    document.title = `Sleep Meals`;
+  }, []);
 
   return (
     <div className='flex flex-col gap-4 pt-4'>
