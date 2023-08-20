@@ -15,6 +15,7 @@ export type Pokemon = {
   recruit_shards: number;
   ingredients: string[];
   location: string[];
+  sleep: string[];
 };
 
 export enum Type {

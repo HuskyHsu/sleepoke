@@ -65,17 +65,17 @@ def csv_to_json(csv_data):
                         int(column_value) if is_number(column_value) else column_value
                     )
             else:
-                # continue
-                if col == "image_list":
-                    download_image(
-                        f"https://www.serebii.net/pokemonsleep/pokemon/sleep/{int(values[0][-3:])}.png", 
-                        f"../public/image/sleep/{values[0][-3:]}.png"
-                    )
-                if col == "image":
-                    download_image(
-                        f"https://www.serebii.net/pokemonsleep/pokemon/drowse/{int(values[0][-3:])}.png", 
-                        f"../public/image/drowse/{values[0][-3:]}.png"
-                    )
+                continue
+                # if col == "image_list":
+                #     download_image(
+                #         f"https://www.serebii.net/pokemonsleep/pokemon/sleep/{int(values[0][-3:])}.png", 
+                #         f"../public/image/sleep/{values[0][-3:]}.png"
+                #     )
+                # if col == "image":
+                #     download_image(
+                #         f"https://www.serebii.net/pokemonsleep/pokemon/drowse/{int(values[0][-3:])}.png", 
+                #         f"../public/image/drowse/{values[0][-3:]}.png"
+                #     )
                 # if col == "image_list":
                 #     download_image(
                 #         column_value, f"../public/image/pmList/{values[0][-3:]}.png"

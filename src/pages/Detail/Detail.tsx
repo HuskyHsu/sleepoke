@@ -115,7 +115,7 @@ function Detail() {
         {/* bg banner */}
         <div
           className={clsx(
-            'absolute -inset-x-4 bottom-0 z-0 h-1/2 md:inset-x-0',
+            'absolute -inset-x-4 bottom-0 z-0 h-3/5 md:inset-x-0',
             'md:rounded-2xl',
             'bg-custom-green/60',
           )}
@@ -127,7 +127,6 @@ function Detail() {
       </h2>
 
       <TitleSlide title='基本資訊' />
-
       <ul className='grid grid-cols-2 gap-y-4'>
         {renderData.map((data, index) => (
           <li
@@ -149,6 +148,27 @@ function Detail() {
           </li>
         ))}
       </ul>
+
+      <TitleSlide title='睡姿' />
+      <div className='relative flex justify-center text-center'>
+        {new Array(2).fill(0).map((_, i) => {
+          return (
+            <div className='relative z-10' key={i}>
+              <span className='absolute inset-x-0 top-0 text-xl'>{pm.sleep[i]}</span>
+              <Icon.Game.PmSleep pm={pm} index={i} />
+            </div>
+          );
+        })}
+
+        {/* bg banner */}
+        <div
+          className={clsx(
+            'absolute -inset-x-4 bottom-0 z-0 h-3/5 md:inset-x-0',
+            'md:rounded-2xl',
+            'bg-custom-green/60',
+          )}
+        />
+      </div>
     </section>
   );
 }

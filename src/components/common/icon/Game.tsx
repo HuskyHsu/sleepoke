@@ -11,6 +11,15 @@ function Pm({ pm }: { pm: Pokemon }) {
   return <img src={imgSrc(pm.pid)} alt={pm.name} loading='lazy' />;
 }
 
+function PmSleep({ pm, index }: { pm: Pokemon; index: number }) {
+  const SleepType = ['sleep', 'drowse'];
+
+  const imgSrc = (pid: string) =>
+    `${process.env.PUBLIC_URL}/image/${SleepType[index]}/${pid.slice(-3)}.png`;
+
+  return <img src={imgSrc(pm.pid)} alt={pm.name} loading='lazy' />;
+}
+
 function Berry({ name }: { name: string }) {
   const imgSrc = (fileName: string) => `${process.env.PUBLIC_URL}/image/berries/${fileName}.png`;
   return <img src={imgSrc(Berrys[name as keyof typeof Berrys])} alt={name} loading='lazy' />;
@@ -41,4 +50,4 @@ function Type({ type, className = 'w-5 h-5' }: { type: string; className?: strin
   );
 }
 
-export { PmFull, Pm, Berry, Ingredient, Meal, Type };
+export { PmFull, Pm, PmSleep, Berry, Ingredient, Meal, Type };
