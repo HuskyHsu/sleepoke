@@ -15,8 +15,8 @@ type Render = {
 
 type Status = {
   index: number;
-  touchStartX: number;
-  touchEndX: number;
+  touchStart: number[];
+  touchEnd: number[];
 };
 
 const renderData: Render[] = [
@@ -106,25 +106,25 @@ function Detail() {
 
   const [status, setStatus] = useState<Status>({
     index: pmIndex,
-    touchStartX: 0,
-    touchEndX: 0,
+    touchStart: [0, 0],
+    touchEnd: [0, 0],
   });
 
   const pm = pmList[status.index];
 
   const handleTouchStart = (event: TouchEvent) => {
-    const { clientX } = event.touches[0];
+    const { clientX, clientY } = event.touches[0];
     setStatus((prevStatus) => ({
       ...prevStatus,
-      touchStartX: clientX,
+      touchStart: [clientX, clientY],
     }));
   };
 
   const handleTouchEnd = (event: TouchEvent) => {
-    const { clientX } = event.changedTouches[0];
+    const { clientX, clientY } = event.changedTouches[0];
     setStatus((prevStatus) => ({
       ...prevStatus,
-      touchEndX: clientX,
+      touchEnd: [clientX, clientY],
     }));
   };
 
@@ -149,13 +149,15 @@ function Detail() {
   }, [pm]);
 
   useEffect(() => {
-    const { touchStartX, touchEndX } = status;
-    const swipeDistance = touchEndX - touchStartX;
+    const { touchStart, touchEnd } = status;
 
-    if (Math.abs(swipeDistance) > 50) {
-      swipeDistance > 0 ? handleSwipe(-1) : handleSwipe(1);
+    const swipeDistanceX = touchEnd[0] - touchStart[0];
+    const swipeDistanceY = touchEnd[1] - touchStart[1];
+
+    if (Math.abs(swipeDistanceX) > Math.abs(swipeDistanceY) && Math.abs(swipeDistanceX) > 50) {
+      swipeDistanceX > 0 ? handleSwipe(-1) : handleSwipe(1);
     }
-  }, [status.touchEndX]);
+  }, [status.touchEnd]);
 
   return (
     <section className='space-y-4' onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
