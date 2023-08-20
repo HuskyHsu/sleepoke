@@ -21,8 +21,9 @@ const renderData: Render[] = [
   {
     title: '屬性',
     Content: ({ pm }: ContentProps) => (
-      <span className='pl-2'>
-        <Icon.Game.Type type={pm.type} className='h-8 w-8 rounded-full' />
+      <span className='flex items-center gap-2 pl-2'>
+        <Icon.Game.Type type={pm.type} className='h-8 w-8' />
+        {pm.type}
       </span>
     ),
   },
