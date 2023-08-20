@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 import { Pokemon } from '@/types';
 import { Icon, TitleSlide } from '@/components';
-import { pmList } from '@/data';
+import { pmFrequencyOrder, pmList } from '@/data';
 
 type ContentProps = { pm: Pokemon };
 
@@ -19,8 +19,12 @@ const renderData: Render[] = [
     Content: ({ pm }: ContentProps) => <>{pm.sleep_type}</>,
   },
   {
-    title: '分類',
-    Content: ({ pm }: ContentProps) => <>{pm.type}</>,
+    title: '屬性',
+    Content: ({ pm }: ContentProps) => (
+      <span className='pl-2'>
+        <Icon.Game.Type type={pm.type} className='h-8 w-8 rounded-full' />
+      </span>
+    ),
   },
   {
     title: '專長',
@@ -45,6 +49,17 @@ const renderData: Render[] = [
         </li>
       </ul>
     ),
+  },
+  {
+    title: '幫忙間隔',
+    Content: ({ pm }: ContentProps) => {
+      const pmOrder = pmFrequencyOrder.findIndex((f) => f === pm.base_frequency) + 1;
+      return (
+        <>
+          {pm.base_frequency} (#{pmOrder})
+        </>
+      );
+    },
   },
   {
     title: '食材',

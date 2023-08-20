@@ -1,4 +1,4 @@
-import { Pokemon, Berrys, Ingredients, Meals } from '@/types';
+import { Pokemon, Berrys, Ingredients, Meals, Type as TypeEnum } from '@/types';
 
 function PmFull({ pm, shiny = false }: { pm: Pokemon; shiny?: boolean }) {
   const imgSrc = (pid: string) =>
@@ -29,4 +29,16 @@ function Meal({ name }: { name: string }) {
   return <img src={imgSrc(Meals[name as keyof typeof Meals])} alt={name} loading='lazy' />;
 }
 
-export { PmFull, Pm, Berry, Ingredient, Meal };
+function Type({ type, className = 'w-5 h-5' }: { type: string; className?: string }) {
+  const link = TypeEnum[type as keyof typeof TypeEnum];
+
+  return (
+    <img
+      src={`${process.env.PUBLIC_URL}/image/type/${link}.svg`}
+      alt={type}
+      className={className}
+    />
+  );
+}
+
+export { PmFull, Pm, Berry, Ingredient, Meal, Type };

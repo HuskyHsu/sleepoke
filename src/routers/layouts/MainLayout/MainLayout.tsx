@@ -38,7 +38,7 @@ function MainLayout() {
       </span>
       <hr />
       <Outlet />
-      <div className='fixed bottom-0 left-0 z-50 h-16 w-full bg-white shadow-navigation md:hidden'>
+      <div className='fixed bottom-0 left-0 z-50 h-16 w-full rounded-t-xl bg-white shadow-navigation md:hidden'>
         <div
           className={clsx(
             'mx-auto grid h-full max-w-lg grid-cols-2',
