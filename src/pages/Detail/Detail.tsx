@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState, useEffect, TouchEvent } from 'react';
 import { useParams } from 'react-router-dom';
 import clsx from 'clsx';
 
@@ -11,6 +11,12 @@ type ContentProps = { pm: Pokemon };
 type Render = {
   title: string;
   Content: ({ pm }: ContentProps) => JSX.Element;
+};
+
+type Status = {
+  index: number;
+  touchStartX: number;
+  touchEndX: number;
 };
 
 const renderData: Render[] = [
@@ -96,14 +102,63 @@ const renderData: Render[] = [
 
 function Detail() {
   const { link = '001' } = useParams();
-  const pm = pmList.find((pm: Pokemon) => pm.pid === `#${link.padStart(4, '0')}`) || pmList[0];
+  const pmIndex = pmList.findIndex((pm: Pokemon) => pm.pid === `#${link.padStart(4, '0')}`);
+
+  const [status, setStatus] = useState<Status>({
+    index: pmIndex,
+    touchStartX: 0,
+    touchEndX: 0,
+  });
+
+  const pm = pmList[status.index];
+
+  const handleTouchStart = (event: TouchEvent) => {
+    const { clientX } = event.touches[0];
+    setStatus((prevStatus) => ({
+      ...prevStatus,
+      touchStartX: clientX,
+    }));
+  };
+
+  const handleTouchEnd = (event: TouchEvent) => {
+    const { clientX } = event.changedTouches[0];
+    setStatus((prevStatus) => ({
+      ...prevStatus,
+      touchEndX: clientX,
+    }));
+  };
+
+  const handleSwipe = (plusMinus: number) => {
+    setStatus((prevStatus) => {
+      let newIndex = prevStatus.index + plusMinus;
+      if (newIndex < 0) {
+        newIndex = pmList.length - 1;
+      } else if (newIndex >= pmList.length) {
+        newIndex = 0;
+      }
+
+      return {
+        ...prevStatus,
+        index: newIndex,
+      };
+    });
+  };
 
   useEffect(() => {
     document.title = `Sleep ${pm.name}`;
   }, [pm]);
 
+  useEffect(() => {
+    const { touchStartX, touchEndX } = status;
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (Math.abs(swipeDistance) > 50) {
+      swipeDistance > 0 ? handleSwipe(-1) : handleSwipe(1);
+    }
+  }, [status.touchEndX]);
+
   return (
-    <section className='space-y-4'>
+    <section className='space-y-4' onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
       <div className='relative flex justify-center'>
         <div className='z-10 md:h-[273px]'>
           <Icon.Game.PmFull pm={pm} />
