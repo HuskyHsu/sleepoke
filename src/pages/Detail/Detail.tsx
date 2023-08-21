@@ -220,14 +220,14 @@ function Detail() {
 
         <Icon.Before
           className={clsx(
-            'absolute bottom-8 left-0 hidden h-32 w-32',
+            'absolute bottom-8 left-0 z-20 hidden h-32 w-32',
             'cursor-pointer fill-slate-100 opacity-40 md:block',
           )}
           onClick={() => handleSwipe(-1)}
         />
         <Icon.Next
           className={clsx(
-            'absolute bottom-8 right-0 hidden h-32 w-32',
+            'absolute bottom-8 right-0 z-20 hidden h-32 w-32',
             'cursor-pointer fill-slate-100 opacity-40 md:block',
           )}
           onClick={() => handleSwipe(1)}
