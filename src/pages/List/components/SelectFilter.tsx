@@ -25,7 +25,7 @@ export function SelectFilter({ filter, handleChickChange }: Props) {
     >
       <SubTitleSlide title='篩選：樹果' />
       <Buttons
-        list={berries}
+        list={berries.map((berry) => berry.name)}
         Icon={Icon.Game.Berry}
         checkSet={filter.berries}
         handleChange={handleChickChange('berries')}

@@ -9,4 +9,25 @@ const pmFrequencyOrder = [...new Set(pmList.map((pm) => pm.base_frequency))].sor
   a.localeCompare(b),
 );
 
-export { pmList, pmFrequencyOrder, meals, berries, ingredients, skills, specialties };
+const berryMap = Object.fromEntries(berries.map((berry) => [berry.name, berry.point]));
+
+const pmEnergyOrder = [
+  ...new Set(
+    pmList.map((pm) => {
+      const basePoint = berryMap[pm.berry];
+      const totalSec = pm.base_frequency.split(':').reduce((acc, cur) => acc * 60 + Number(cur), 0);
+      return Math.ceil((86400 / totalSec) * (basePoint * pm.berry_quantity));
+    }),
+  ),
+].sort((a, b) => b - a);
+
+export {
+  pmList,
+  pmFrequencyOrder,
+  pmEnergyOrder,
+  meals,
+  berries,
+  ingredients,
+  skills,
+  specialties,
+};

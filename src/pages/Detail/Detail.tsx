@@ -1,10 +1,10 @@
 import { useState, useEffect, TouchEvent } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import clsx from 'clsx';
 
 import { Pokemon } from '@/types';
 import { Icon, TitleSlide } from '@/components';
-import { pmFrequencyOrder, pmList } from '@/data';
+import { pmFrequencyOrder, pmEnergyOrder, pmList, berries } from '@/data';
 
 type ContentProps = { pm: Pokemon };
 
@@ -17,7 +17,10 @@ type Status = {
   index: number;
   touchStart: number[];
   touchEnd: number[];
+  displaySwipe: boolean;
 };
+
+const berryMap = Object.fromEntries(berries.map((berry) => [berry.name, berry.point]));
 
 const renderData: Render[] = [
   {
@@ -58,17 +61,6 @@ const renderData: Render[] = [
     ),
   },
   {
-    title: '幫忙間隔',
-    Content: ({ pm }: ContentProps) => {
-      const pmOrder = pmFrequencyOrder.findIndex((f) => f === pm.base_frequency) + 1;
-      return (
-        <>
-          {pm.base_frequency} (#{pmOrder})
-        </>
-      );
-    },
-  },
-  {
     title: '食材',
     Content: ({ pm }: ContentProps) => (
       <ul className='mb-2 flex w-full gap-x-12 whitespace-nowrap'>
@@ -98,19 +90,59 @@ const renderData: Render[] = [
     title: '主技能描述',
     Content: ({ pm }: ContentProps) => <>{pm.skill_description}</>,
   },
+  {
+    title: '幫忙間隔',
+    Content: ({ pm }: ContentProps) => {
+      const pmOrder = pmFrequencyOrder.findIndex((f) => f === pm.base_frequency) + 1;
+      return (
+        <>
+          {pm.base_frequency} (#{pmOrder})
+        </>
+      );
+    },
+  },
+  {
+    title: '果實能量基準',
+    Content: ({ pm }: ContentProps) => {
+      const basePoint = berryMap[pm.berry];
+      const totalSec = pm.base_frequency.split(':').reduce((acc, cur) => acc * 60 + Number(cur), 0);
+      const energy = Math.ceil((86400 / totalSec) * (basePoint * pm.berry_quantity));
+      const pmOrder = pmEnergyOrder.findIndex((e) => e === energy) + 1;
+      return (
+        <>
+          {basePoint * pm.berry_quantity}/{totalSec}s [{energy}/day] (#{pmOrder})
+        </>
+      );
+    },
+  },
+  {
+    title: '友情點數',
+    Content: ({ pm }: ContentProps) => {
+      return <>{pm.friendship_points_needed}點</>;
+    },
+  },
 ];
 
 function Detail() {
   const { link = '001' } = useParams();
   const pmIndex = pmList.findIndex((pm: Pokemon) => pm.pid === `#${link.padStart(4, '0')}`);
+  const navigate = useNavigate();
 
   const [status, setStatus] = useState<Status>({
     index: pmIndex,
     touchStart: [0, 0],
     touchEnd: [0, 0],
+    displaySwipe: true,
   });
 
   const pm = pmList[status.index];
+
+  setTimeout(function () {
+    setStatus((prevStatus) => ({
+      ...prevStatus,
+      displaySwipe: false,
+    }));
+  }, 2000);
 
   const handleTouchStart = (event: TouchEvent) => {
     const { clientX, clientY } = event.touches[0];
@@ -159,8 +191,16 @@ function Detail() {
     }
   }, [status.touchEnd]);
 
+  useEffect(() => {
+    navigate(`/pm/${pmList[status.index].pid.slice(-3)}`);
+  }, [status.index]);
+
   return (
-    <section className='space-y-4' onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+    <section
+      className='relative space-y-4'
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
       <div className='relative flex justify-center'>
         <div className='z-10 md:h-[273px]'>
           <Icon.Game.PmFull pm={pm} />
@@ -176,6 +216,21 @@ function Detail() {
             'md:rounded-2xl',
             'bg-custom-green/60',
           )}
+        />
+
+        <Icon.Before
+          className={clsx(
+            'absolute bottom-8 left-0 hidden h-32 w-32',
+            'cursor-pointer fill-slate-100 opacity-40 md:block',
+          )}
+          onClick={() => handleSwipe(-1)}
+        />
+        <Icon.Next
+          className={clsx(
+            'absolute bottom-8 right-0 hidden h-32 w-32',
+            'cursor-pointer fill-slate-100 opacity-40 md:block',
+          )}
+          onClick={() => handleSwipe(1)}
         />
       </div>
 
@@ -226,6 +281,14 @@ function Detail() {
           )}
         />
       </div>
+
+      <Icon.Swipe
+        className={clsx(
+          'absolute inset-0 -z-10 h-full w-full fill-slate-200',
+          'transition duration-[2s]',
+          status.displaySwipe ? 'block opacity-40 md:hidden' : 'opacity-0',
+        )}
+      />
     </section>
   );
 }
