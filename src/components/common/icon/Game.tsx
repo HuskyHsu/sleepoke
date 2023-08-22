@@ -11,7 +11,7 @@ function Pm({ pm }: { pm: Pokemon }) {
 
   const imgSrc = (pid: string) =>
     `${process.env.PUBLIC_URL}/image/pmIcon${isMobile ? '_70' : ''}/${pid.slice(-3)}.png`;
-  return <img src={imgSrc(pm.pid)} alt={pm.name} loading='lazy' />;
+  return <img src={imgSrc(pm.pid)} alt={pm.name} />;
 }
 
 function PmSleep({ pm, index }: { pm: Pokemon; index: number }) {
