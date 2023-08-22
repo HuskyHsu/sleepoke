@@ -1,6 +1,10 @@
+import { lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
-import { List, Detail, Meal } from '@/pages';
+
+const List = lazy(() => import(/* webpackChunkName: "List" */ '@/pages/List/List'));
+const Detail = lazy(() => import(/* webpackChunkName: "Detail" */ '@/pages/Detail/Detail'));
+const Meal = lazy(() => import(/* webpackChunkName: "Meal" */ '@/pages/Meal/Meal'));
 
 export function Router() {
   return (
