@@ -7,7 +7,10 @@ function PmFull({ pm, shiny = false }: { pm: Pokemon; shiny?: boolean }) {
 }
 
 function Pm({ pm }: { pm: Pokemon }) {
-  const imgSrc = (pid: string) => `${process.env.PUBLIC_URL}/image/pmIcon/${pid.slice(-3)}.png`;
+  const isMobile = window.screen.width < 768;
+
+  const imgSrc = (pid: string) =>
+    `${process.env.PUBLIC_URL}/image/pmIcon${isMobile ? '_70' : ''}/${pid.slice(-3)}.png`;
   return <img src={imgSrc(pm.pid)} alt={pm.name} loading='lazy' />;
 }
 
