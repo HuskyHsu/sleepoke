@@ -17,7 +17,7 @@
     linear-gradient(#f93318 0 0) top / 100% calc(50% - 2px),
     linear-gradient(#f1f1f1 0 0) bottom/100% calc(50% - 2px) #000;
   background-repeat: no-repeat;
-  animation: w10 1s infinite cubic-bezier(0.5, 120, 0.5, -120);
+  animation: w10 1.5s infinite cubic-bezier(0.5, 120, 0.5, -120);
   width: 60px;
   height: 60px;
 }
