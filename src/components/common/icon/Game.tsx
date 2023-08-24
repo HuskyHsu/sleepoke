@@ -7,10 +7,7 @@ function PmFull({ pm, shiny = false }: { pm: Pokemon; shiny?: boolean }) {
 }
 
 function Pm({ pm }: { pm: Pokemon }) {
-  const isMobile = window.screen.width < 768;
-
-  const imgSrc = (pid: string) =>
-    `${process.env.PUBLIC_URL}/image/pmIcon${isMobile ? '_70' : ''}/${pid.slice(-3)}.png`;
+  const imgSrc = (pid: string) => `${process.env.PUBLIC_URL}/image/pmIcon/${pid.slice(-3)}.png`;
   return <img src={imgSrc(pm.pid)} alt={pm.name} />;
 }
 
@@ -24,18 +21,13 @@ function PmSleep({ pm, index }: { pm: Pokemon; index: number }) {
 }
 
 function Berry({ name }: { name: string }) {
-  const isMobile = window.screen.width < 768;
-
-  const imgSrc = (fileName: string) =>
-    `${process.env.PUBLIC_URL}/image/berries${isMobile ? '_40' : ''}/${fileName}.png`;
+  const imgSrc = (fileName: string) => `${process.env.PUBLIC_URL}/image/berries/${fileName}.png`;
   return <img src={imgSrc(Berrys[name as keyof typeof Berrys])} alt={name} loading='lazy' />;
 }
 
 function Ingredient({ name }: { name: string }) {
-  const isMobile = window.screen.width < 768;
-
   const imgSrc = (fileName: string) =>
-    `${process.env.PUBLIC_URL}/image/ingredients${isMobile ? '_40' : ''}/${fileName}.png`;
+    `${process.env.PUBLIC_URL}/image/ingredients/${fileName}.png`;
   return (
     <img src={imgSrc(Ingredients[name as keyof typeof Ingredients])} alt={name} loading='lazy' />
   );
