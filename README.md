@@ -5,6 +5,8 @@
 ## Introduce
 
 ![](https://raw.githubusercontent.com/HuskyHsu/sleepoke/main/doc/_page_list.png)
+![](https://raw.githubusercontent.com/HuskyHsu/sleepoke/main/doc/_page_meals.png)
+![](https://raw.githubusercontent.com/HuskyHsu/sleepoke/main/doc/_page_detail.png)
 
 ## todo list
 
