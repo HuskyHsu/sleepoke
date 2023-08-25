@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sleepoke/static/css/main.ae5f1a59.css",
-    "main.js": "/sleepoke/static/js/main.52fd9e80.js",
+    "main.css": "/sleepoke/static/css/main.b0a0529c.css",
+    "main.js": "/sleepoke/static/js/main.eabb9227.js",
     "List.js": "/sleepoke/static/js/List.b6b98f0f.chunk.js",
     "Detail.js": "/sleepoke/static/js/Detail.0a6a9c6b.chunk.js",
     "Meal.js": "/sleepoke/static/js/Meal.b1d09dd2.chunk.js",
     "static/js/787.80b534a0.chunk.js": "/sleepoke/static/js/787.80b534a0.chunk.js",
     "static/js/938.1b6ef69f.chunk.js": "/sleepoke/static/js/938.1b6ef69f.chunk.js",
-    "static/media/Logo.svg": "/sleepoke/static/media/Logo.372b92c9211a160a8625b09da8ef5ffd.svg",
+    "static/media/Logo.svg": "/sleepoke/static/media/Logo.13f23a12bd22c5533fc0beaad255775b.svg",
     "static/media/Filter.svg": "/sleepoke/static/media/Filter.b58472365d34df8d381e858e385a3836.svg",
     "static/media/Category.svg": "/sleepoke/static/media/Category.10ca21af779ba642291800e906fd9edd.svg",
     "static/media/ZZ.svg": "/sleepoke/static/media/ZZ.543181da5955365841bbd8e5cf9ee7cf.svg",
@@ -17,8 +17,8 @@
     "static/media/Search.svg": "/sleepoke/static/media/Search.70618b7533946d2ab5e393dce8e77709.svg",
     "static/media/Next.svg": "/sleepoke/static/media/Next.11ac5ea3b29508ccc24becccbe82ea79.svg",
     "static/media/Before.svg": "/sleepoke/static/media/Before.77f97c6fef581992c111ca9ea5275012.svg",
-    "main.ae5f1a59.css.map": "/sleepoke/static/css/main.ae5f1a59.css.map",
-    "main.52fd9e80.js.map": "/sleepoke/static/js/main.52fd9e80.js.map",
+    "main.b0a0529c.css.map": "/sleepoke/static/css/main.b0a0529c.css.map",
+    "main.eabb9227.js.map": "/sleepoke/static/js/main.eabb9227.js.map",
     "List.b6b98f0f.chunk.js.map": "/sleepoke/static/js/List.b6b98f0f.chunk.js.map",
     "Detail.0a6a9c6b.chunk.js.map": "/sleepoke/static/js/Detail.0a6a9c6b.chunk.js.map",
     "Meal.b1d09dd2.chunk.js.map": "/sleepoke/static/js/Meal.b1d09dd2.chunk.js.map",
@@ -26,7 +26,7 @@
     "938.1b6ef69f.chunk.js.map": "/sleepoke/static/js/938.1b6ef69f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae5f1a59.css",
-    "static/js/main.52fd9e80.js"
+    "static/css/main.b0a0529c.css",
+    "static/js/main.eabb9227.js"
   ]
 }
