@@ -1,6 +1,6 @@
 # SleePoke
 
-![](https://raw.githubusercontent.com/HuskyHsu/sleepoke/main/src/assets/icon/Logo.svg)
+![](https://raw.githubusercontent.com/HuskyHsu/sleepoke/main/doc/_page_cover.png)
 
 ## Introduce
 
