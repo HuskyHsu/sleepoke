@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx,svg}'],
   theme: {
     extend: {
       colors: {
@@ -40,6 +40,15 @@ module.exports = {
         'list-items': 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px',
         'list-items--hover': 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px',
         navigation: 'rgba(101, 208, 119, 0.6) 0px -4px',
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'scale(1)', opacity: 1 },
+          '50%': { transform: 'scale(1.1)', opacity: 0.8 },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 6s ease-in-out infinite',
       },
     },
   },
