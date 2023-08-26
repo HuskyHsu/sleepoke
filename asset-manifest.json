@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/sleepoke/static/css/main.b0a0529c.css",
-    "main.js": "/sleepoke/static/js/main.eabb9227.js",
+    "main.js": "/sleepoke/static/js/main.afc62798.js",
     "List.js": "/sleepoke/static/js/List.b6b98f0f.chunk.js",
     "Detail.js": "/sleepoke/static/js/Detail.0a6a9c6b.chunk.js",
-    "Meal.js": "/sleepoke/static/js/Meal.b1d09dd2.chunk.js",
+    "Meal.js": "/sleepoke/static/js/Meal.065bac57.chunk.js",
     "static/js/787.80b534a0.chunk.js": "/sleepoke/static/js/787.80b534a0.chunk.js",
     "static/js/938.1b6ef69f.chunk.js": "/sleepoke/static/js/938.1b6ef69f.chunk.js",
     "static/media/Logo.svg": "/sleepoke/static/media/Logo.13f23a12bd22c5533fc0beaad255775b.svg",
@@ -18,15 +18,15 @@
     "static/media/Next.svg": "/sleepoke/static/media/Next.11ac5ea3b29508ccc24becccbe82ea79.svg",
     "static/media/Before.svg": "/sleepoke/static/media/Before.77f97c6fef581992c111ca9ea5275012.svg",
     "main.b0a0529c.css.map": "/sleepoke/static/css/main.b0a0529c.css.map",
-    "main.eabb9227.js.map": "/sleepoke/static/js/main.eabb9227.js.map",
+    "main.afc62798.js.map": "/sleepoke/static/js/main.afc62798.js.map",
     "List.b6b98f0f.chunk.js.map": "/sleepoke/static/js/List.b6b98f0f.chunk.js.map",
     "Detail.0a6a9c6b.chunk.js.map": "/sleepoke/static/js/Detail.0a6a9c6b.chunk.js.map",
-    "Meal.b1d09dd2.chunk.js.map": "/sleepoke/static/js/Meal.b1d09dd2.chunk.js.map",
+    "Meal.065bac57.chunk.js.map": "/sleepoke/static/js/Meal.065bac57.chunk.js.map",
     "787.80b534a0.chunk.js.map": "/sleepoke/static/js/787.80b534a0.chunk.js.map",
     "938.1b6ef69f.chunk.js.map": "/sleepoke/static/js/938.1b6ef69f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0a0529c.css",
-    "static/js/main.eabb9227.js"
+    "static/js/main.afc62798.js"
   ]
 }
