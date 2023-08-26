@@ -41,7 +41,7 @@ function Meal() {
   const handleSizeChange = (n: number) => {
     setFilter((prevSearch) => ({
       ...prevSearch,
-      size: Math.max(15, prevSearch.size + n),
+      size: Math.min(Math.max(15, prevSearch.size + n), 162),
     }));
   };
 

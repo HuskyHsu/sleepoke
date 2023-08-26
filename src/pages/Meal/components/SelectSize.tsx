@@ -19,6 +19,7 @@ export function SelectSize({ filter, handleSizeChange }: Props) {
         </p>
         <PlusMinus n={1} handleSizeChange={handleSizeChange} />
         <PlusMinus n={3} handleSizeChange={handleSizeChange} />
+        <PlusMinus n={filter.size} handleSizeChange={handleSizeChange} />
       </div>
     </div>
   );

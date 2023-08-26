@@ -30,14 +30,14 @@ type PlusMinusProps = {
 };
 
 export function PlusMinus({ n, handleSizeChange }: PlusMinusProps) {
+  const displayNum = n > 3 ? 'x2' : n > 0 ? `+${n}` : n;
   return (
     <button
       type='button'
       className='h-8 w-8 rounded-full bg-amber-100 shadow-list-items'
       onClick={() => handleSizeChange(n)}
     >
-      {n > 0 && '+'}
-      {n}
+      {displayNum}
     </button>
   );
 }
