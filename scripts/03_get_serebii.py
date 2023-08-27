@@ -1,4 +1,5 @@
 import json
+import os
 import requests
 from bs4 import BeautifulSoup
 
@@ -116,8 +117,32 @@ areaMap = {
     "Snowdrop Tundra": "白花雪原",
 }
 
+levelMap = {
+    "Basic": "普通",
+    "Great": "超級",
+    "Ultra": "高級",
+    "Master": "大師",
+}
+
+incense = {
+    "萌綠之島": [
+        "quilava",
+        "bayleef",
+        "arcanine",
+        "flareon",
+        "meganium",
+        "typhlosion",
+        "leafeon",
+        "houndoom",
+    ],
+    "天青沙灘": [],
+    "灰褐洞窟": [],
+    "白花雪原": [],
+}
+
 if __name__ == "__main__":
-    for name in list[6:7]:
+    data = []
+    for name in list[:]:
         url = f"https://www.serebii.net/pokemonsleep/pokemon/{name}.shtml"
         response = requests.get(url)
 
@@ -125,12 +150,12 @@ if __name__ == "__main__":
 
         locations_tds = soup.findAll("td", class_="fooinfo", valign="top")
 
-        # print(locations_td)
+        print(name)
 
-        locations_info = []
+        locations_info = {}
 
-        for locations_td in locations_tds:
-            subLocation = []
+        for j, locations_td in enumerate(locations_tds):
+            # subLocation = []
             if locations_td:
                 s = [
                     child.text.replace(" - From ", "")
@@ -139,8 +164,33 @@ if __name__ == "__main__":
                 ]
 
                 for i in range(0, len(s), 2):
-                    subLocation.append({"area": areaMap[s[i]], "level": s[i + 1]})
+                    area = areaMap[s[i]]
+                    level = levelMap[s[i + 1].split(" ")[0]]
+                    subLevel = int(s[i + 1].split(" ")[1])
 
-                locations_info.append(subLocation)
+                    if not area in locations_info:
+                        locations_info[area] = []
 
-        print(json.dumps(locations_info, indent=2, ensure_ascii=False))
+                    locations_info[area].append(
+                        {"style": j, "level": level, "subLevel": subLevel}
+                    )
+
+                    # subLocation.append(
+                    #     {
+                    #         "area": areaMap[s[i]],
+                    #         "level": levelMap[s[i + 1].split(" ")[0]],
+                    #         "subLevel": int(s[i + 1].split(" ")[1]),
+                    #     }
+                    # )
+
+                # locations_info.append(subLocation)
+
+        # print(name, json.dumps(locations_info, indent=2, ensure_ascii=False))
+
+        data.append({"name": name, "locations": locations_info})
+
+    output_folder = "."
+
+    output_file_path = os.path.join(output_folder, "pmLocations.json")
+    with open(output_file_path, "w", encoding="utf-8") as output_file:
+        output_file.write(json.dumps(data, indent=2))

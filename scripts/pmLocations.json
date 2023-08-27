@@ -1,0 +1,4389 @@
+[
+  {
+    "name": "bulbasaur",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "ivysaur",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        }
+      ]
+    }
+  },
+  {
+    "name": "venusaur",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 9
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
+        }
+      ]
+    }
+  },
+  {
+    "name": "charmander",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "charmeleon",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "charizard",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 9
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 11
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "squirtle",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "wartortle",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "blastoise",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 9
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 12
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        }
+      ]
+    }
+  },
+  {
+    "name": "caterpie",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "metapod",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "butterfree",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "rattata",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "raticate",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        }
+      ]
+    }
+  },
+  {
+    "name": "ekans",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "arbok",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "pikachu",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "raichu",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 8
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 9
+        }
+      ]
+    }
+  },
+  {
+    "name": "jigglypuff",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "wigglytuff",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 9
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 4
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 8
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 3
+        }
+      ]
+    }
+  },
+  {
+    "name": "diglett",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "dugtrio",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "meowth",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "persian",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "psyduck",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "golduck",
+    "locations": {
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "mankey",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "primeape",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "growlithe",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "arcanine",
+    "locations": {}
+  },
+  {
+    "name": "bellsprout",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "weepinbell",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        }
+      ]
+    }
+  },
+  {
+    "name": "victreebel",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        }
+      ]
+    }
+  },
+  {
+    "name": "geodude",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "graveler",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "golem",
+    "locations": {
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "slowpoke",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "slowbro",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "magnemite",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "magneton",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "doduo",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "dodrio",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "gastly",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "haunter",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        }
+      ]
+    }
+  },
+  {
+    "name": "gengar",
+    "locations": {
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "cubone",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "marowak",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "kangaskhan",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "pinsir",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        }
+      ]
+    }
+  },
+  {
+    "name": "ditto",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 4,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 6,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 5,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 9,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "eevee",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "vaporeon",
+    "locations": {
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 12
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        }
+      ]
+    }
+  },
+  {
+    "name": "jolteon",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 9
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 15
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
+        }
+      ]
+    }
+  },
+  {
+    "name": "flareon",
+    "locations": {}
+  },
+  {
+    "name": "chikorita",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "bayleef",
+    "locations": {}
+  },
+  {
+    "name": "meganium",
+    "locations": {}
+  },
+  {
+    "name": "cyndaquil",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "quilava",
+    "locations": {}
+  },
+  {
+    "name": "typhlosion",
+    "locations": {}
+  },
+  {
+    "name": "totodile",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "croconaw",
+    "locations": {
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "feraligatr",
+    "locations": {
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 12
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        }
+      ]
+    }
+  },
+  {
+    "name": "pichu",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "igglybuff",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "togepi",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "togetic",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        }
+      ]
+    }
+  },
+  {
+    "name": "mareep",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "flaaffy",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "ampharos",
+    "locations": {
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "sudowoodo",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "espeon",
+    "locations": {
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 11
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "umbreon",
+    "locations": {
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 11
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "slowking",
+    "locations": {
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 12
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        }
+      ]
+    }
+  },
+  {
+    "name": "wobbuffet",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "heracross",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        }
+      ]
+    }
+  },
+  {
+    "name": "houndour",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "houndoom",
+    "locations": {}
+  },
+  {
+    "name": "larvitar",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "pupitar",
+    "locations": {
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "tyranitar",
+    "locations": {
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 16
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 11
+        }
+      ]
+    }
+  },
+  {
+    "name": "slakoth",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "vigoroth",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "slaking",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 11
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 12
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 12
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        }
+      ]
+    }
+  },
+  {
+    "name": "sableye",
+    "locations": {
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "gulpin",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "swalot",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "swablu",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "altaria",
+    "locations": {
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "absol",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "wynaut",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "spheal",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "sealeo",
+    "locations": {
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "walrein",
+    "locations": {
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "bonsly",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "riolu",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "lucario",
+    "locations": {
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "croagunk",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "toxicroak",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "magnezone",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 11
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 17
+        }
+      ]
+    }
+  },
+  {
+    "name": "togekiss",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 16
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 11
+        }
+      ]
+    }
+  },
+  {
+    "name": "leafeon",
+    "locations": {}
+  },
+  {
+    "name": "glaceon",
+    "locations": {
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "sylveon",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 13
+        }
+      ]
+    }
+  }
+]
