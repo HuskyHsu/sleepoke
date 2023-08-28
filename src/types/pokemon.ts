@@ -1,4 +1,4 @@
-type sleepType = {
+export type sleepType = {
   style: number;
   level: string;
   subLevel: number;

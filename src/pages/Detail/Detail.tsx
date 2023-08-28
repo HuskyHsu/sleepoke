@@ -2,9 +2,9 @@ import { useState, useEffect, TouchEvent } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import clsx from 'clsx';
 
-import { Pokemon } from '@/types';
+import { Pokemon, sleepType } from '@/types';
 import { Icon, TitleSlide } from '@/components';
-import { pmFrequencyOrder, pmEnergyOrder, pmList, berries } from '@/data';
+import { pmFrequencyOrder, pmEnergyOrder, pmList, berries, areas } from '@/data';
 
 type ContentProps = { pm: Pokemon };
 
@@ -137,7 +137,25 @@ function Detail() {
 
   const pm = pmList[status.index];
 
+  const allSleepStyle = areas.reduce(
+    (acc, cur) => {
+      acc = acc.concat(
+        (pm.locations[cur as keyof typeof pm.locations] || []).map((location) => {
+          return {
+            ...location,
+            area: cur,
+          };
+        }),
+      );
+
+      return acc;
+    },
+    [] as (sleepType & { area: string })[],
+  );
+
   setTimeout(function () {
+    if (!status.displaySwipe) return;
+
     setStatus((prevStatus) => ({
       ...prevStatus,
       displaySwipe: false,
@@ -268,6 +286,18 @@ function Detail() {
             <div className='relative z-10' key={i}>
               <span className='absolute inset-x-0 top-0 text-xl'>{pm.sleep[i]}</span>
               <Icon.Game.PmSleep pm={pm} index={i} />
+              <div className=' flex flex-col text-xs' key={i}>
+                {allSleepStyle
+                  .filter((style) => style.style === i)
+                  .map((style, i) => {
+                    return (
+                      <span key={i}>
+                        {style.area} - {style.level}
+                        {style.subLevel}
+                      </span>
+                    );
+                  })}
+              </div>
             </div>
           );
         })}
