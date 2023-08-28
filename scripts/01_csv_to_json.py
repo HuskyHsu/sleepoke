@@ -32,19 +32,23 @@ def download_image(url, filepath):
     else:
         print(url, response.status_code)
 
-def csv_to_json(csv_data):
+
+def csv_to_json(csv_data, locations):
     lines = csv_data.strip().split("\n")
     header = lines[0].split(",")
     header = [col.strip().lower().replace(" ", "_") for col in header]
     excluded_columns = ["image_list", "image", "image_shiny"]
 
     data = []
-    for line in lines[1:]:
+    for j, line in enumerate(lines[1:]):
         values = line.split(",")
         print(values[0])
         obj = {}
 
         for i, col in enumerate(header):
+            if "location" in col:
+                continue
+
             column_value = values[i].strip()
 
             if col not in excluded_columns:
@@ -68,12 +72,12 @@ def csv_to_json(csv_data):
                 continue
                 # if col == "image_list":
                 #     download_image(
-                #         f"https://www.serebii.net/pokemonsleep/pokemon/sleep/{int(values[0][-3:])}.png", 
+                #         f"https://www.serebii.net/pokemonsleep/pokemon/sleep/{int(values[0][-3:])}.png",
                 #         f"../public/image/sleep/{values[0][-3:]}.png"
                 #     )
                 # if col == "image":
                 #     download_image(
-                #         f"https://www.serebii.net/pokemonsleep/pokemon/drowse/{int(values[0][-3:])}.png", 
+                #         f"https://www.serebii.net/pokemonsleep/pokemon/drowse/{int(values[0][-3:])}.png",
                 #         f"../public/image/drowse/{values[0][-3:]}.png"
                 #     )
                 # if col == "image_list":
@@ -89,6 +93,7 @@ def csv_to_json(csv_data):
                 #         column_value, f"../public/image/pm/{values[0][-3:]}_s.png"
                 #     )
 
+        obj["locations"] = locations[j]["locations"]
         data.append(obj)
 
     return json.dumps(data, indent=2)
@@ -96,10 +101,14 @@ def csv_to_json(csv_data):
 
 if __name__ == "__main__":
     csv_file_path = "sleep - PM_list.csv"
+    json_file_path = "pmLocations.json"
+
+    with open(json_file_path, "r", encoding="utf-8") as json_file:
+        data = json.load(json_file)
 
     with open(csv_file_path, "r", encoding="utf-8") as file:
         csv_data = file.read()
-        json_data = csv_to_json(csv_data)
+        json_data = csv_to_json(csv_data, data)
         # print(json_data)
 
     output_folder = "../src/data/"

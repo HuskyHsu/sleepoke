@@ -15,6 +15,7 @@ export type Filter = {
   ingredients: Set<string>;
   skills: Set<string>;
   specialties: Set<string>;
+  locations: Set<string>;
   displayFilter: boolean;
   groupBy:
     | keyof Pick<Pokemon, 'sleep_type' | 'berry' | 'ingredients' | 'type' | 'specialty' | 'skill'>
@@ -29,6 +30,7 @@ function List() {
     ingredients: new Set<string>(),
     skills: new Set<string>(),
     specialties: new Set<string>(),
+    locations: new Set<string>(),
     displayFilter: false,
     groupBy: null,
     displayGroupBy: false,
@@ -43,7 +45,7 @@ function List() {
   };
 
   const handleChickChange =
-    (key: 'berries' | 'ingredients' | 'skills' | 'specialties') =>
+    (key: 'berries' | 'ingredients' | 'skills' | 'specialties' | 'locations') =>
     (event: ChangeEvent<HTMLInputElement>) => {
       const { name, checked } = event.target;
 
@@ -130,6 +132,10 @@ function List() {
 
     if (display && filter.specialties.size > 0) {
       display = filter.specialties.has(pm.specialty);
+    }
+
+    if (display && filter.locations.size > 0) {
+      display = Object.keys(pm.locations).some((areaName) => filter.locations.has(areaName));
     }
 
     return display;

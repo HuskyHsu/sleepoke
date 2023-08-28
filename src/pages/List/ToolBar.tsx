@@ -8,7 +8,7 @@ import { SelectFilter, SelectGroup } from './components';
 type Props = {
   filter: Filter;
   handleChickChange: (
-    key: 'berries' | 'ingredients' | 'skills' | 'specialties',
+    key: 'berries' | 'ingredients' | 'skills' | 'specialties' | 'locations',
   ) => (event: ChangeEvent<HTMLInputElement>) => void;
   handleGroupByChange: (event: ChangeEvent<HTMLInputElement>) => void;
   removeFilter: (key: 'berries' | 'ingredients' | 'skills' | 'specialties', name: string) => void;

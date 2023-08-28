@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 import { Icon, SubTitleSlide } from '@/components';
 
-import { berries, ingredients, skills, specialties } from '@/data';
+import { berries, ingredients, skills, specialties, areas } from '@/data';
 
 import { Buttons } from './Buttons';
 import { Filter } from '../List';
@@ -11,7 +11,7 @@ import { Filter } from '../List';
 type Props = {
   filter: Filter;
   handleChickChange: (
-    key: 'berries' | 'ingredients' | 'skills' | 'specialties',
+    key: 'berries' | 'ingredients' | 'skills' | 'specialties' | 'locations',
   ) => (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -45,6 +45,12 @@ export function SelectFilter({ filter, handleChickChange }: Props) {
       />
       <SubTitleSlide title='篩選：主技能' />
       <Buttons list={skills} checkSet={filter.skills} handleChange={handleChickChange('skills')} />
+      <SubTitleSlide title='篩選：區域' />
+      <Buttons
+        list={areas}
+        checkSet={filter.locations}
+        handleChange={handleChickChange('locations')}
+      />
     </div>
   );
 }

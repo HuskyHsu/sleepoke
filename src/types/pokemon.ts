@@ -1,3 +1,16 @@
+type sleepType = {
+  style: number;
+  level: string;
+  subLevel: number;
+};
+
+type location = {
+  萌綠之島?: sleepType[];
+  天青沙灘?: sleepType[];
+  灰褐洞窟?: sleepType[];
+  白花雪原?: sleepType[];
+};
+
 export type Pokemon = {
   pid: string;
   name: string;
@@ -14,7 +27,7 @@ export type Pokemon = {
   recruit_experience: number;
   recruit_shards: number;
   ingredients: string[];
-  location: string[];
+  locations: location;
   sleep: string[];
 };
 

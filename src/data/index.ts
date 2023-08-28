@@ -4,6 +4,7 @@ import skills from './skills.json';
 import pmList from './pmList.json';
 import specialties from './specialties.json';
 import meals from './meals.json';
+import areas from './areas.json';
 
 const pmFrequencyOrder = [...new Set(pmList.map((pm) => pm.base_frequency))].sort((a, b) =>
   a.localeCompare(b),
@@ -30,4 +31,5 @@ export {
   ingredients,
   skills,
   specialties,
+  areas,
 };
