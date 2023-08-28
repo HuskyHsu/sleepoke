@@ -15,15 +15,20 @@ type Props = {
 };
 
 export function ToolBar({ filter, handleChickChange, handleGroupByChange, removeFilter }: Props) {
-  const hasFilter = [filter.berries, filter.ingredients, filter.skills, filter.specialties].some(
-    (set) => set.size > 0,
-  );
+  const hasFilter = [
+    filter.berries,
+    filter.ingredients,
+    filter.skills,
+    filter.specialties,
+    filter.locations,
+  ].some((set) => set.size > 0);
 
   const filterList = [
     { set: filter.berries, name: '樹果', key: 'berries' },
     { set: filter.ingredients, name: '食材', key: 'ingredients' },
     { set: filter.specialties, name: '專長', key: 'specialties' },
     { set: filter.skills, name: '主技能', key: 'skills' },
+    { set: filter.locations, name: '區域', key: 'locations' },
   ];
 
   return (

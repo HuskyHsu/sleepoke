@@ -153,9 +153,13 @@ function List() {
     groupByList = [...new Set(groupByList)];
   }
 
-  const hasFilter = [filter.berries, filter.ingredients, filter.skills, filter.specialties].some(
-    (set) => set.size > 0,
-  );
+  const hasFilter = [
+    filter.berries,
+    filter.ingredients,
+    filter.skills,
+    filter.specialties,
+    filter.locations,
+  ].some((set) => set.size > 0);
 
   return (
     <div className='flex flex-col'>
