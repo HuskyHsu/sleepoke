@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import { Pokemon, sleepType } from '@/types';
 import { Icon, TitleSlide } from '@/components';
 import { pmFrequencyOrder, pmEnergyOrder, pmList, berries, areas } from '@/data';
+import { Cube } from './components';
 
 type ContentProps = { pm: Pokemon };
 
@@ -280,6 +281,19 @@ function Detail() {
       </ul>
 
       <TitleSlide title='睡姿' />
+
+      <div className=''>
+        {new Array(2).fill(0).map((_, i) => {
+          return (
+            <div key={i}>
+              <Cube label={<span className=''>{pm.sleep[i]}</span>}>
+                <Icon.Game.PmSleep pm={pm} index={i} />
+              </Cube>
+            </div>
+          );
+        })}
+      </div>
+
       <div className='relative flex justify-center text-center'>
         {new Array(2).fill(0).map((_, i) => {
           return (
