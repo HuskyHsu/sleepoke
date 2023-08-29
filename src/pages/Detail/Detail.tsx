@@ -281,7 +281,7 @@ function Detail() {
 
       <TitleSlide title='睡姿' />
 
-      <div className='flex flex-col flex-wrap justify-around gap-y-10 md:flex-row'>
+      <div className='flex flex-col justify-around gap-y-10 md:grid md:grid-cols-2'>
         {new Array(4).fill(0).map((_, i) => {
           return (
             <div key={i} className='flex flex-col items-center'>
