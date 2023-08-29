@@ -5,7 +5,6 @@ import clsx from 'clsx';
 import { Pokemon, sleepType } from '@/types';
 import { Icon, TitleSlide } from '@/components';
 import { pmFrequencyOrder, pmEnergyOrder, pmList, berries, areas } from '@/data';
-import { Cube } from './components';
 
 type ContentProps = { pm: Pokemon };
 
@@ -285,45 +284,37 @@ function Detail() {
       <div className=''>
         {new Array(2).fill(0).map((_, i) => {
           return (
-            <div key={i}>
-              <Cube label={<span className=''>{pm.sleep[i]}</span>}>
-                <Icon.Game.PmSleep pm={pm} index={i} />
-              </Cube>
-            </div>
-          );
-        })}
-      </div>
-
-      <div className='relative flex justify-center text-center'>
-        {new Array(2).fill(0).map((_, i) => {
-          return (
-            <div className='relative z-10' key={i}>
-              <span className='absolute inset-x-0 top-0 text-xl'>{pm.sleep[i]}</span>
-              <Icon.Game.PmSleep pm={pm} index={i} />
-              <div className=' flex flex-col text-xs' key={i}>
-                {allSleepStyle
-                  .filter((style) => style.style === i)
-                  .map((style, i) => {
-                    return (
-                      <span key={i}>
-                        {style.area} - {style.level}
-                        {style.subLevel}
-                      </span>
-                    );
-                  })}
+            <div key={i} className='flex items-center justify-around gap-x-4'>
+              <div className='relative w-40 md:w-64'>
+                <header className='absolute -top-6'>
+                  <Icon.Game.PmSleep pm={pm} index={i} />
+                </header>
+                <footer className='text-center'>
+                  <Icon.Cube className='h-40 w-40 md:h-64 md:w-64' />
+                  <div className='absolute inset-x-0 bottom-10 md:inset-x-8 md:bottom-16'>
+                    <span className='rounded-full border-4 border-custom-green bg-white px-4 py-2 text-xs md:text-base'>
+                      {pm.sleep[i]}
+                    </span>
+                  </div>
+                </footer>
+              </div>
+              <div>
+                <div className='flex flex-col text-base md:text-xl' key={i}>
+                  {allSleepStyle
+                    .filter((style) => style.style === i)
+                    .map((style, i) => {
+                      return (
+                        <span key={i}>
+                          {style.area} - {style.level}
+                          {style.subLevel}
+                        </span>
+                      );
+                    })}
+                </div>
               </div>
             </div>
           );
         })}
-
-        {/* bg banner */}
-        <div
-          className={clsx(
-            'absolute -inset-x-4 bottom-0 z-0 h-3/5 md:inset-x-0',
-            'md:rounded-2xl',
-            'bg-custom-green/60',
-          )}
-        />
       </div>
 
       <Icon.Swipe
