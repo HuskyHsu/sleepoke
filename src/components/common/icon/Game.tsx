@@ -1,4 +1,4 @@
-import { Pokemon, Berrys, Ingredients, Meals, Type as TypeEnum } from '@/types';
+import { Pokemon, Berrys, Ingredients, Meals, Ranks, Type as TypeEnum } from '@/types';
 
 function PmFull({ pm, shiny = false }: { pm: Pokemon; shiny?: boolean }) {
   const imgSrc = (pid: string) =>
@@ -17,7 +17,14 @@ function PmSleep({ pm, index }: { pm: Pokemon; index: number }) {
   const imgSrc = (pid: string) =>
     `${process.env.PUBLIC_URL}/image/${SleepType[index]}/${pid.slice(-3)}.png`;
 
-  return <img src={imgSrc(pm.pid)} alt={pm.name} loading='lazy' />;
+  return (
+    <img
+      src={imgSrc(pm.pid)}
+      alt={`${pm.name} - ${pm.sleep[index] || '大肚上睡'}`}
+      loading='lazy'
+      className='h-full w-full'
+    />
+  );
 }
 
 function Berry({ name }: { name: string }) {
@@ -50,4 +57,10 @@ function Type({ type, className = 'w-5 h-5' }: { type: string; className?: strin
   );
 }
 
-export { PmFull, Pm, PmSleep, Berry, Ingredient, Meal, Type };
+function Rank({ rank }: { rank: string }) {
+  const imgSrc = (rank: string) =>
+    `${process.env.PUBLIC_URL}/image/rank/${Ranks[rank as keyof typeof Ranks]}.webp`;
+  return <img src={imgSrc(rank)} alt={rank} className='inline h-6 w-6' />;
+}
+
+export { PmFull, Pm, PmSleep, Berry, Ingredient, Meal, Type, Rank };

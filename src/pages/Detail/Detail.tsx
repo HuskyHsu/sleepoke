@@ -281,36 +281,41 @@ function Detail() {
 
       <TitleSlide title='睡姿' />
 
-      <div className=''>
-        {new Array(2).fill(0).map((_, i) => {
+      <div className='flex flex-col flex-wrap justify-around gap-y-10 md:flex-row'>
+        {new Array(4).fill(0).map((_, i) => {
           return (
-            <div key={i} className='flex items-center justify-around gap-x-4'>
-              <div className='relative w-40 md:w-64'>
-                <header className='absolute -top-6'>
-                  <Icon.Game.PmSleep pm={pm} index={i} />
-                </header>
-                <footer className='text-center'>
-                  <Icon.Cube className='h-40 w-40 md:h-64 md:w-64' />
-                  <div className='absolute inset-x-0 bottom-10 md:inset-x-8 md:bottom-16'>
-                    <span className='rounded-full border-4 border-custom-green bg-white px-4 py-2 text-xs md:text-base'>
-                      {pm.sleep[i]}
-                    </span>
-                  </div>
-                </footer>
-              </div>
-              <div>
-                <div className='flex flex-col text-base md:text-xl' key={i}>
-                  {allSleepStyle
-                    .filter((style) => style.style === i)
-                    .map((style, i) => {
-                      return (
-                        <span key={i}>
-                          {style.area} - {style.level}
-                          {style.subLevel}
-                        </span>
-                      );
-                    })}
+            <div key={i} className='flex flex-col items-center'>
+              <div className='relative h-64 w-64'>
+                <Icon.Stand className='absolute bottom-0 h-full w-full' />
+                <div className='absolute bottom-12 flex h-full w-full items-center justify-center'>
+                  {i < 2 ? <Icon.Game.PmSleep pm={pm} index={i} /> : '暫無圖資QAQ'}
                 </div>
+                <div className='absolute inset-x-0 bottom-[15%] mx-auto'>
+                  <div
+                    className={clsx(
+                      'mx-auto w-fit rounded-full border-2',
+                      'border-custom-green bg-white px-4 py-1 text-base',
+                    )}
+                  >
+                    {pm.sleep[i] || '大肚上睡'}
+                  </div>
+                </div>
+              </div>
+              <div className='-mt-4 flex text-center text-base' key={i}>
+                {allSleepStyle
+                  .filter((style) => style.style === i)
+                  .map((style, i) => {
+                    return (
+                      <div key={i} className='flex flex-col justify-center px-4 py-0 text-center'>
+                        <p>{style.area}</p>
+                        <p>
+                          <Icon.Game.Rank rank={style.level} />
+                          {style.level}
+                          {style.subLevel}
+                        </p>
+                      </div>
+                    );
+                  })}
               </div>
             </div>
           );

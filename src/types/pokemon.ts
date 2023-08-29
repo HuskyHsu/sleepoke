@@ -144,3 +144,10 @@ export enum Meals {
   '大馬拉薩達' = 'bigmalasada',
   '大力士豆香甜甜圈' = 'hugepowersoydonuts',
 }
+
+export enum Ranks {
+  '普通' = 'Basic',
+  '超級' = 'Great',
+  '高級' = 'Ultra',
+  '大師' = 'Master',
+}
