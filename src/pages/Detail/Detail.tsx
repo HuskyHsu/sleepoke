@@ -286,9 +286,18 @@ function Detail() {
           return (
             <div key={i} className='flex flex-col items-center'>
               <div className='relative h-64 w-64'>
-                <Icon.Stand className='absolute bottom-0 h-full w-full' />
-                <div className='absolute bottom-12 flex h-full w-full items-center justify-center'>
-                  {i < 2 ? <Icon.Game.PmSleep pm={pm} index={i} /> : '暫無圖資QAQ'}
+                {i < 3 ? (
+                  <Icon.Stand className='absolute bottom-0 h-full w-full' />
+                ) : (
+                  <Icon.Snorlax className='absolute bottom-0 h-full w-full' />
+                )}
+                <div
+                  className={clsx(
+                    'absolute flex h-full w-full items-center justify-center',
+                    i < 3 ? 'bottom-12' : 'bottom-16 left-4',
+                  )}
+                >
+                  {<Icon.Game.PmSleep pm={pm} index={i} />}
                 </div>
                 <div className='absolute inset-x-0 bottom-[15%] mx-auto'>
                   <div

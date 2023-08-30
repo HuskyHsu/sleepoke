@@ -9,7 +9,22 @@ import { ReactComponent as Next } from '@/assets/icon/Next.svg';
 import { ReactComponent as ZZ } from '@/assets/icon/ZZ.svg';
 import { ReactComponent as Cube } from '@/assets/icon/Cube.svg';
 import { ReactComponent as Stand } from '@/assets/icon/Stand.svg';
+import { ReactComponent as Snorlax } from '@/assets/icon/Snorlax.svg';
 
 import * as Game from './Game';
 
-export { Game, Logo, Search, Filter, Category, Close, Swipe, Before, Next, ZZ, Cube, Stand };
+export {
+  Game,
+  Logo,
+  Search,
+  Filter,
+  Category,
+  Close,
+  Swipe,
+  Before,
+  Next,
+  ZZ,
+  Cube,
+  Stand,
+  Snorlax,
+};

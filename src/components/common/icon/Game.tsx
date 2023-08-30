@@ -12,17 +12,17 @@ function Pm({ pm }: { pm: Pokemon }) {
 }
 
 function PmSleep({ pm, index }: { pm: Pokemon; index: number }) {
-  const SleepType = ['sleep', 'drowse'];
+  const SleepType = ['sleep', 'drowse', 'sleep', 'sleep'];
+  const pids = [pm.pid.slice(-3), pm.pid.slice(-3), 'todo', pm.pid.slice(-3)];
 
-  const imgSrc = (pid: string) =>
-    `${process.env.PUBLIC_URL}/image/${SleepType[index]}/${pid.slice(-3)}.png`;
+  const imgSrc = () => `${process.env.PUBLIC_URL}/image/${SleepType[index]}/${pids[index]}.png`;
 
   return (
     <img
-      src={imgSrc(pm.pid)}
+      src={imgSrc()}
       alt={`${pm.name} - ${pm.sleep[index] || '大肚上睡'}`}
       loading='lazy'
-      className='h-full w-full'
+      className={index < 3 ? 'h-full w-full' : 'h-[70%] w-[70%]'}
     />
   );
 }
