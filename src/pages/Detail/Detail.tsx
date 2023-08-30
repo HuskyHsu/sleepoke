@@ -293,8 +293,8 @@ function Detail() {
                 )}
                 <div
                   className={clsx(
-                    'absolute flex h-full w-full items-center justify-center',
-                    i < 3 ? 'bottom-12' : 'bottom-16 left-4',
+                    'absolute flex w-full items-center justify-center',
+                    i < 3 ? 'bottom-16' : 'bottom-28 left-4',
                   )}
                 >
                   {<Icon.Game.PmSleep pm={pm} index={i} />}
