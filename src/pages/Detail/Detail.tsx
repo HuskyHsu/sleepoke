@@ -4,14 +4,9 @@ import clsx from 'clsx';
 
 import { Pokemon, sleepType } from '@/types';
 import { Icon, TitleSlide } from '@/components';
-import { pmFrequencyOrder, pmEnergyOrder, pmList, berries, areas } from '@/data';
+import { pmList, areas } from '@/data';
 
-type ContentProps = { pm: Pokemon };
-
-type Render = {
-  title: string;
-  Content: ({ pm }: ContentProps) => JSX.Element;
-};
+import { Header, Info } from './components';
 
 type Status = {
   index: number;
@@ -19,109 +14,6 @@ type Status = {
   touchEnd: number[];
   displaySwipe: boolean;
 };
-
-const berryMap = Object.fromEntries(berries.map((berry) => [berry.name, berry.point]));
-
-const renderData: Render[] = [
-  {
-    title: '分類',
-    Content: ({ pm }: ContentProps) => <>{pm.sleep_type}</>,
-  },
-  {
-    title: '屬性',
-    Content: ({ pm }: ContentProps) => (
-      <span className='flex items-center gap-2 pl-2'>
-        <Icon.Game.Type type={pm.type} className='h-8 w-8' />
-        {pm.type}
-      </span>
-    ),
-  },
-  {
-    title: '專長',
-    Content: ({ pm }: ContentProps) => <>{pm.specialty}</>,
-  },
-  {
-    title: '樹果',
-    Content: ({ pm }: ContentProps) => (
-      <ul className='relative flex whitespace-nowrap'>
-        {new Array(pm.berry_quantity).fill(0).map((_, index) => (
-          <li className='w-12' key={index}>
-            <Icon.Game.Berry name={pm.berry} />
-          </li>
-        ))}
-        <li
-          className={clsx(
-            'absolute -right-8 bottom-0',
-            'rounded-full border-[1px] border-amber-300 bg-white px-2 py-1 text-xs',
-          )}
-        >
-          {pm.berry}
-        </li>
-      </ul>
-    ),
-  },
-  {
-    title: '食材',
-    Content: ({ pm }: ContentProps) => (
-      <ul className='mb-2 flex w-full gap-x-12 whitespace-nowrap'>
-        {pm.ingredients.map((item) => (
-          <li className='relative' key={item}>
-            <div className='w-10'>
-              <Icon.Game.Ingredient name={item} />
-            </div>
-            <span
-              className={clsx(
-                'absolute -bottom-2 left-4',
-                'rounded-full border-[1px] border-amber-300 bg-white px-2 py-1 text-xs',
-              )}
-            >
-              {item}
-            </span>
-          </li>
-        ))}
-      </ul>
-    ),
-  },
-  {
-    title: '主技能',
-    Content: ({ pm }: ContentProps) => <>{pm.skill}</>,
-  },
-  {
-    title: '主技能描述',
-    Content: ({ pm }: ContentProps) => <>{pm.skill_description}</>,
-  },
-  {
-    title: '幫忙間隔',
-    Content: ({ pm }: ContentProps) => {
-      const pmOrder = pmFrequencyOrder.findIndex((f) => f === pm.base_frequency) + 1;
-      return (
-        <>
-          {pm.base_frequency} (#{pmOrder})
-        </>
-      );
-    },
-  },
-  {
-    title: '果實能量基準',
-    Content: ({ pm }: ContentProps) => {
-      const basePoint = berryMap[pm.berry];
-      const totalSec = pm.base_frequency.split(':').reduce((acc, cur) => acc * 60 + Number(cur), 0);
-      const energy = Math.ceil((86400 / totalSec) * (basePoint * pm.berry_quantity));
-      const pmOrder = pmEnergyOrder.findIndex((e) => e === energy) + 1;
-      return (
-        <>
-          {basePoint * pm.berry_quantity}/{totalSec}s [{energy}/day] (#{pmOrder})
-        </>
-      );
-    },
-  },
-  {
-    title: '友情點數',
-    Content: ({ pm }: ContentProps) => {
-      return <>{pm.friendship_points_needed}點</>;
-    },
-  },
-];
 
 function Detail() {
   const { link = '001' } = useParams();
@@ -219,70 +111,16 @@ function Detail() {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      <div className='relative flex justify-center'>
-        <div className='z-10 md:h-[273px]'>
-          <Icon.Game.PmFull pm={pm} />
-        </div>
-        <div className='z-10 md:h-[273px]'>
-          <Icon.Game.PmFull pm={pm} shiny={true} />
-        </div>
-
-        {/* bg banner */}
-        <div
-          className={clsx(
-            'absolute -inset-x-4 bottom-0 z-0 h-3/5 md:inset-x-0',
-            'md:rounded-2xl',
-            'bg-custom-green/60',
-          )}
-        />
-
-        <Icon.Before
-          className={clsx(
-            'absolute bottom-8 left-0 z-20 hidden h-32 w-32',
-            'cursor-pointer fill-slate-100 opacity-40 md:block',
-          )}
-          onClick={() => handleSwipe(-1)}
-        />
-        <Icon.Next
-          className={clsx(
-            'absolute bottom-8 right-0 z-20 hidden h-32 w-32',
-            'cursor-pointer fill-slate-100 opacity-40 md:block',
-          )}
-          onClick={() => handleSwipe(1)}
-        />
-      </div>
-
-      <h2 className='text-2xl'>
-        #{pm.pid.slice(2)} {pm.name}
-      </h2>
-
-      <TitleSlide title='基本資訊' />
-      <ul className='grid grid-cols-2 gap-y-4'>
-        {renderData.map((data, index) => (
-          <li
-            className={clsx('flex h-10 items-center gap-x-2', index > 3 && 'col-span-2')}
-            key={index}
-          >
-            <span
-              className={clsx(
-                'py-px',
-                'shrink-0 grow-0 basis-[30%]',
-                'border-2 border-solid border-custom-green',
-                'rounded-full text-center text-sm text-black',
-              )}
-            >
-              {data.title}
-            </span>
-
-            <data.Content pm={pm} />
-          </li>
-        ))}
-      </ul>
+      <Header pm={pm} handleSwipe={handleSwipe} />
+      <Info pm={pm} />
 
       <TitleSlide title='睡姿' />
 
       <div className='flex flex-col justify-around gap-y-10 md:grid md:grid-cols-2'>
         {new Array(4).fill(0).map((_, i) => {
+          const sleepStyle = allSleepStyle.filter((style) => style.style === i);
+          if (i == 3 && sleepStyle.length === 0) return null;
+
           return (
             <div key={i} className='flex flex-col items-center'>
               <div className='relative h-64 w-64'>
@@ -311,20 +149,18 @@ function Detail() {
                 </div>
               </div>
               <div className='-mt-4 flex text-center text-base' key={i}>
-                {allSleepStyle
-                  .filter((style) => style.style === i)
-                  .map((style, i) => {
-                    return (
-                      <div key={i} className='flex flex-col justify-center px-4 py-0 text-center'>
-                        <p>{style.area}</p>
-                        <p>
-                          <Icon.Game.Rank rank={style.level} />
-                          {style.level}
-                          {style.subLevel}
-                        </p>
-                      </div>
-                    );
-                  })}
+                {sleepStyle.map((style, i) => {
+                  return (
+                    <div key={i} className='flex flex-col justify-center px-4 py-0 text-center'>
+                      <p>{style.area}</p>
+                      <p>
+                        <Icon.Game.Rank rank={style.level} />
+                        {style.level}
+                        {style.subLevel}
+                      </p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           );
