@@ -6,8 +6,7 @@
 
 ![](https://raw.githubusercontent.com/HuskyHsu/sleepoke/main/doc/_page_list_02.png)
 ![](https://raw.githubusercontent.com/HuskyHsu/sleepoke/main/doc/_page_meals_02.png)
-
-<!-- ![](https://raw.githubusercontent.com/HuskyHsu/sleepoke/main/doc/_page_detail.png) -->
+![](https://raw.githubusercontent.com/HuskyHsu/sleepoke/main/doc/_page_detail_02.png)
 
 ## todo list
 
