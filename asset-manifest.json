@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/sleepoke/static/css/main.a9fec53d.css",
-    "main.js": "/sleepoke/static/js/main.045ae5b5.js",
+    "main.js": "/sleepoke/static/js/main.b4847e54.js",
     "List.js": "/sleepoke/static/js/List.614d719d.chunk.js",
     "Detail.js": "/sleepoke/static/js/Detail.05f47472.chunk.js",
-    "Meal.js": "/sleepoke/static/js/Meal.f480ad80.chunk.js",
+    "Meal.js": "/sleepoke/static/js/Meal.8b9fa46f.chunk.js",
     "static/js/787.80b534a0.chunk.js": "/sleepoke/static/js/787.80b534a0.chunk.js",
-    "static/js/465.f8243c75.chunk.js": "/sleepoke/static/js/465.f8243c75.chunk.js",
     "static/media/Logo.svg": "/sleepoke/static/media/Logo.13f23a12bd22c5533fc0beaad255775b.svg",
     "static/media/Snorlax.svg": "/sleepoke/static/media/Snorlax.aee292bc104c77d3b1bef8dc32530fec.svg",
     "static/media/Filter.svg": "/sleepoke/static/media/Filter.b58472365d34df8d381e858e385a3836.svg",
@@ -21,15 +20,14 @@
     "static/media/Next.svg": "/sleepoke/static/media/Next.11ac5ea3b29508ccc24becccbe82ea79.svg",
     "static/media/Before.svg": "/sleepoke/static/media/Before.77f97c6fef581992c111ca9ea5275012.svg",
     "main.a9fec53d.css.map": "/sleepoke/static/css/main.a9fec53d.css.map",
-    "main.045ae5b5.js.map": "/sleepoke/static/js/main.045ae5b5.js.map",
+    "main.b4847e54.js.map": "/sleepoke/static/js/main.b4847e54.js.map",
     "List.614d719d.chunk.js.map": "/sleepoke/static/js/List.614d719d.chunk.js.map",
     "Detail.05f47472.chunk.js.map": "/sleepoke/static/js/Detail.05f47472.chunk.js.map",
-    "Meal.f480ad80.chunk.js.map": "/sleepoke/static/js/Meal.f480ad80.chunk.js.map",
-    "787.80b534a0.chunk.js.map": "/sleepoke/static/js/787.80b534a0.chunk.js.map",
-    "465.f8243c75.chunk.js.map": "/sleepoke/static/js/465.f8243c75.chunk.js.map"
+    "Meal.8b9fa46f.chunk.js.map": "/sleepoke/static/js/Meal.8b9fa46f.chunk.js.map",
+    "787.80b534a0.chunk.js.map": "/sleepoke/static/js/787.80b534a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9fec53d.css",
-    "static/js/main.045ae5b5.js"
+    "static/js/main.b4847e54.js"
   ]
 }
