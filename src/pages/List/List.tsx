@@ -36,9 +36,7 @@ function List() {
     handleChickChange,
     removeFilter,
     handleGroupByChange,
-    handleCategoryChange,
-    handleFilterChange,
-    handleFirstChange,
+    handleCheckChange,
   } = UseFilter();
 
   useEffect(() => {
@@ -67,11 +65,14 @@ function List() {
         <div className='flex w-full items-center gap-x-3 md:w-3/5 lg:w-1/3'>
           <SearchBar value={filter.keyword} onChange={handleInputChange} />
           <div className='relative'>
-            <Filter checked={filter.displayFilter} onChange={handleFilterChange} />
+            <Filter checked={filter.displayFilter} onChange={handleCheckChange('displayFilter')} />
             {hasFilter && <Indicator />}
           </div>
           <div className='relative'>
-            <Category checked={filter.displayGroupBy} onChange={handleCategoryChange} />
+            <Category
+              checked={filter.displayGroupBy}
+              onChange={handleCheckChange('displayGroupBy')}
+            />
             {filter.groupBy !== null && <Indicator />}
           </div>
         </div>
@@ -82,7 +83,7 @@ function List() {
         handleChickChange={handleChickChange}
         handleGroupByChange={handleGroupByChange}
         removeFilter={removeFilter}
-        handleFirstChange={handleFirstChange}
+        handleFirstChange={handleCheckChange('onlyFirstIngredient')}
       />
 
       <TitleSlide title='清單' />

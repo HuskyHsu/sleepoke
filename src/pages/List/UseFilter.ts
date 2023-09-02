@@ -7,7 +7,7 @@ export function UseFilter() {
     keyword: '',
     berries: new Set<string>(),
     ingredients: new Set<string>(),
-    onlyFirstIngredient: true,
+    onlyFirstIngredient: false,
     skills: new Set<string>(),
     specialties: new Set<string>(),
     locations: new Set<string>(),
@@ -63,38 +63,18 @@ export function UseFilter() {
     });
   };
 
-  const handleCategoryChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { checked } = event.target;
+  const handleCheckChange =
+    (key: keyof Pick<Filter, 'displayGroupBy' | 'displayFilter' | 'onlyFirstIngredient'>) =>
+    (event: ChangeEvent<HTMLInputElement>) => {
+      const { checked } = event.target;
 
-    setFilter((prevSearch) => {
-      return {
-        ...prevSearch,
-        displayGroupBy: checked,
-      };
-    });
-  };
-
-  const handleFilterChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { checked } = event.target;
-
-    setFilter((prevSearch) => {
-      return {
-        ...prevSearch,
-        displayFilter: checked,
-      };
-    });
-  };
-
-  const handleFirstChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { checked } = event.target;
-
-    setFilter((prevSearch) => {
-      return {
-        ...prevSearch,
-        onlyFirstIngredient: checked,
-      };
-    });
-  };
+      setFilter((prevSearch) => {
+        return {
+          ...prevSearch,
+          [key]: checked,
+        };
+      });
+    };
 
   return {
     filter,
@@ -102,8 +82,6 @@ export function UseFilter() {
     handleChickChange,
     removeFilter,
     handleGroupByChange,
-    handleCategoryChange,
-    handleFilterChange,
-    handleFirstChange,
+    handleCheckChange,
   };
 }
