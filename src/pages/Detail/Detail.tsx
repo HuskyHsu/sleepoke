@@ -10,8 +10,6 @@ import { Header, Info } from './components';
 
 type Status = {
   index: number;
-  touchStart: number[];
-  touchEnd: number[];
   displaySwipe: boolean;
 };
 
@@ -19,11 +17,10 @@ function Detail() {
   const { link = '001' } = useParams();
   const pmIndex = pmList.findIndex((pm: Pokemon) => pm.pid === `#${link.padStart(4, '0')}`);
   const navigate = useNavigate();
+  let touchStart = [0, 0];
 
   const [status, setStatus] = useState<Status>({
     index: pmIndex,
-    touchStart: [0, 0],
-    touchEnd: [0, 0],
     displaySwipe: true,
   });
 
@@ -45,29 +42,20 @@ function Detail() {
     [] as (sleepType & { area: string })[],
   );
 
-  setTimeout(function () {
-    if (!status.displaySwipe) return;
-
-    setStatus((prevStatus) => ({
-      ...prevStatus,
-      displaySwipe: false,
-    }));
-  }, 2000);
-
   const handleTouchStart = (event: TouchEvent) => {
     const { clientX, clientY } = event.touches[0];
-    setStatus((prevStatus) => ({
-      ...prevStatus,
-      touchStart: [clientX, clientY],
-    }));
+    touchStart = [clientX, clientY];
   };
 
   const handleTouchEnd = (event: TouchEvent) => {
     const { clientX, clientY } = event.changedTouches[0];
-    setStatus((prevStatus) => ({
-      ...prevStatus,
-      touchEnd: [clientX, clientY],
-    }));
+
+    const swipeDistanceX = clientX - touchStart[0];
+    const swipeDistanceY = clientY - touchStart[1];
+
+    if (Math.abs(swipeDistanceX) > Math.abs(swipeDistanceY) && Math.abs(swipeDistanceX) > 50) {
+      swipeDistanceX > 0 ? handleSwipe(-1) : handleSwipe(1);
+    }
   };
 
   const handleSwipe = (plusMinus: number) => {
@@ -91,15 +79,13 @@ function Detail() {
   }, [pm]);
 
   useEffect(() => {
-    const { touchStart, touchEnd } = status;
-
-    const swipeDistanceX = touchEnd[0] - touchStart[0];
-    const swipeDistanceY = touchEnd[1] - touchStart[1];
-
-    if (Math.abs(swipeDistanceX) > Math.abs(swipeDistanceY) && Math.abs(swipeDistanceX) > 50) {
-      swipeDistanceX > 0 ? handleSwipe(-1) : handleSwipe(1);
-    }
-  }, [status.touchEnd]);
+    setTimeout(function () {
+      setStatus((prevStatus) => ({
+        ...prevStatus,
+        displaySwipe: false,
+      }));
+    }, 2000);
+  }, []);
 
   useEffect(() => {
     navigate(`/pm/${pmList[status.index].pid.slice(-3)}`);
