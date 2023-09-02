@@ -13,6 +13,7 @@ export type Filter = {
   keyword: string;
   berries: Set<string>;
   ingredients: Set<string>;
+  onlyFirstIngredient: boolean;
   skills: Set<string>;
   specialties: Set<string>;
   locations: Set<string>;
@@ -37,6 +38,7 @@ function List() {
     handleGroupByChange,
     handleCategoryChange,
     handleFilterChange,
+    handleFirstChange,
   } = UseFilter();
 
   useEffect(() => {
@@ -80,6 +82,7 @@ function List() {
         handleChickChange={handleChickChange}
         handleGroupByChange={handleGroupByChange}
         removeFilter={removeFilter}
+        handleFirstChange={handleFirstChange}
       />
 
       <TitleSlide title='清單' />

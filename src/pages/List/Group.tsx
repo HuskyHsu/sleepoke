@@ -16,7 +16,11 @@ export function Group({ pmList, filter, groupBy }: Props) {
     if (filter.groupBy === null) {
       return true;
     } else if (Array.isArray(pm[filter.groupBy])) {
-      return pm[filter.groupBy].includes(groupBy);
+      if (filter.groupBy === 'ingredients' && filter.onlyFirstIngredient) {
+        return pm[filter.groupBy][0] === groupBy;
+      } else {
+        return pm[filter.groupBy].includes(groupBy);
+      }
     }
     return pm[filter.groupBy] === groupBy;
   };
@@ -33,8 +37,14 @@ export function Group({ pmList, filter, groupBy }: Props) {
     }
 
     if (display && filter.ingredients.size > 0) {
-      display =
-        pm.ingredients.find((ingredient) => filter.ingredients.has(ingredient)) !== undefined;
+      if (filter.onlyFirstIngredient) {
+        display =
+          [...filter.ingredients].find((ingredient) => ingredient === pm.ingredients[0]) !==
+          undefined;
+      } else {
+        display =
+          pm.ingredients.find((ingredient) => filter.ingredients.has(ingredient)) !== undefined;
+      }
     }
 
     if (display && filter.skills.size > 0) {

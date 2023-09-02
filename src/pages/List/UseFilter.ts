@@ -7,6 +7,7 @@ export function UseFilter() {
     keyword: '',
     berries: new Set<string>(),
     ingredients: new Set<string>(),
+    onlyFirstIngredient: true,
     skills: new Set<string>(),
     specialties: new Set<string>(),
     locations: new Set<string>(),
@@ -84,6 +85,17 @@ export function UseFilter() {
     });
   };
 
+  const handleFirstChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { checked } = event.target;
+
+    setFilter((prevSearch) => {
+      return {
+        ...prevSearch,
+        onlyFirstIngredient: checked,
+      };
+    });
+  };
+
   return {
     filter,
     handleInputChange,
@@ -92,5 +104,6 @@ export function UseFilter() {
     handleGroupByChange,
     handleCategoryChange,
     handleFilterChange,
+    handleFirstChange,
   };
 }

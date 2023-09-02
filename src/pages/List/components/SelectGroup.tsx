@@ -15,7 +15,7 @@ export function SelectGroup({ filter, handleGroupByChange }: Props) {
     { key: 'none', name: '無' },
     { key: 'sleep_type', name: '睡眠分類' },
     { key: 'berry', name: '樹果' },
-    { key: 'ingredients', name: '食材' },
+    { key: 'ingredients', name: '食材' + (filter.onlyFirstIngredient ? '(第一食材)' : '') },
     { key: 'specialty', name: '專長' },
     { key: 'skill', name: '主技能' },
     { key: 'type', name: '屬性' },

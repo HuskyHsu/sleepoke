@@ -10,9 +10,16 @@ type Props = {
   handleChickChange: (key: groupByKeys) => (event: ChangeEvent<HTMLInputElement>) => void;
   handleGroupByChange: (event: ChangeEvent<HTMLInputElement>) => void;
   removeFilter: (key: groupByKeys, name: string) => void;
+  handleFirstChange: (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
-export function ToolBar({ filter, handleChickChange, handleGroupByChange, removeFilter }: Props) {
+export function ToolBar({
+  filter,
+  handleChickChange,
+  handleGroupByChange,
+  removeFilter,
+  handleFirstChange,
+}: Props) {
   const hasFilter = [
     filter.berries,
     filter.ingredients,
@@ -31,7 +38,11 @@ export function ToolBar({ filter, handleChickChange, handleGroupByChange, remove
 
   return (
     <>
-      <SelectFilter filter={filter} handleChickChange={handleChickChange} />
+      <SelectFilter
+        filter={filter}
+        handleChickChange={handleChickChange}
+        handleFirstChange={handleFirstChange}
+      />
       <SelectGroup filter={filter} handleGroupByChange={handleGroupByChange} />
 
       <div
@@ -53,6 +64,7 @@ export function ToolBar({ filter, handleChickChange, handleGroupByChange, remove
               .map((row) => {
                 const [name, itemKey, filterKey] = row;
                 const key = `${name}-${itemKey}`;
+
                 return (
                   <span
                     key={key}
@@ -61,6 +73,7 @@ export function ToolBar({ filter, handleChickChange, handleGroupByChange, remove
                       'rounded-xl bg-amber-100 px-2 py-1 shadow-list-items',
                     )}
                   >
+                    {name === '食材' && filter.onlyFirstIngredient && '(第一食材)'}
                     {itemKey}
                     <Icon.Close
                       className='h-3 w-3'
