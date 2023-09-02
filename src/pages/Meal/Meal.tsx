@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 import { meals } from '@/data';
 import { TitleSlide } from '@/components';
+import { useWeek } from '@/components/contexts';
 
 import { Card, ToolBar } from './components';
 
@@ -23,26 +24,22 @@ export type Meal = {
 };
 
 function Meal() {
+  const { week, toggleMealType, toggleMealSize } = useWeek();
+
   const [filter, setFilter] = useState<Filter>({
-    type: '咖哩',
-    size: 15,
+    type: week.meal.type,
+    size: week.meal.size,
     ingredients: new Set<string>(),
     ingredientsCount: {},
   });
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name } = event.target;
-    setFilter((prevSearch) => ({
-      ...prevSearch,
-      type: name,
-    }));
+    toggleMealType(name);
   };
 
   const handleSizeChange = (n: number) => {
-    setFilter((prevSearch) => ({
-      ...prevSearch,
-      size: Math.min(Math.max(15, prevSearch.size + n), 162),
-    }));
+    toggleMealSize(Math.min(Math.max(15, filter.size + n), 162));
   };
 
   const handleChickChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -117,6 +114,14 @@ function Meal() {
   useEffect(() => {
     document.title = `Sleep Meals`;
   }, []);
+
+  useEffect(() => {
+    setFilter((prevSearch) => ({
+      ...prevSearch,
+      type: week.meal.type,
+      size: week.meal.size,
+    }));
+  }, [week.meal]);
 
   return (
     <div className='flex flex-col gap-4 pt-4'>
