@@ -6,13 +6,11 @@ import { Icon, SubTitleSlide } from '@/components';
 import { berries, ingredients, skills, specialties, areas } from '@/data';
 
 import { Buttons } from './Buttons';
-import { Filter } from '../List';
+import { Filter, groupByKeys } from '../List';
 
 type Props = {
   filter: Filter;
-  handleChickChange: (
-    key: 'berries' | 'ingredients' | 'skills' | 'specialties' | 'locations',
-  ) => (event: ChangeEvent<HTMLInputElement>) => void;
+  handleChickChange: (key: groupByKeys) => (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
 export function SelectFilter({ filter, handleChickChange }: Props) {

@@ -2,16 +2,14 @@ import { ChangeEvent } from 'react';
 import clsx from 'clsx';
 
 import { Icon } from '@/components';
-import { Filter } from './List';
+import { Filter, groupByKeys } from './List';
 import { SelectFilter, SelectGroup } from './components';
 
 type Props = {
   filter: Filter;
-  handleChickChange: (
-    key: 'berries' | 'ingredients' | 'skills' | 'specialties' | 'locations',
-  ) => (event: ChangeEvent<HTMLInputElement>) => void;
+  handleChickChange: (key: groupByKeys) => (event: ChangeEvent<HTMLInputElement>) => void;
   handleGroupByChange: (event: ChangeEvent<HTMLInputElement>) => void;
-  removeFilter: (key: 'berries' | 'ingredients' | 'skills' | 'specialties', name: string) => void;
+  removeFilter: (key: groupByKeys, name: string) => void;
 };
 
 export function ToolBar({ filter, handleChickChange, handleGroupByChange, removeFilter }: Props) {
@@ -67,10 +65,7 @@ export function ToolBar({ filter, handleChickChange, handleGroupByChange, remove
                     <Icon.Close
                       className='h-3 w-3'
                       onClick={() => {
-                        removeFilter(
-                          filterKey as 'berries' | 'ingredients' | 'skills' | 'specialties',
-                          itemKey,
-                        );
+                        removeFilter(filterKey as groupByKeys, itemKey);
                       }}
                     />
                   </span>
