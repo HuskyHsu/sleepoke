@@ -15,7 +15,7 @@ export function StyleInfo({ sleepStyle }: Props) {
           <div key={i} className='flex flex-col justify-center px-4 py-0 text-center'>
             <p>{style.area}</p>
             <p>
-              <Icon.Game.Rank rank={style.level} />
+              <Icon.Game.Rank name={style.level} />
               {style.level}
               {style.subLevel}
             </p>

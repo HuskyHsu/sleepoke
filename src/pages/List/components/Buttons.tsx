@@ -8,25 +8,32 @@ type Props = {
   list: string[];
   handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
   Icon?: ({ name }: { name: string }) => JSX.Element;
+  prefixKey?: string;
 };
 
-type TextProps = {
-  select: string | null;
-  list: { key: string; name: string }[];
-  handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
-};
-
-export function Buttons({ list, checkSet, Icon, handleChange }: Props) {
+export function Buttons({ list, checkSet, Icon, handleChange, prefixKey }: Props) {
   return (
     <div className={clsx('flex w-full flex-wrap justify-items-center gap-x-4 gap-y-3 pb-2 pl-2')}>
       {list.map((item) => (
-        <CheckboxItem key={item} label={item} checked={checkSet.has(item)} onChange={handleChange}>
+        <CheckboxItem
+          key={item}
+          label={item}
+          checked={checkSet.has(item)}
+          onChange={handleChange}
+          prefixKey={prefixKey}
+        >
           {Icon && <Icon name={item} />}
         </CheckboxItem>
       ))}
     </div>
   );
 }
+
+type TextProps = {
+  select: string | null;
+  list: { key: string; name: string }[];
+  handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
+};
 
 export function TextButtons({ list, select, handleChange }: TextProps) {
   return (

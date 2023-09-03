@@ -1,9 +1,15 @@
 import { Pokemon, Berrys, Ingredients, Meals, Ranks, Type as TypeEnum } from '@/types';
+import clsx from 'clsx';
 
 function PmFull({ pm, shiny = false }: { pm: Pokemon; shiny?: boolean }) {
   const imgSrc = (pid: string) =>
     `${process.env.PUBLIC_URL}/image/pm/${pid.slice(-3)}${shiny ? '_s' : ''}.png`;
   return <img src={imgSrc(pm.pid)} alt={pm.name} loading='lazy' />;
+}
+
+function Snorlax() {
+  const imgSrc = () => `${process.env.PUBLIC_URL}/image/pmIcon/snorlax.png`;
+  return <img src={imgSrc()} alt='snorlax' className='w-10' />;
 }
 
 function Pm({ pm }: { pm: Pokemon }) {
@@ -57,10 +63,10 @@ function Type({ type, className = 'w-5 h-5' }: { type: string; className?: strin
   );
 }
 
-function Rank({ rank }: { rank: string }) {
+function Rank({ name, size = 'h-6 w-6' }: { name: string; size?: string }) {
   const imgSrc = (rank: string) =>
     `${process.env.PUBLIC_URL}/image/rank/${Ranks[rank as keyof typeof Ranks]}.webp`;
-  return <img src={imgSrc(rank)} alt={rank} className='inline h-6 w-6' />;
+  return <img src={imgSrc(name)} alt={name} className={clsx('inline', size)} />;
 }
 
-export { PmFull, Pm, PmSleep, Berry, Ingredient, Meal, Type, Rank };
+export { PmFull, Pm, PmSleep, Berry, Ingredient, Meal, Type, Rank, Snorlax };

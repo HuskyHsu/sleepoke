@@ -1,8 +1,11 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 import { Pokemon } from '@/types';
 import { Filter, groupByKeys } from './List';
+import { useWeek } from '@/components/contexts';
 
 export function UseFilter() {
+  const { week } = useWeek();
+
   const [filter, setFilter] = useState<Filter>({
     keyword: '',
     berries: new Set<string>(),
@@ -14,6 +17,10 @@ export function UseFilter() {
     displayFilter: false,
     groupBy: null,
     displayGroupBy: false,
+    isUseSnorlaxBerries: false,
+    isUseSnorlaxLocations: false,
+    level: '',
+    subLevel: 0,
   });
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -64,17 +71,60 @@ export function UseFilter() {
   };
 
   const handleCheckChange =
-    (key: keyof Pick<Filter, 'displayGroupBy' | 'displayFilter' | 'onlyFirstIngredient'>) =>
+    (
+      key: keyof Pick<
+        Filter,
+        | 'displayGroupBy'
+        | 'displayFilter'
+        | 'onlyFirstIngredient'
+        | 'isUseSnorlaxBerries'
+        | 'isUseSnorlaxLocations'
+      >,
+    ) =>
     (event: ChangeEvent<HTMLInputElement>) => {
       const { checked } = event.target;
 
       setFilter((prevSearch) => {
-        return {
+        const newSearch = {
           ...prevSearch,
           [key]: checked,
         };
+
+        if (key === 'isUseSnorlaxBerries' && checked === false) {
+          newSearch.berries = new Set();
+        } else if (key === 'isUseSnorlaxLocations' && checked === false) {
+          newSearch.locations = new Set();
+        }
+
+        return newSearch;
       });
     };
+
+  useEffect(() => {
+    setFilter((prevSearch) => {
+      if (!filter.isUseSnorlaxBerries) {
+        return prevSearch;
+      }
+
+      return {
+        ...prevSearch,
+        berries: new Set(week.snorlaxLike),
+      };
+    });
+  }, [filter.isUseSnorlaxBerries, week]);
+
+  useEffect(() => {
+    setFilter((prevSearch) => {
+      if (!filter.isUseSnorlaxLocations) {
+        return prevSearch;
+      }
+
+      return {
+        ...prevSearch,
+        locations: new Set([week.area]),
+      };
+    });
+  }, [filter.isUseSnorlaxLocations, week]);
 
   return {
     filter,

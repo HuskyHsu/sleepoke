@@ -59,6 +59,26 @@ export function Group({ pmList, filter, groupBy }: Props) {
       display = Object.keys(pm.locations).some((areaName) => filter.locations.has(areaName));
     }
 
+    // if (filter.isUseSnorlax) {
+    //   const levelScore: Record<string, number> = {
+    //     普通: 0,
+    //     超級: 10,
+    //     高級: 100,
+    //     大師: 1000,
+    //   };
+    //   if (display) {
+    //     const baseScore = levelScore[filter.level] + filter.subLevel;
+
+    //     const targetScore = pm.locations[
+    //       Object.keys(pm.locations).find((location) =>
+    //         filter.locations.has(location),
+    //       ) as keyof typeof pm.locations
+    //     ]?.map((sleepStyle) => levelScore[sleepStyle.level] + sleepStyle.subLevel) as number[];
+
+    //     display = targetScore.some((score) => score <= baseScore);
+    //   }
+    // }
+
     return display;
   };
 

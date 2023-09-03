@@ -22,11 +22,23 @@ export type Filter = {
     | keyof Pick<Pokemon, 'sleep_type' | 'berry' | 'ingredients' | 'type' | 'specialty' | 'skill'>
     | null;
   displayGroupBy: boolean;
+  level: string;
+  subLevel: number;
+  isUseSnorlaxBerries: boolean;
+  isUseSnorlaxLocations: boolean;
 };
 
 export type groupByKeys = keyof Pick<
   Filter,
   'berries' | 'ingredients' | 'skills' | 'specialties' | 'locations'
+>;
+export type checkKeys = keyof Pick<
+  Filter,
+  | 'displayGroupBy'
+  | 'displayFilter'
+  | 'onlyFirstIngredient'
+  | 'isUseSnorlaxBerries'
+  | 'isUseSnorlaxLocations'
 >;
 
 function List() {
@@ -84,6 +96,7 @@ function List() {
         handleGroupByChange={handleGroupByChange}
         removeFilter={removeFilter}
         handleFirstChange={handleCheckChange('onlyFirstIngredient')}
+        handleCheckChange={handleCheckChange}
       />
 
       <TitleSlide title='清單' />

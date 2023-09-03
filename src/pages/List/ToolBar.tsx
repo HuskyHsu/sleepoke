@@ -2,7 +2,7 @@ import { ChangeEvent } from 'react';
 import clsx from 'clsx';
 
 import { Icon } from '@/components';
-import { Filter, groupByKeys } from './List';
+import { Filter, checkKeys, groupByKeys } from './List';
 import { SelectFilter, SelectGroup } from './components';
 
 type Props = {
@@ -11,6 +11,7 @@ type Props = {
   handleGroupByChange: (event: ChangeEvent<HTMLInputElement>) => void;
   removeFilter: (key: groupByKeys, name: string) => void;
   handleFirstChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  handleCheckChange: (key: checkKeys) => (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
 export function ToolBar({
@@ -19,6 +20,7 @@ export function ToolBar({
   handleGroupByChange,
   removeFilter,
   handleFirstChange,
+  handleCheckChange,
 }: Props) {
   const hasFilter = [
     filter.berries,
@@ -42,6 +44,7 @@ export function ToolBar({
         filter={filter}
         handleChickChange={handleChickChange}
         handleFirstChange={handleFirstChange}
+        handleCheckChange={handleCheckChange}
       />
       <SelectGroup filter={filter} handleGroupByChange={handleGroupByChange} />
 
