@@ -52,10 +52,18 @@ export function UseFilter() {
     setFilter((prevSearch) => {
       prevSearch[key].delete(name);
 
-      return {
+      const newSearch = {
         ...prevSearch,
         [key]: prevSearch[key],
       };
+
+      if (key === 'berries') {
+        newSearch.isUseSnorlaxBerries = false;
+      } else if (key === 'locations') {
+        newSearch.isUseSnorlaxLocations = false;
+      }
+
+      return newSearch;
     });
   };
 
