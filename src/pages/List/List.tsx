@@ -20,6 +20,7 @@ export type Filter = {
   displayFilter: boolean;
   groupBy:
     | keyof Pick<Pokemon, 'sleep_type' | 'berry' | 'ingredients' | 'type' | 'specialty' | 'skill'>
+    | 'level'
     | null;
   displayGroupBy: boolean;
   level: string;
@@ -57,10 +58,18 @@ function List() {
 
   let groupByList: string[] = [''];
   if (filter.groupBy !== null) {
-    groupByList = pmList
-      .map((pm: Pokemon) => pm[filter.groupBy as Extract<Filter['groupBy'], keyof Pokemon>])
-      .flat();
-    groupByList = [...new Set(groupByList)];
+    if (filter.groupBy === 'level') {
+      if (filter.locations.size === 1) {
+        groupByList = ['普通', '超級', '高級', '大師'].flatMap((rank) =>
+          new Array(rank !== '大師' ? 5 : 20).fill(0).map((_, i) => `${rank}${i + 1}`),
+        );
+      }
+    } else {
+      groupByList = pmList
+        .map((pm: Pokemon) => pm[filter.groupBy as Extract<Filter['groupBy'], keyof Pokemon>])
+        .flat();
+      groupByList = [...new Set(groupByList)];
+    }
   }
 
   const hasFilter = [

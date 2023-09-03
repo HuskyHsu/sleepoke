@@ -19,6 +19,7 @@ export function SelectGroup({ filter, handleGroupByChange }: Props) {
     { key: 'specialty', name: '專長' },
     { key: 'skill', name: '主技能' },
     { key: 'type', name: '屬性' },
+    { key: 'level', name: '卡比獸等級' },
   ];
 
   return (

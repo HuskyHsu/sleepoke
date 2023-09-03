@@ -94,7 +94,7 @@ export function Snorlax({ toggleSnorlaxModal }: { toggleSnorlaxModal: () => void
               }}
             />
 
-            <SubTitleSlide title='等級(我還沒想好怎麼用這個選項，所以沒用ing)' />
+            <SubTitleSlide title='卡比獸等級(我還沒想好怎麼用，所以沒作用)' />
             <Buttons
               list={['普通', '超級', '高級', '大師']}
               Icon={Icon.Game.Rank}

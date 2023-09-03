@@ -3337,7 +3337,7 @@
     "name": "\u767e\u8b8a\u602a",
     "type": "\u4e00\u822c",
     "sleep_type": "\u5b89\u7136\u5165\u7761",
-    "specialty": "",
+    "specialty": "\u98df\u6750",
     "berry": "\u67ff\u4ed4\u679c",
     "berry_quantity": 1,
     "skill": "\u80fd\u91cf\u586b\u5145S",
@@ -5412,7 +5412,7 @@
     "name": "\u52fe\u9b42\u773c",
     "type": "\u60e1",
     "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
-    "specialty": "",
+    "specialty": "\u6280\u80fd",
     "berry": "\u7570\u5947\u679c",
     "berry_quantity": 1,
     "skill": "\u5922\u4e4b\u788e\u7247\u7372\u53d6S",
@@ -5779,7 +5779,7 @@
     "name": "\u963f\u52c3\u68ad\u9b6f",
     "type": "\u60e1",
     "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
-    "specialty": "",
+    "specialty": "\u98df\u6750",
     "berry": "\u7570\u5947\u679c",
     "berry_quantity": 1,
     "skill": "\u80fd\u91cf\u586b\u5145S",
@@ -5791,7 +5791,8 @@
     "recruit_shards": 556,
     "ingredients": [
       "\u653e\u9b06\u53ef\u53ef",
-      "\u54c1\u9bae\u8611\u83c7"
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u7279\u9078\u860b\u679c"
     ],
     "sleep": [
       "\u6536\u624b\u624b\u7761",

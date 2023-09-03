@@ -61,6 +61,9 @@ export function UseFilter() {
         newSearch.isUseSnorlaxBerries = false;
       } else if (key === 'locations') {
         newSearch.isUseSnorlaxLocations = false;
+        if (newSearch.groupBy === 'level') {
+          newSearch.groupBy = null;
+        }
       }
 
       return newSearch;
@@ -71,6 +74,11 @@ export function UseFilter() {
     const { name } = event.target;
 
     setFilter((prevSearch) => {
+      if (name === 'level' && prevSearch.locations.size !== 1) {
+        alert('請只選擇一個區域');
+        return prevSearch;
+      }
+
       return {
         ...prevSearch,
         groupBy: name !== 'none' ? (name as Extract<Filter['groupBy'], keyof Pokemon>) : null,

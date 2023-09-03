@@ -11,10 +11,29 @@ type Props = {
   groupBy: string;
 };
 
+const levelScore: Record<string, number> = {
+  普通: 0,
+  超級: 10,
+  高級: 100,
+  大師: 1000,
+};
+
 export function Group({ pmList, filter, groupBy }: Props) {
   const filterGroup = (pm: Pokemon, groupBy: string) => {
     if (filter.groupBy === null) {
       return true;
+    } else if (filter.groupBy === 'level') {
+      if (filter.locations.size === 0) {
+        return true;
+      }
+
+      const baseScore = levelScore[groupBy.slice(0, 2)] + Number(groupBy.slice(2));
+
+      return pm.locations[
+        Object.keys(pm.locations).find((location) =>
+          filter.locations.has(location),
+        ) as keyof typeof pm.locations
+      ]?.some((sleepStyle) => levelScore[sleepStyle.level] + sleepStyle.subLevel === baseScore);
     } else if (Array.isArray(pm[filter.groupBy])) {
       if (filter.groupBy === 'ingredients' && filter.onlyFirstIngredient) {
         return pm[filter.groupBy][0] === groupBy;
