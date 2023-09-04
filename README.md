@@ -11,5 +11,5 @@
 ## todo list
 
 - [ ] PWA
-- [ ] select save to localStorage
-- [ ] 卡比獸頁面(喜愛的三種水果，地區，愛吃的料理種類)
+- [x] select save to localStorage
+- [x] 卡比獸頁面(喜愛的三種水果，地區，愛吃的料理種類)
