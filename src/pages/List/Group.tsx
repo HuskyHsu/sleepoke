@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
 import { Pokemon, SleepTypeBgClass } from '@/types';
@@ -125,7 +125,7 @@ export function Group({ pmList, filter, groupBy }: Props) {
             key={pm.pid}
           >
             <Card pm={pm} />
-            {/* <Link className={'stretchedLink'} to={`/pm/${pm.pid.slice(-3)}`} /> */}
+            <Link className={'stretchedLink'} to={`/pm/${pm.pid.slice(-3)}`} />
           </li>
         ))}
     </ul>
