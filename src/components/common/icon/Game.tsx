@@ -9,7 +9,7 @@ function PmFull({ pm, shiny = false }: { pm: Pokemon; shiny?: boolean }) {
 
 function Snorlax() {
   const imgSrc = () => `${process.env.PUBLIC_URL}/image/pmIcon/snorlax.png`;
-  return <img src={imgSrc()} alt='snorlax' className='w-10' />;
+  return <img src={imgSrc()} alt='snorlax' className='h-[33.48px] w-10' />;
 }
 
 function Pm({ pm }: { pm: Pokemon }) {
