@@ -17,9 +17,9 @@ function Pm({ pm }: { pm: Pokemon }) {
     `${process.env.PUBLIC_URL}/image/pmIcon/${pid.slice(-3)}.${type}`;
 
   return (
-    <picture className='block h-full w-full'>
+    <picture>
       <source srcSet={imgSrc(pm.pid, 'webp')} type='image/webp' />
-      <img src={imgSrc(pm.pid, 'png')} alt={pm.name} />
+      <img src={imgSrc(pm.pid, 'png')} alt={pm.name} width='64' height='64' />
     </picture>
   );
 }
