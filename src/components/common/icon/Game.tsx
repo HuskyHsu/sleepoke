@@ -13,8 +13,17 @@ function Snorlax() {
 }
 
 function Pm({ pm }: { pm: Pokemon }) {
-  const imgSrc = (pid: string) => `${process.env.PUBLIC_URL}/image/pmIcon/${pid.slice(-3)}.png`;
-  return <img src={imgSrc(pm.pid)} alt={pm.name} />;
+  const imgSrc = (pid: string, type: string) =>
+    `${process.env.PUBLIC_URL}/image/pmIcon${type === 'webp' ? '_webp' : ''}/${pid.slice(
+      -3,
+    )}.${type}`;
+
+  return (
+    <picture>
+      <source srcSet={imgSrc(pm.pid, 'webp')} type='image/webp' />
+      <img src={imgSrc(pm.pid, 'png')} alt={pm.name} />
+    </picture>
+  );
 }
 
 function PmSleep({ pm, index }: { pm: Pokemon; index: number }) {
