@@ -7,7 +7,7 @@ type Props = {
   checkSet: Set<string>;
   list: string[];
   handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
-  Icon?: ({ name }: { name: string }) => JSX.Element;
+  Icon?: ({ name, size = 'h-8 w-8' }: { name: string; size?: string }) => JSX.Element;
   prefixKey?: string;
 };
 
@@ -22,7 +22,7 @@ export function Buttons({ list, checkSet, Icon, handleChange, prefixKey }: Props
           onChange={handleChange}
           prefixKey={prefixKey}
         >
-          {Icon && <Icon name={item} />}
+          {Icon && <Icon name={item} size={'h-10 w-10'} />}
         </CheckboxItem>
       ))}
     </div>

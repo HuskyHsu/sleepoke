@@ -40,18 +40,18 @@ function PmSleep({ pm, index }: { pm: Pokemon; index: number }) {
   );
 }
 
-function Berry({ name }: { name: string }) {
+function Berry({ name, size = 'h-8 w-8' }: { name: string; size?: string }) {
   const imgSrc = (fileName: string, type: string) =>
     `${process.env.PUBLIC_URL}/image/berries/${fileName}.${type}`;
   return (
     <picture>
       <source srcSet={imgSrc(Berrys[name as keyof typeof Berrys], 'webp')} type='image/webp' />
-      <img src={imgSrc(Berrys[name as keyof typeof Berrys], 'png')} alt={name} />
+      <img src={imgSrc(Berrys[name as keyof typeof Berrys], 'png')} alt={name} className={size} />
     </picture>
   );
 }
 
-function Ingredient({ name }: { name: string }) {
+function Ingredient({ name, size = 'h-8 w-8' }: { name: string; size?: string }) {
   const imgSrc = (fileName: string, type: string) =>
     `${process.env.PUBLIC_URL}/image/ingredients/${fileName}.${type}`;
 
@@ -61,7 +61,11 @@ function Ingredient({ name }: { name: string }) {
         srcSet={imgSrc(Ingredients[name as keyof typeof Ingredients], 'webp')}
         type='image/webp'
       />
-      <img src={imgSrc(Ingredients[name as keyof typeof Ingredients], 'png')} alt={name} />
+      <img
+        src={imgSrc(Ingredients[name as keyof typeof Ingredients], 'png')}
+        alt={name}
+        className={size}
+      />
     </picture>
   );
 }
