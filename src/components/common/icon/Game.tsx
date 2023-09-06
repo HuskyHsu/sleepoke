@@ -14,9 +14,7 @@ function Snorlax() {
 
 function Pm({ pm }: { pm: Pokemon }) {
   const imgSrc = (pid: string, type: string) =>
-    `${process.env.PUBLIC_URL}/image/pmIcon${type === 'webp' ? '_webp' : ''}/${pid.slice(
-      -3,
-    )}.${type}`;
+    `${process.env.PUBLIC_URL}/image/pmIcon/${pid.slice(-3)}.${type}`;
 
   return (
     <picture>
@@ -43,15 +41,28 @@ function PmSleep({ pm, index }: { pm: Pokemon; index: number }) {
 }
 
 function Berry({ name }: { name: string }) {
-  const imgSrc = (fileName: string) => `${process.env.PUBLIC_URL}/image/berries/${fileName}.png`;
-  return <img src={imgSrc(Berrys[name as keyof typeof Berrys])} alt={name} loading='lazy' />;
+  const imgSrc = (fileName: string, type: string) =>
+    `${process.env.PUBLIC_URL}/image/berries/${fileName}.${type}`;
+  return (
+    <picture>
+      <source srcSet={imgSrc(Berrys[name as keyof typeof Berrys], 'webp')} type='image/webp' />
+      <img src={imgSrc(Berrys[name as keyof typeof Berrys], 'png')} alt={name} />
+    </picture>
+  );
 }
 
 function Ingredient({ name }: { name: string }) {
-  const imgSrc = (fileName: string) =>
-    `${process.env.PUBLIC_URL}/image/ingredients/${fileName}.png`;
+  const imgSrc = (fileName: string, type: string) =>
+    `${process.env.PUBLIC_URL}/image/ingredients/${fileName}.${type}`;
+
   return (
-    <img src={imgSrc(Ingredients[name as keyof typeof Ingredients])} alt={name} loading='lazy' />
+    <picture>
+      <source
+        srcSet={imgSrc(Ingredients[name as keyof typeof Ingredients], 'webp')}
+        type='image/webp'
+      />
+      <img src={imgSrc(Ingredients[name as keyof typeof Ingredients], 'png')} alt={name} />
+    </picture>
   );
 }
 
