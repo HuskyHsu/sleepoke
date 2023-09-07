@@ -78,41 +78,66 @@ export function Group({ pmList, filter, groupBy }: Props) {
       display = Object.keys(pm.locations).some((areaName) => filter.locations.has(areaName));
     }
 
-    // if (filter.isUseSnorlax) {
-    //   const levelScore: Record<string, number> = {
-    //     普通: 0,
-    //     超級: 10,
-    //     高級: 100,
-    //     大師: 1000,
-    //   };
-    //   if (display) {
-    //     const baseScore = levelScore[filter.level] + filter.subLevel;
-
-    //     const targetScore = pm.locations[
-    //       Object.keys(pm.locations).find((location) =>
-    //         filter.locations.has(location),
-    //       ) as keyof typeof pm.locations
-    //     ]?.map((sleepStyle) => levelScore[sleepStyle.level] + sleepStyle.subLevel) as number[];
-
-    //     display = targetScore.some((score) => score <= baseScore);
-    //   }
-    // }
-
     return display;
   };
 
+  const sortPm = (pm_a: Pokemon, pm_b: Pokemon) => {
+    if (filter.groupBy !== 'level') {
+      return 0;
+    }
+
+    if (pm_a.sleep_type > pm_b.sleep_type) {
+      return 1;
+    } else if (pm_a.sleep_type < pm_b.sleep_type) {
+      return -1;
+    } else {
+      return pm_a.pid > pm_b.pid ? 1 : -1;
+    }
+  };
+
+  const subList = pmList
+    .filter((pm: Pokemon) => filterGroup(pm, groupBy))
+    .filter(filterPm)
+    .sort(sortPm);
+
   return (
-    <ul
-      className={clsx(
-        'grid grid-cols-list-mobile justify-between justify-items-center gap-y-4',
-        'md:mx-0 md:grid-cols-list md:gap-x-4',
-        'h-full',
+    <>
+      {filter.groupBy === 'level' && (
+        <div className='flex gap-4 py-2 pl-1'>
+          {Object.entries(
+            subList.reduce(
+              (acc, cur) => {
+                if (acc[cur.sleep_type] === undefined) {
+                  acc[cur.sleep_type] = 0;
+                }
+                acc[cur.sleep_type] += 1;
+                return acc;
+              },
+              {} as Record<string, number>,
+            ),
+          ).map(([key, val]) => (
+            <span
+              key={key}
+              className={clsx(
+                'rounded-full px-2 py-1',
+                'shadow-list-items',
+                'text-sm',
+                SleepTypeBgClass[key as keyof typeof SleepTypeBgClass],
+              )}
+            >
+              {key} {val} 種
+            </span>
+          ))}
+        </div>
       )}
-    >
-      {pmList
-        .filter((pm: Pokemon) => filterGroup(pm, groupBy))
-        .filter(filterPm)
-        .map((pm: Pokemon) => (
+      <ul
+        className={clsx(
+          'grid grid-cols-list-mobile justify-between justify-items-center gap-y-4',
+          'md:mx-0 md:grid-cols-list md:gap-x-4',
+          'h-full',
+        )}
+      >
+        {subList.map((pm: Pokemon) => (
           <li
             className={clsx(
               'relative w-28 md:w-32',
@@ -128,6 +153,7 @@ export function Group({ pmList, filter, groupBy }: Props) {
             <Link className={'stretchedLink'} to={`/pm/${pm.pid.slice(-3)}`} />
           </li>
         ))}
-    </ul>
+      </ul>
+    </>
   );
 }

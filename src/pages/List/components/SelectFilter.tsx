@@ -79,7 +79,7 @@ export function SelectFilter({
 
         <SubTitleSlide title='篩選：區域' />
         <Buttons
-          list={areas}
+          list={areas.map((area) => area.name)}
           checkSet={filter.locations}
           handleChange={handleChickChange('locations')}
         />

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import { Pokemon } from '@/types';
 import { SubTitleSlide, TitleSlide } from '@/components';
-import { pmList } from '@/data';
+import { pmList, areas } from '@/data';
 
 import { SearchBar, Filter, Category, Indicator } from './components';
 import { ToolBar } from './ToolBar';
@@ -80,6 +80,11 @@ function List() {
     filter.locations,
   ].some((set) => set.size > 0);
 
+  let area = areas[0];
+  if (filter.groupBy === 'level') {
+    area = areas.find((area) => filter.locations.has(area.name)) || areas[0];
+  }
+
   return (
     <div className='flex flex-col'>
       <div className='flex justify-end py-3'>
@@ -110,10 +115,20 @@ function List() {
 
       <TitleSlide title='清單' />
       <div className='mt-4 space-y-8'>
-        {groupByList.map((groupBy: string) => {
+        {groupByList.map((groupBy: string, i: number, list: string[]) => {
+          let subTitle = groupBy;
+          if (filter.groupBy === 'level') {
+            subTitle += ` (卡比獸能量：${area.strength[i].toLocaleString('zh-TW')} 分)${
+              i < list.length - 1
+                ? ` 下一等需 ${(area.strength[i + 1] - area.strength[i]).toLocaleString(
+                    'zh-TW',
+                  )} 分`
+                : ''
+            }`;
+          }
           return (
             <div key={groupBy} className='space-y-2'>
-              {groupBy !== '' && <SubTitleSlide title={groupBy} />}
+              {groupBy !== '' && <SubTitleSlide title={subTitle} />}
               <Group pmList={pmList} filter={filter} groupBy={groupBy} />
             </div>
           );

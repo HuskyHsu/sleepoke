@@ -29,10 +29,10 @@ function Detail() {
   const allSleepStyle = areas.reduce(
     (acc, cur) => {
       acc = acc.concat(
-        (pm.locations[cur as keyof typeof pm.locations] || []).map((location) => {
+        (pm.locations[cur.name as keyof typeof pm.locations] || []).map((location) => {
           return {
             ...location,
-            area: cur,
+            area: cur.name,
           };
         }),
       );

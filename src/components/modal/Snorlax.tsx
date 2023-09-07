@@ -77,7 +77,7 @@ export function Snorlax({ toggleSnorlaxModal }: { toggleSnorlaxModal: () => void
           <div className='space-y-4 p-6'>
             <SubTitleSlide title='區域' />
             <Buttons
-              list={areas}
+              list={areas.map((area) => area.name)}
               checkSet={new Set([week.area])}
               handleChange={(e) => {
                 toggleArea(e.target.name.split(':')[1]);

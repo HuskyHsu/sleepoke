@@ -29,7 +29,7 @@ const localStorageKey = 'week';
 
 const init: Week = {
   timestamp: new Date().getTime(),
-  area: areas[0],
+  area: areas[0].name,
   level: '普通',
   subLevel: 1,
   snorlaxLike: [],

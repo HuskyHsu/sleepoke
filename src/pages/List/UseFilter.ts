@@ -75,7 +75,7 @@ export function UseFilter() {
 
     setFilter((prevSearch) => {
       if (name === 'level' && prevSearch.locations.size !== 1) {
-        alert('請只選擇一個區域');
+        alert('請選擇一個區域出來');
         return prevSearch;
       }
 
