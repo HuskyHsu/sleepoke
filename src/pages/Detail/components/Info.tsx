@@ -40,13 +40,13 @@ const renderData: Render[] = [
     Content: ({ pm }: ContentProps) => (
       <ul className='relative flex whitespace-nowrap'>
         {new Array(pm.berry_quantity).fill(0).map((_, index) => (
-          <li className='w-12' key={index}>
+          <li className='w-8' key={index}>
             <Icon.Game.Berry name={pm.berry} />
           </li>
         ))}
         <li
           className={clsx(
-            'absolute -right-8 bottom-0',
+            'absolute -bottom-2 -right-10',
             'rounded-full border-[1px] border-amber-300 bg-white px-2 py-1 text-xs',
           )}
         >
