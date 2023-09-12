@@ -149,7 +149,7 @@ export function Group({ pmList, filter, groupBy }: Props) {
             )}
             key={pm.pid}
           >
-            <Card pm={pm} />
+            <Card pm={pm} filter={filter} groupBy={groupBy} />
             <Link className={'stretchedLink'} to={`/pm/${pm.pid.slice(-3)}`} />
           </li>
         ))}
