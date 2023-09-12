@@ -3277,13 +3277,14 @@
     "skill": "\u80fd\u91cf\u586b\u5145S",
     "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0400\u3002",
     "base_frequency": "09:59:00",
-    "carry_limit": 0,
+    "carry_limit": 17,
     "friendship_points_needed": 0,
     "recruit_experience": 0,
     "recruit_shards": 0,
     "ingredients": [
       "\u597d\u7720\u756a\u8304",
-      "\u7aa9\u5fc3\u6d0b\u828b"
+      "\u7aa9\u5fc3\u6d0b\u828b",
+      "\u7c97\u679d\u5927\u8525"
     ],
     "sleep": [
       "???\u7761",
@@ -6246,13 +6247,14 @@
     "skill": "\u80fd\u91cf\u586b\u5145S",
     "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0400\u3002",
     "base_frequency": "09:59:00",
-    "carry_limit": 0,
+    "carry_limit": 10,
     "friendship_points_needed": 0,
     "recruit_experience": 0,
     "recruit_shards": 0,
     "ingredients": [
       "\u597d\u7720\u756a\u8304",
-      "\u7aa9\u5fc3\u6d0b\u828b"
+      "\u7aa9\u5fc3\u6d0b\u828b",
+      "\u7c97\u679d\u5927\u8525"
     ],
     "sleep": [
       "???\u7761",
