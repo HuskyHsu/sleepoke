@@ -2,7 +2,7 @@ import os
 from PIL import Image
 
 # 輸入資料夾路徑，包含PNG圖像檔案
-folder = "../public/image/berries"
+folder = "../public/image/pmIcon"
 
 if __name__ == "__main__":
     # 確保輸出資料夾存在，如果不存在則創建它

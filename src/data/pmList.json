@@ -3267,6 +3267,55 @@
     }
   },
   {
+    "pid": "#0122",
+    "name": "\u9b54\u7246\u4eba\u5076",
+    "type": "\u8d85\u80fd\u529b",
+    "sleep_type": "\u5b89\u7136\u5165\u7761",
+    "specialty": "\u98df\u6750",
+    "berry": "\u8292\u8292\u679c",
+    "berry_quantity": 1,
+    "skill": "\u80fd\u91cf\u586b\u5145S",
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0400\u3002",
+    "base_frequency": "09:59:00",
+    "carry_limit": 0,
+    "friendship_points_needed": 0,
+    "recruit_experience": 0,
+    "recruit_shards": 0,
+    "ingredients": [
+      "\u597d\u7720\u756a\u8304",
+      "\u7aa9\u5fc3\u6d0b\u828b"
+    ],
+    "sleep": [
+      "???\u7761",
+      "???\u7761",
+      "???\u7761"
+    ],
+    "locations": {
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
     "pid": "#0127",
     "name": "\u51f1\u7f85\u65af",
     "type": "\u87f2",
@@ -6181,6 +6230,55 @@
         {
           "style": 3,
           "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "pid": "#0439",
+    "name": "\u9b54\u5c3c\u5c3c",
+    "type": "\u8d85\u80fd\u529b",
+    "sleep_type": "\u6df1\u6df1\u5165\u7720",
+    "specialty": "\u98df\u6750",
+    "berry": "\u8292\u8292\u679c",
+    "berry_quantity": 1,
+    "skill": "\u80fd\u91cf\u586b\u5145S",
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0400\u3002",
+    "base_frequency": "09:59:00",
+    "carry_limit": 0,
+    "friendship_points_needed": 0,
+    "recruit_experience": 0,
+    "recruit_shards": 0,
+    "ingredients": [
+      "\u597d\u7720\u756a\u8304",
+      "\u7aa9\u5fc3\u6d0b\u828b"
+    ],
+    "sleep": [
+      "???\u7761",
+      "???\u7761",
+      "???\u7761"
+    ],
+    "locations": {
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
           "subLevel": 1
         }
       ]
