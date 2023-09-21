@@ -74,7 +74,7 @@ export function SelectIngredientCount({ filter, handleCountChange }: Props) {
               <div key={key} className='flex items-center gap-3'>
                 <div className='flex w-16 flex-col items-center'>
                   <div className='h-12 w-12'>
-                    <Icon.Game.Ingredient name={key} />
+                    <Icon.Game.Ingredient name={key} size='h-12 w-12' />
                   </div>
                   <span
                     className={clsx(
