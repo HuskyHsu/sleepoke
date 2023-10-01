@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sleepoke/static/css/main.4f2a0d28.css",
-    "main.js": "/sleepoke/static/js/main.6c437c5d.js",
+    "main.js": "/sleepoke/static/js/main.6173f703.js",
     "List.js": "/sleepoke/static/js/List.6476f33f.chunk.js",
     "Detail.js": "/sleepoke/static/js/Detail.ff2a65a4.chunk.js",
     "Meal.js": "/sleepoke/static/js/Meal.f4a9120a.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/Next.svg": "/sleepoke/static/media/Next.11ac5ea3b29508ccc24becccbe82ea79.svg",
     "static/media/Before.svg": "/sleepoke/static/media/Before.77f97c6fef581992c111ca9ea5275012.svg",
     "main.4f2a0d28.css.map": "/sleepoke/static/css/main.4f2a0d28.css.map",
-    "main.6c437c5d.js.map": "/sleepoke/static/js/main.6c437c5d.js.map",
+    "main.6173f703.js.map": "/sleepoke/static/js/main.6173f703.js.map",
     "List.6476f33f.chunk.js.map": "/sleepoke/static/js/List.6476f33f.chunk.js.map",
     "Detail.ff2a65a4.chunk.js.map": "/sleepoke/static/js/Detail.ff2a65a4.chunk.js.map",
     "Meal.f4a9120a.chunk.js.map": "/sleepoke/static/js/Meal.f4a9120a.chunk.js.map",
@@ -28,6 +28,6 @@
   },
   "entrypoints": [
     "static/css/main.4f2a0d28.css",
-    "static/js/main.6c437c5d.js"
+    "static/js/main.6173f703.js"
   ]
 }
