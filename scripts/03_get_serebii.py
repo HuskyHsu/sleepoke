@@ -22,6 +22,8 @@ list = [
     "arbok",
     "pikachu",
     "raichu",
+    "clefairy",
+    "clefable",
     "jigglypuff",
     "wigglytuff",
     "diglett",
@@ -69,6 +71,7 @@ list = [
     "croconaw",
     "feraligatr",
     "pichu",
+    "cleffa",
     "igglybuff",
     "togepi",
     "togetic",
@@ -166,6 +169,8 @@ if __name__ == "__main__":
                 ]
 
                 for i in range(0, len(s), 2):
+                    if s[i + 1] == " - ":
+                        continue
                     area = areaMap[s[i]]
                     level = levelMap[s[i + 1].split(" ")[0]]
                     subLevel = int(s[i + 1].split(" ")[1])

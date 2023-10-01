@@ -797,6 +797,182 @@
     }
   },
   {
+    "name": "clefairy",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "clefable",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 8
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 9
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 8
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        }
+      ]
+    }
+  },
+  {
     "name": "jigglypuff",
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -2707,6 +2883,94 @@
         {
           "style": 3,
           "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "cleffa",
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
           "subLevel": 1
         }
       ]
