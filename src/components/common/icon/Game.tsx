@@ -25,8 +25,8 @@ function Pm({ pm }: { pm: Pokemon }) {
 }
 
 function PmSleep({ pm, index }: { pm: Pokemon; index: number }) {
-  const SleepType = ['sleep', 'drowse', 'sleep', 'sleep'];
-  const pids = [pm.pid.slice(-3), pm.pid.slice(-3), 'pokeball', pm.pid.slice(-3)];
+  const SleepType = ['sleep', 'drowse', 'rare', 'sleep'];
+  const pids = [pm.pid.slice(-3), pm.pid.slice(-3), pm.pid.slice(-3), pm.pid.slice(-3)];
 
   const imgSrc = () => `${process.env.PUBLIC_URL}/image/${SleepType[index]}/${pids[index]}.png`;
 
@@ -34,6 +34,10 @@ function PmSleep({ pm, index }: { pm: Pokemon; index: number }) {
     <img
       src={imgSrc()}
       alt={`${pm.name} - ${pm.sleep[index] || '大肚上睡'}`}
+      onError={(event) => {
+        event.currentTarget.src = `${process.env.PUBLIC_URL}/image/sleep/pokeball.png`;
+        event.currentTarget.className = 'error';
+      }}
       loading='lazy'
       className={index < 3 ? 'h-full w-full' : 'h-[70%] w-[70%]'}
     />
