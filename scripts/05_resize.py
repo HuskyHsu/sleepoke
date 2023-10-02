@@ -20,12 +20,17 @@ def to_webP(folder):
     print("所有PNG圖像已成功轉換為WebP格式。")
 
 
-def resize_image(input_path, output_path, new_size):
+def resize_image(input_path, output_path, new_size, transpose=False):
     try:
         # 開啟圖片
         with Image.open(input_path) as img:
             # 調整大小
             img = img.resize(new_size)
+
+            # 左右翻轉
+            if transpose:
+                img = img.transpose(Image.FLIP_LEFT_RIGHT)
+
             # 儲存圖片
             img.save(output_path)
         print(f"成功調整圖片大小並儲存到 {output_path}")
@@ -33,30 +38,35 @@ def resize_image(input_path, output_path, new_size):
         print(f"發生錯誤: {str(e)}")
 
 
-for pid in [122, 439]:
+for pid in [35, 36, 173]:
     resize_image(
-        f"sourceImg/pokemon_{pid}.png", f"../public/image/pmIcon/{pid}.png", (150, 150)
+        f"sourceImg/pokemon_{pid}_flip.png",
+        f"../public/image/pmIcon/{str(pid).zfill(3)}.png",
+        (150, 150),
+        True,
     )
 
     resize_image(
-        f"sourceImg/pokemon_{pid}_.png", f"../public/image/pm/{pid}.png", (300, 273)
+        f"sourceImg/pokemon_{pid}.png",
+        f"../public/image/pm/{str(pid).zfill(3)}.png",
+        (300, 273),
     )
 
     resize_image(
         f"sourceImg/pokemon_{pid}_shiny.png",
-        f"../public/image/pm/{pid}_s.png",
+        f"../public/image/pm/{str(pid).zfill(3)}_s.png",
         (300, 273),
     )
 
     resize_image(
         f"sourceImg/pokemon_{pid}_normal.png",
-        f"../public/image/sleep/{pid}.png",
+        f"../public/image/sleep/{str(pid).zfill(3)}.png",
         (300, 273),
     )
 
     resize_image(
         f"sourceImg/pokemon_{pid}_drowse.png",
-        f"../public/image/drowse/{pid}.png",
+        f"../public/image/drowse/{str(pid).zfill(3)}.png",
         (300, 273),
     )
 
