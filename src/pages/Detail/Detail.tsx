@@ -9,22 +9,21 @@ import { pmList, areas } from '@/data';
 import { Header, Info, ShowStyle, StyleInfo } from './components';
 
 type Status = {
-  index: number;
   displaySwipe: boolean;
 };
 
 function Detail() {
   const { link = '001' } = useParams();
+
   const pmIndex = pmList.findIndex((pm: Pokemon) => pm.pid === `#${link.padStart(4, '0')}`);
   const navigate = useNavigate();
   let touchStart = [0, 0];
 
   const [status, setStatus] = useState<Status>({
-    index: pmIndex,
     displaySwipe: true,
   });
 
-  const pm = pmList[status.index];
+  const pm = pmList[pmIndex];
 
   const allSleepStyle = areas.reduce(
     (acc, cur) => {
@@ -59,19 +58,14 @@ function Detail() {
   };
 
   const handleSwipe = (plusMinus: number) => {
-    setStatus((prevStatus) => {
-      let newIndex = prevStatus.index + plusMinus;
-      if (newIndex < 0) {
-        newIndex = pmList.length - 1;
-      } else if (newIndex >= pmList.length) {
-        newIndex = 0;
-      }
+    let newIndex = pmIndex + plusMinus;
+    if (newIndex < 0) {
+      newIndex = pmList.length - 1;
+    } else if (newIndex >= pmList.length) {
+      newIndex = 0;
+    }
 
-      return {
-        ...prevStatus,
-        index: newIndex,
-      };
-    });
+    navigate(`/pm/${pmList[newIndex].pid.slice(-3)}`);
   };
 
   useEffect(() => {
@@ -86,10 +80,6 @@ function Detail() {
       }));
     }, 2000);
   }, []);
-
-  useEffect(() => {
-    navigate(`/pm/${pmList[status.index].pid.slice(-3)}`);
-  }, [status.index]);
 
   return (
     <section
