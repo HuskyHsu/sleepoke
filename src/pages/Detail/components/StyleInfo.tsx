@@ -13,7 +13,7 @@ export function StyleInfo({ sleepStyle }: Props) {
       {sleepStyle.map((style, i) => {
         return (
           <div key={i} className='flex flex-col justify-center px-4 py-0 text-center'>
-            <p>{style.area}</p>
+            <p className='whitespace-nowrap'>{style.area}</p>
             <p>
               <Icon.Game.Rank name={style.level} />
               {style.level}
