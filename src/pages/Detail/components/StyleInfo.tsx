@@ -14,7 +14,7 @@ export function StyleInfo({ sleepStyle }: Props) {
         return (
           <div key={i} className='flex flex-col justify-center px-4 py-0 text-center'>
             <p className='whitespace-nowrap'>{style.area}</p>
-            <p>
+            <p className='whitespace-nowrap'>
               <Icon.Game.Rank name={style.level} />
               {style.level}
               {style.subLevel}
