@@ -113,6 +113,8 @@ list = [
     "leafeon",
     "glaceon",
     "sylveon",
+    "Shuppet",
+    "Banette",
 ]
 
 areaMap = {

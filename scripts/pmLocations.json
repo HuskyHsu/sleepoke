@@ -2144,6 +2144,23 @@
   {
     "name": "gengar",
     "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 8
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 9
+        }
+      ],
       "\u7070\u8910\u6d1e\u7a9f": [
         {
           "style": 0,
@@ -4700,8 +4717,21 @@
           "style": 2,
           "level": "\u5927\u5e2b",
           "subLevel": 13
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 8
         }
       ]
     }
+  },
+  {
+    "name": "Shuppet",
+    "locations": {}
+  },
+  {
+    "name": "Banette",
+    "locations": {}
   }
 ]
