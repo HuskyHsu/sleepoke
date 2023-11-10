@@ -38,7 +38,7 @@ def resize_image(input_path, output_path, new_size, transpose=False):
         print(f"發生錯誤: {str(e)}")
 
 
-for pid in [35, 36, 173]:
+for pid in [353, 354, 95, 208]:
     resize_image(
         f"sourceImg/pokemon_{pid}_flip.png",
         f"../public/image/pmIcon/{str(pid).zfill(3)}.png",

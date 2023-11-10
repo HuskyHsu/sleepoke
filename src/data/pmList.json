@@ -3263,28 +3263,25 @@
     }
   },
   {
-    "pid": "#0104",
-    "name": "\u5361\u62c9\u5361\u62c9",
+    "pid": "#0095",
+    "name": "\u5927\u5ca9\u86c7",
     "type": "\u5730\u9762",
     "sleep_type": "\u6df1\u6df1\u5165\u7720",
     "specialty": "\u6a39\u679c",
     "berry": "\u52ff\u82b1\u679c",
     "berry_quantity": 2,
-    "skill": "\u6d3b\u529b\u586b\u5145S",
-    "skill_description": "\u8b93\u81ea\u5df1\u56de\u5fa9\u6d3b\u529b12\u3002",
-    "base_frequency": "01:20:00",
-    "carry_limit": 10,
-    "friendship_points_needed": 5,
-    "recruit_experience": 9,
-    "recruit_shards": 16,
-    "ingredients": [
-      "\u6696\u6696\u8591",
-      "\u653e\u9b06\u53ef\u53ef"
-    ],
+    "skill": "\u98df\u6750\u7372\u53d6S",
+    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
+    "base_frequency": "00:51:40",
+    "carry_limit": 22,
+    "friendship_points_needed": 16,
+    "recruit_experience": 215,
+    "recruit_shards": 644,
+    "ingredients": [],
     "sleep": [
-      "\u54ed\u54ed\u7761",
-      "\u9aa8\u982d\u6414\u6414\u7761",
-      "\u6795\u6795\u9aa8\u982d\u7761"
+      "\uff1f\uff1f\uff1f\uff1f\u7761",
+      "\uff1f\uff1f\uff1f\uff1f\u7761",
+      "\uff1f\uff1f\uff1f\uff1f\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -3351,8 +3348,8 @@
     }
   },
   {
-    "pid": "#0105",
-    "name": "\u560e\u5566\u560e\u5566",
+    "pid": "#0104",
+    "name": "\u5361\u62c9\u5361\u62c9",
     "type": "\u5730\u9762",
     "sleep_type": "\u6df1\u6df1\u5165\u7720",
     "specialty": "\u6a39\u679c",
@@ -3360,17 +3357,17 @@
     "berry_quantity": 2,
     "skill": "\u6d3b\u529b\u586b\u5145S",
     "skill_description": "\u8b93\u81ea\u5df1\u56de\u5fa9\u6d3b\u529b12\u3002",
-    "base_frequency": "00:58:20",
-    "carry_limit": 15,
-    "friendship_points_needed": 12,
-    "recruit_experience": 93,
-    "recruit_shards": 197,
+    "base_frequency": "01:20:00",
+    "carry_limit": 10,
+    "friendship_points_needed": 5,
+    "recruit_experience": 9,
+    "recruit_shards": 16,
     "ingredients": [
       "\u6696\u6696\u8591",
       "\u653e\u9b06\u53ef\u53ef"
     ],
     "sleep": [
-      "\u62b1\u62b1\u9aa8\u982d\u7761",
+      "\u54ed\u54ed\u7761",
       "\u9aa8\u982d\u6414\u6414\u7761",
       "\u6795\u6795\u9aa8\u982d\u7761"
     ],
@@ -3439,29 +3436,28 @@
     }
   },
   {
-    "pid": "#0115",
-    "name": "\u888b\u7378",
-    "type": "\u4e00\u822c",
-    "sleep_type": "\u5b89\u7136\u5165\u7761",
-    "specialty": "\u98df\u6750",
-    "berry": "\u67ff\u4ed4\u679c",
-    "berry_quantity": 1,
-    "skill": "\u98df\u6750\u7372\u53d6S",
-    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
-    "base_frequency": "00:46:40",
-    "carry_limit": 16,
-    "friendship_points_needed": 16,
-    "recruit_experience": 416,
-    "recruit_shards": 449,
+    "pid": "#0105",
+    "name": "\u560e\u5566\u560e\u5566",
+    "type": "\u5730\u9762",
+    "sleep_type": "\u6df1\u6df1\u5165\u7720",
+    "specialty": "\u6a39\u679c",
+    "berry": "\u52ff\u82b1\u679c",
+    "berry_quantity": 2,
+    "skill": "\u6d3b\u529b\u586b\u5145S",
+    "skill_description": "\u8b93\u81ea\u5df1\u56de\u5fa9\u6d3b\u529b12\u3002",
+    "base_frequency": "00:58:20",
+    "carry_limit": 15,
+    "friendship_points_needed": 12,
+    "recruit_experience": 93,
+    "recruit_shards": 197,
     "ingredients": [
       "\u6696\u6696\u8591",
-      "\u7aa9\u5fc3\u6d0b\u828b",
-      "\u840c\u7da0\u5927\u8c46"
+      "\u653e\u9b06\u53ef\u53ef"
     ],
     "sleep": [
-      "\u89aa\u5b50\u60c5\u6df1\u7761",
-      "\u89aa\u5b50\u540c\u6b65\u7761",
-      "\u4e00\u500b\u4e0d\u7761\u4e00\u500b\u7761"
+      "\u62b1\u62b1\u9aa8\u982d\u7761",
+      "\u9aa8\u982d\u6414\u6414\u7761",
+      "\u6795\u6795\u9aa8\u982d\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -3496,6 +3492,56 @@
           "style": 2,
           "level": "\u5927\u5e2b",
           "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "pid": "#0115",
+    "name": "\u888b\u7378",
+    "type": "\u4e00\u822c",
+    "sleep_type": "\u5b89\u7136\u5165\u7761",
+    "specialty": "\u98df\u6750",
+    "berry": "\u67ff\u4ed4\u679c",
+    "berry_quantity": 1,
+    "skill": "\u98df\u6750\u7372\u53d6S",
+    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
+    "base_frequency": "00:46:40",
+    "carry_limit": 16,
+    "friendship_points_needed": 16,
+    "recruit_experience": 416,
+    "recruit_shards": 449,
+    "ingredients": [
+      "\u6696\u6696\u8591",
+      "\u7aa9\u5fc3\u6d0b\u828b",
+      "\u840c\u7da0\u5927\u8c46"
+    ],
+    "sleep": [
+      "\u89aa\u5b50\u60c5\u6df1\u7761",
+      "\u89aa\u5b50\u540c\u6b65\u7761",
+      "\u4e00\u500b\u4e0d\u7761\u4e00\u500b\u7761"
+    ],
+    "locations": {
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
         },
         {
           "style": 3,
@@ -3531,55 +3577,6 @@
       "\u9ed8\u5287\u5e8a\u4e0a\u7761"
     ],
     "locations": {
-      "\u5929\u9752\u6c99\u7058": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 5
-        },
-        {
-          "style": 1,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 4
-        },
-        {
-          "style": 2,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 5
-        },
-        {
-          "style": 3,
-          "level": "\u5927\u5e2b",
-          "subLevel": 1
-        }
-      ]
-    }
-  },
-  {
-    "pid": "#0127",
-    "name": "\u51f1\u7f85\u65af",
-    "type": "\u87f2",
-    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
-    "specialty": "\u98df\u6750",
-    "berry": "\u6728\u5b50\u679c",
-    "berry_quantity": 1,
-    "skill": "\u80fd\u91cf\u586b\u5145S",
-    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0400\u3002",
-    "base_frequency": "00:40:00",
-    "carry_limit": 19,
-    "friendship_points_needed": 16,
-    "recruit_experience": 235,
-    "recruit_shards": 608,
-    "ingredients": [
-      "\u751c\u751c\u871c",
-      "\u8c46\u88fd\u8089"
-    ],
-    "sleep": [
-      "\u5927\u81bd\u7761",
-      "\u5446\u7acb\u7761",
-      "\u9041\u5730\u7761"
-    ],
-    "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
@@ -3622,29 +3619,28 @@
     }
   },
   {
-    "pid": "#0132",
-    "name": "\u767e\u8b8a\u602a",
-    "type": "\u4e00\u822c",
-    "sleep_type": "\u5b89\u7136\u5165\u7761",
+    "pid": "#0127",
+    "name": "\u51f1\u7f85\u65af",
+    "type": "\u87f2",
+    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
     "specialty": "\u98df\u6750",
-    "berry": "\u67ff\u4ed4\u679c",
+    "berry": "\u6728\u5b50\u679c",
     "berry_quantity": 1,
     "skill": "\u80fd\u91cf\u586b\u5145S",
-    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
-    "base_frequency": "00:58:20",
-    "carry_limit": 13,
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0400\u3002",
+    "base_frequency": "00:40:00",
+    "carry_limit": 19,
     "friendship_points_needed": 16,
-    "recruit_experience": 219,
-    "recruit_shards": 394,
+    "recruit_experience": 235,
+    "recruit_shards": 608,
     "ingredients": [
-      "\u7d14\u7cb9\u6cb9",
-      "\u7c97\u679d\u5927\u8525",
-      "\u7f8e\u5473\u5c3e\u5df4"
+      "\u751c\u751c\u871c",
+      "\u8c46\u88fd\u8089"
     ],
     "sleep": [
-      "\u8b8a\u6210\u77f3\u982d\u7761",
-      "\u539f\u6a23\u7761",
-      "\u76ae\u5361\u4e18\u7761"
+      "\u5927\u81bd\u7761",
+      "\u5446\u7acb\u7761",
+      "\u9041\u5730\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -3748,29 +3744,29 @@
     }
   },
   {
-    "pid": "#0133",
-    "name": "\u4f0a\u5e03",
+    "pid": "#0132",
+    "name": "\u767e\u8b8a\u602a",
     "type": "\u4e00\u822c",
     "sleep_type": "\u5b89\u7136\u5165\u7761",
-    "specialty": "\u6280\u80fd",
+    "specialty": "\u98df\u6750",
     "berry": "\u67ff\u4ed4\u679c",
     "berry_quantity": 1,
-    "skill": "\u98df\u6750\u7372\u53d6S",
-    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
-    "base_frequency": "01:01:40",
-    "carry_limit": 12,
-    "friendship_points_needed": 5,
-    "recruit_experience": 20,
-    "recruit_shards": 36,
+    "skill": "\u80fd\u91cf\u586b\u5145S",
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
+    "base_frequency": "00:58:20",
+    "carry_limit": 13,
+    "friendship_points_needed": 16,
+    "recruit_experience": 219,
+    "recruit_shards": 394,
     "ingredients": [
-      "\u54de\u54de\u9bae\u5976",
-      "\u653e\u9b06\u53ef\u53ef",
-      "\u8c46\u88fd\u8089"
+      "\u7d14\u7cb9\u6cb9",
+      "\u7c97\u679d\u5927\u8525",
+      "\u7f8e\u5473\u5c3e\u5df4"
     ],
     "sleep": [
-      "\u7aa9\u8d77\u4f86\u7761",
-      "\u5782\u8033\u7761",
-      "\u7cbe\u529b\u5145\u6c9b\u7761"
+      "\u8b8a\u6210\u77f3\u982d\u7761",
+      "\u539f\u6a23\u7761",
+      "\u76ae\u5361\u4e18\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -3859,6 +3855,56 @@
     }
   },
   {
+    "pid": "#0133",
+    "name": "\u4f0a\u5e03",
+    "type": "\u4e00\u822c",
+    "sleep_type": "\u5b89\u7136\u5165\u7761",
+    "specialty": "\u6280\u80fd",
+    "berry": "\u67ff\u4ed4\u679c",
+    "berry_quantity": 1,
+    "skill": "\u98df\u6750\u7372\u53d6S",
+    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
+    "base_frequency": "01:01:40",
+    "carry_limit": 12,
+    "friendship_points_needed": 5,
+    "recruit_experience": 20,
+    "recruit_shards": 36,
+    "ingredients": [
+      "\u54de\u54de\u9bae\u5976",
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u8c46\u88fd\u8089"
+    ],
+    "sleep": [
+      "\u7aa9\u8d77\u4f86\u7761",
+      "\u5782\u8033\u7761",
+      "\u7cbe\u529b\u5145\u6c9b\u7761"
+    ],
+    "locations": {
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 12
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        }
+      ]
+    }
+  },
+  {
     "pid": "#0134",
     "name": "\u6c34\u4f0a\u5e03",
     "type": "\u6c34",
@@ -3884,26 +3930,26 @@
       "\u8cbc\u5730\u7761"
     ],
     "locations": {
-      "\u5929\u9752\u6c99\u7058": [
+      "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
           "level": "\u5927\u5e2b",
-          "subLevel": 2
+          "subLevel": 5
         },
         {
           "style": 1,
           "level": "\u5927\u5e2b",
-          "subLevel": 6
+          "subLevel": 9
         },
         {
           "style": 2,
           "level": "\u5927\u5e2b",
-          "subLevel": 12
+          "subLevel": 15
         },
         {
           "style": 3,
           "level": "\u5927\u5e2b",
-          "subLevel": 7
+          "subLevel": 10
         }
       ]
     }
@@ -3933,30 +3979,7 @@
       "\u7aef\u5750\u7761",
       "\u5922\u4e2d\u5954\u8dd1\u7761"
     ],
-    "locations": {
-      "\u840c\u7da0\u4e4b\u5cf6": [
-        {
-          "style": 0,
-          "level": "\u5927\u5e2b",
-          "subLevel": 5
-        },
-        {
-          "style": 1,
-          "level": "\u5927\u5e2b",
-          "subLevel": 9
-        },
-        {
-          "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 15
-        },
-        {
-          "style": 3,
-          "level": "\u5927\u5e2b",
-          "subLevel": 10
-        }
-      ]
-    }
+    "locations": {}
   },
   {
     "pid": "#0136",
@@ -3982,33 +4005,6 @@
       "\u6416\u5c3e\u5df4\u7761",
       "\u6536\u624b\u624b\u7761",
       "\u570d\u5c3e\u5df4\u7761"
-    ],
-    "locations": {}
-  },
-  {
-    "pid": "#0152",
-    "name": "\u83ca\u8349\u8449",
-    "type": "\u8349",
-    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
-    "specialty": "\u6a39\u679c",
-    "berry": "\u91d1\u6795\u679c",
-    "berry_quantity": 2,
-    "skill": "\u80fd\u91cf\u586b\u5145S",
-    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
-    "base_frequency": "01:13:20",
-    "carry_limit": 12,
-    "friendship_points_needed": 5,
-    "recruit_experience": 18,
-    "recruit_shards": 39,
-    "ingredients": [
-      "\u653e\u9b06\u53ef\u53ef",
-      "\u751c\u751c\u871c",
-      "\u7c97\u679d\u5927\u8525"
-    ],
-    "sleep": [
-      "\u8f49\u8449\u5b50\u7761",
-      "\u5782\u8449\u5b50\u7761",
-      "\u809a\u5b50\u671d\u5929\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -4051,6 +4047,33 @@
         }
       ]
     }
+  },
+  {
+    "pid": "#0152",
+    "name": "\u83ca\u8349\u8449",
+    "type": "\u8349",
+    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
+    "specialty": "\u6a39\u679c",
+    "berry": "\u91d1\u6795\u679c",
+    "berry_quantity": 2,
+    "skill": "\u80fd\u91cf\u586b\u5145S",
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
+    "base_frequency": "01:13:20",
+    "carry_limit": 12,
+    "friendship_points_needed": 5,
+    "recruit_experience": 18,
+    "recruit_shards": 39,
+    "ingredients": [
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u751c\u751c\u871c",
+      "\u7c97\u679d\u5927\u8525"
+    ],
+    "sleep": [
+      "\u8f49\u8449\u5b50\u7761",
+      "\u5782\u8449\u5b50\u7761",
+      "\u809a\u5b50\u671d\u5929\u7761"
+    ],
+    "locations": {}
   },
   {
     "pid": "#0153",
@@ -4104,33 +4127,6 @@
       "\u7529\u8116\u5b50\u7761",
       "\u904d\u5730\u958b\u82b1\u7761"
     ],
-    "locations": {}
-  },
-  {
-    "pid": "#0155",
-    "name": "\u706b\u7403\u9f20",
-    "type": "\u706b",
-    "sleep_type": "\u5b89\u7136\u5165\u7761",
-    "specialty": "\u6a39\u679c",
-    "berry": "\u860b\u91ce\u679c",
-    "berry_quantity": 2,
-    "skill": "\u80fd\u91cf\u586b\u5145S",
-    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
-    "base_frequency": "00:58:20",
-    "carry_limit": 14,
-    "friendship_points_needed": 5,
-    "recruit_experience": 16,
-    "recruit_shards": 42,
-    "ingredients": [
-      "\u6696\u6696\u8591",
-      "\u706b\u8fa3\u9999\u8349",
-      "\u653e\u9b06\u53ef\u53ef"
-    ],
-    "sleep": [
-      "\u8cbc\u5730\u7761",
-      "\u5c48\u8eab\u7761",
-      "\u5674\u51fa\u706b\u7130\u7761"
-    ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
         {
@@ -4172,6 +4168,33 @@
         }
       ]
     }
+  },
+  {
+    "pid": "#0155",
+    "name": "\u706b\u7403\u9f20",
+    "type": "\u706b",
+    "sleep_type": "\u5b89\u7136\u5165\u7761",
+    "specialty": "\u6a39\u679c",
+    "berry": "\u860b\u91ce\u679c",
+    "berry_quantity": 2,
+    "skill": "\u80fd\u91cf\u586b\u5145S",
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
+    "base_frequency": "00:58:20",
+    "carry_limit": 14,
+    "friendship_points_needed": 5,
+    "recruit_experience": 16,
+    "recruit_shards": 42,
+    "ingredients": [
+      "\u6696\u6696\u8591",
+      "\u706b\u8fa3\u9999\u8349",
+      "\u653e\u9b06\u53ef\u53ef"
+    ],
+    "sleep": [
+      "\u8cbc\u5730\u7761",
+      "\u5c48\u8eab\u7761",
+      "\u5674\u51fa\u706b\u7130\u7761"
+    ],
+    "locations": {}
   },
   {
     "pid": "#0156",
@@ -4225,32 +4248,6 @@
       "\u7406\u6bdb\u7761",
       "\u5674\u51fa\u706b\u7130\u7761"
     ],
-    "locations": {}
-  },
-  {
-    "pid": "#0158",
-    "name": "\u5c0f\u92f8\u9c77",
-    "type": "\u6c34",
-    "sleep_type": "\u6df1\u6df1\u5165\u7720",
-    "specialty": "\u6a39\u679c",
-    "berry": "\u6a59\u6a59\u679c",
-    "berry_quantity": 2,
-    "skill": "\u80fd\u91cf\u586b\u5145S",
-    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
-    "base_frequency": "01:15:00",
-    "carry_limit": 11,
-    "friendship_points_needed": 5,
-    "recruit_experience": 20,
-    "recruit_shards": 36,
-    "ingredients": [
-      "\u8c46\u88fd\u8089",
-      "\u7d14\u7cb9\u6cb9"
-    ],
-    "sleep": [
-      "\u55ae\u773c\u7761",
-      "\u8f15\u54ac\u7761",
-      "\u5f35\u5927\u5634\u5df4\u7761"
-    ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
         {
@@ -4294,6 +4291,55 @@
     }
   },
   {
+    "pid": "#0158",
+    "name": "\u5c0f\u92f8\u9c77",
+    "type": "\u6c34",
+    "sleep_type": "\u6df1\u6df1\u5165\u7720",
+    "specialty": "\u6a39\u679c",
+    "berry": "\u6a59\u6a59\u679c",
+    "berry_quantity": 2,
+    "skill": "\u80fd\u91cf\u586b\u5145S",
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
+    "base_frequency": "01:15:00",
+    "carry_limit": 11,
+    "friendship_points_needed": 5,
+    "recruit_experience": 20,
+    "recruit_shards": 36,
+    "ingredients": [
+      "\u8c46\u88fd\u8089",
+      "\u7d14\u7cb9\u6cb9"
+    ],
+    "sleep": [
+      "\u55ae\u773c\u7761",
+      "\u8f15\u54ac\u7761",
+      "\u5f35\u5927\u5634\u5df4\u7761"
+    ],
+    "locations": {
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
     "pid": "#0159",
     "name": "\u85cd\u9c77",
     "type": "\u6c34",
@@ -4321,23 +4367,23 @@
       "\u5929\u9752\u6c99\u7058": [
         {
           "style": 0,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
         },
         {
           "style": 1,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 5
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
         },
         {
           "style": 2,
           "level": "\u5927\u5e2b",
-          "subLevel": 1
+          "subLevel": 12
         },
         {
           "style": 3,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 1
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
         }
       ]
     }
@@ -4367,26 +4413,21 @@
       "\u5f35\u5927\u5634\u5df4\u7761"
     ],
     "locations": {
-      "\u5929\u9752\u6c99\u7058": [
+      "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
-          "level": "\u5927\u5e2b",
-          "subLevel": 2
+          "level": "\u666e\u901a",
+          "subLevel": 1
         },
         {
           "style": 1,
-          "level": "\u5927\u5e2b",
-          "subLevel": 6
-        },
-        {
-          "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 12
+          "level": "\u666e\u901a",
+          "subLevel": 5
         },
         {
           "style": 3,
-          "level": "\u5927\u5e2b",
-          "subLevel": 7
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
         }
       ]
     }
@@ -4415,51 +4456,6 @@
       "\u5b89\u7a69\u7761",
       "\u5750\u8457\u7761",
       "\u653e\u96fb\u7761"
-    ],
-    "locations": {
-      "\u840c\u7da0\u4e4b\u5cf6": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
-        },
-        {
-          "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 5
-        },
-        {
-          "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
-        }
-      ]
-    }
-  },
-  {
-    "pid": "#0173",
-    "name": "\u76ae\u5bf6\u5bf6",
-    "type": "\u5996\u7cbe",
-    "sleep_type": "\u6df1\u6df1\u5165\u7720",
-    "specialty": "\u6a39\u679c",
-    "berry": "\u6843\u6843\u679c",
-    "berry_quantity": 2,
-    "skill": "\u63ee\u6307",
-    "skill_description": "\u5f9e\u5168\u90e8\u7684\u4e3b\u6280\u80fd\u4e2d\u96a8\u6a5f\u767c\u52d5\u4e00\u7a2e\u3002",
-    "base_frequency": "01:33:20",
-    "carry_limit": 10,
-    "friendship_points_needed": 5,
-    "recruit_experience": 25,
-    "recruit_shards": 27,
-    "ingredients": [
-      "\u7279\u9078\u860b\u679c",
-      "\u751c\u751c\u871c",
-      "\u840c\u7da0\u5927\u8c46"
-    ],
-    "sleep": [
-      "\u6efe\u6efe\u7761",
-      "\u6253\u76f9\u7761",
-      "\u671d\u5929\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -4542,6 +4538,95 @@
         {
           "style": 3,
           "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "pid": "#0173",
+    "name": "\u76ae\u5bf6\u5bf6",
+    "type": "\u5996\u7cbe",
+    "sleep_type": "\u6df1\u6df1\u5165\u7720",
+    "specialty": "\u6a39\u679c",
+    "berry": "\u6843\u6843\u679c",
+    "berry_quantity": 2,
+    "skill": "\u63ee\u6307",
+    "skill_description": "\u5f9e\u5168\u90e8\u7684\u4e3b\u6280\u80fd\u4e2d\u96a8\u6a5f\u767c\u52d5\u4e00\u7a2e\u3002",
+    "base_frequency": "01:33:20",
+    "carry_limit": 10,
+    "friendship_points_needed": 5,
+    "recruit_experience": 25,
+    "recruit_shards": 27,
+    "ingredients": [
+      "\u7279\u9078\u860b\u679c",
+      "\u751c\u751c\u871c",
+      "\u840c\u7da0\u5927\u8c46"
+    ],
+    "sleep": [
+      "\u6efe\u6efe\u7761",
+      "\u6253\u76f9\u7761",
+      "\u671d\u5929\u7761"
+    ],
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
           "subLevel": 1
         }
       ]
@@ -4590,28 +4675,6 @@
           "subLevel": 1
         }
       ],
-      "\u5929\u9752\u6c99\u7058": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
-        },
-        {
-          "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 2
-        },
-        {
-          "style": 2,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 3
-        },
-        {
-          "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
-        }
-      ],
       "\u7070\u8910\u6d1e\u7a9f": [
         {
           "style": 0,
@@ -4627,6 +4690,28 @@
           "style": 2,
           "level": "\u8d85\u7d1a",
           "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
         },
         {
           "style": 3,
@@ -4665,62 +4750,40 @@
       "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
         },
         {
           "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 5
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
         },
         {
           "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
-        }
-      ],
-      "\u7070\u8910\u6d1e\u7a9f": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
-        },
-        {
-          "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 1
-        },
-        {
-          "style": 2,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 2
-        },
-        {
-          "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
         }
       ],
       "\u767d\u82b1\u96ea\u539f": [
         {
           "style": 0,
           "level": "\u666e\u901a",
-          "subLevel": 1
+          "subLevel": 4
         },
         {
           "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 1
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
         },
         {
           "style": 2,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
         },
         {
           "style": 3,
           "level": "\u8d85\u7d1a",
-          "subLevel": 1
+          "subLevel": 4
         }
       ]
     }
@@ -4754,72 +4817,6 @@
       "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 4
-        },
-        {
-          "style": 1,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 3
-        },
-        {
-          "style": 3,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 4
-        }
-      ],
-      "\u767d\u82b1\u96ea\u539f": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 4
-        },
-        {
-          "style": 1,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 3
-        },
-        {
-          "style": 2,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 4
-        },
-        {
-          "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 4
-        }
-      ]
-    }
-  },
-  {
-    "pid": "#0179",
-    "name": "\u54a9\u5229\u7f8a",
-    "type": "\u96fb",
-    "sleep_type": "\u5b89\u7136\u5165\u7761",
-    "specialty": "\u6280\u80fd",
-    "berry": "\u8404\u8461\u679c",
-    "berry_quantity": 1,
-    "skill": "\u80fd\u91cf\u586b\u5145M",
-    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0880\u3002",
-    "base_frequency": "01:16:40",
-    "carry_limit": 9,
-    "friendship_points_needed": 5,
-    "recruit_experience": 11,
-    "recruit_shards": 13,
-    "ingredients": [
-      "\u706b\u8fa3\u9999\u8349",
-      "\u7279\u9078\u86cb"
-    ],
-    "sleep": [
-      "\u84ec\u84ec\u7761",
-      "\u8e44\u5b50\u6252\u6252\u7761",
-      "\u5c3e\u5df4\u9583\u9583\u7761"
-    ],
-    "locations": {
-      "\u840c\u7da0\u4e4b\u5cf6": [
-        {
-          "style": 0,
           "level": "\u666e\u901a",
           "subLevel": 1
         },
@@ -4859,8 +4856,8 @@
     }
   },
   {
-    "pid": "#0180",
-    "name": "\u8338\u8338\u7f8a",
+    "pid": "#0179",
+    "name": "\u54a9\u5229\u7f8a",
     "type": "\u96fb",
     "sleep_type": "\u5b89\u7136\u5165\u7761",
     "specialty": "\u6280\u80fd",
@@ -4868,18 +4865,18 @@
     "berry_quantity": 1,
     "skill": "\u80fd\u91cf\u586b\u5145M",
     "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0880\u3002",
-    "base_frequency": "00:55:00",
-    "carry_limit": 11,
-    "friendship_points_needed": 12,
-    "recruit_experience": 79,
-    "recruit_shards": 121,
+    "base_frequency": "01:16:40",
+    "carry_limit": 9,
+    "friendship_points_needed": 5,
+    "recruit_experience": 11,
+    "recruit_shards": 13,
     "ingredients": [
       "\u706b\u8fa3\u9999\u8349",
       "\u7279\u9078\u86cb"
     ],
     "sleep": [
-      "\u8cbc\u5730\u7761",
       "\u84ec\u84ec\u7761",
+      "\u8e44\u5b50\u6252\u6252\u7761",
       "\u5c3e\u5df4\u9583\u9583\u7761"
     ],
     "locations": {
@@ -4925,8 +4922,8 @@
     }
   },
   {
-    "pid": "#0181",
-    "name": "\u96fb\u9f8d",
+    "pid": "#0180",
+    "name": "\u8338\u8338\u7f8a",
     "type": "\u96fb",
     "sleep_type": "\u5b89\u7136\u5165\u7761",
     "specialty": "\u6280\u80fd",
@@ -4934,19 +4931,19 @@
     "berry_quantity": 1,
     "skill": "\u80fd\u91cf\u586b\u5145M",
     "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0880\u3002",
-    "base_frequency": "00:41:40",
-    "carry_limit": 15,
-    "friendship_points_needed": 20,
-    "recruit_experience": 397,
-    "recruit_shards": 715,
+    "base_frequency": "00:55:00",
+    "carry_limit": 11,
+    "friendship_points_needed": 12,
+    "recruit_experience": 79,
+    "recruit_shards": 121,
     "ingredients": [
       "\u706b\u8fa3\u9999\u8349",
       "\u7279\u9078\u86cb"
     ],
     "sleep": [
-      "\u6414\u5c3e\u5df4\u7761",
-      "\u7529\u8116\u5b50\u7761",
-      "\u5c3e\u5df4\u5149\u8000\u7761"
+      "\u8cbc\u5730\u7761",
+      "\u84ec\u84ec\u7761",
+      "\u5c3e\u5df4\u9583\u9583\u7761"
     ],
     "locations": {
       "\u767d\u82b1\u96ea\u539f": [
@@ -4974,29 +4971,28 @@
     }
   },
   {
-    "pid": "#0185",
-    "name": "\u6a39\u624d\u602a",
-    "type": "\u5ca9\u77f3",
-    "sleep_type": "\u6df1\u6df1\u5165\u7720",
+    "pid": "#0181",
+    "name": "\u96fb\u9f8d",
+    "type": "\u96fb",
+    "sleep_type": "\u5b89\u7136\u5165\u7761",
     "specialty": "\u6280\u80fd",
-    "berry": "\u6587\u67da\u679c",
+    "berry": "\u8404\u8461\u679c",
     "berry_quantity": 1,
     "skill": "\u80fd\u91cf\u586b\u5145M",
     "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0880\u3002",
-    "base_frequency": "01:06:40",
-    "carry_limit": 10,
-    "friendship_points_needed": 7,
-    "recruit_experience": 23,
-    "recruit_shards": 41,
+    "base_frequency": "00:41:40",
+    "carry_limit": 15,
+    "friendship_points_needed": 20,
+    "recruit_experience": 397,
+    "recruit_shards": 715,
     "ingredients": [
-      "\u597d\u7720\u756a\u8304",
-      "\u54c1\u9bae\u8611\u83c7",
-      "\u840c\u7da0\u5927\u8c46"
+      "\u706b\u8fa3\u9999\u8349",
+      "\u7279\u9078\u86cb"
     ],
     "sleep": [
-      "\u88dd\u6a39\u7761",
-      "\u534a\u88dd\u6a39\u7761",
-      "\u4e0d\u88dd\u6a39\u7761"
+      "\u6414\u5c3e\u5df4\u7761",
+      "\u7529\u8116\u5b50\u7761",
+      "\u5c3e\u5df4\u5149\u8000\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -5036,6 +5032,56 @@
           "style": 3,
           "level": "\u9ad8\u7d1a",
           "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "pid": "#0185",
+    "name": "\u6a39\u624d\u602a",
+    "type": "\u5ca9\u77f3",
+    "sleep_type": "\u6df1\u6df1\u5165\u7720",
+    "specialty": "\u6280\u80fd",
+    "berry": "\u6587\u67da\u679c",
+    "berry_quantity": 1,
+    "skill": "\u80fd\u91cf\u586b\u5145M",
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0880\u3002",
+    "base_frequency": "01:06:40",
+    "carry_limit": 10,
+    "friendship_points_needed": 7,
+    "recruit_experience": 23,
+    "recruit_shards": 41,
+    "ingredients": [
+      "\u597d\u7720\u756a\u8304",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u840c\u7da0\u5927\u8c46"
+    ],
+    "sleep": [
+      "\u88dd\u6a39\u7761",
+      "\u534a\u88dd\u6a39\u7761",
+      "\u4e0d\u88dd\u6a39\u7761"
+    ],
+    "locations": {
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 11
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
         }
       ]
     }
@@ -5116,26 +5162,26 @@
       "\u809a\u5b50\u671d\u5929\u7761"
     ],
     "locations": {
-      "\u7070\u8910\u6d1e\u7a9f": [
+      "\u5929\u9752\u6c99\u7058": [
         {
           "style": 0,
           "level": "\u5927\u5e2b",
-          "subLevel": 1
+          "subLevel": 2
         },
         {
           "style": 1,
           "level": "\u5927\u5e2b",
-          "subLevel": 5
+          "subLevel": 6
         },
         {
           "style": 2,
           "level": "\u5927\u5e2b",
-          "subLevel": 11
+          "subLevel": 12
         },
         {
           "style": 3,
           "level": "\u5927\u5e2b",
-          "subLevel": 6
+          "subLevel": 7
         }
       ]
     }
@@ -5164,56 +5210,6 @@
       "\u61f6\u6563\u7761",
       "\u8ce2\u8005\u7761",
       "\u9748\u5149\u4e00\u9583\u7761"
-    ],
-    "locations": {
-      "\u5929\u9752\u6c99\u7058": [
-        {
-          "style": 0,
-          "level": "\u5927\u5e2b",
-          "subLevel": 2
-        },
-        {
-          "style": 1,
-          "level": "\u5927\u5e2b",
-          "subLevel": 6
-        },
-        {
-          "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 12
-        },
-        {
-          "style": 3,
-          "level": "\u5927\u5e2b",
-          "subLevel": 7
-        }
-      ]
-    }
-  },
-  {
-    "pid": "#0202",
-    "name": "\u679c\u7136\u7fc1",
-    "type": "\u8d85\u80fd\u529b",
-    "sleep_type": "\u5b89\u7136\u5165\u7761",
-    "specialty": "\u6280\u80fd",
-    "berry": "\u8292\u8292\u679c",
-    "berry_quantity": 1,
-    "skill": "\u6d3b\u529b\u7642\u7652S",
-    "skill_description": "\u96a8\u6a5f\u8b93\u81ea\u5df1\u4ee5\u5916\u7684\u5bf6\u53ef\u5922\u56de\u5fa9\u6d3b\u529b14\u3002",
-    "base_frequency": "00:58:20",
-    "carry_limit": 10,
-    "friendship_points_needed": 7,
-    "recruit_experience": 29,
-    "recruit_shards": 31,
-    "ingredients": [
-      "\u7279\u9078\u860b\u679c",
-      "\u7d14\u7cb9\u6cb9",
-      "\u54c1\u9bae\u8611\u83c7"
-    ],
-    "sleep": [
-      "\u85cf\u5c3e\u5df4\u7761",
-      "\u5fcd\u8010\u7761",
-      "\u62db\u724c\u59ff\u52e2\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -5280,28 +5276,29 @@
     }
   },
   {
-    "pid": "#0214",
-    "name": "\u8d6b\u62c9\u514b\u7f85\u65af",
-    "type": "\u87f2",
-    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
+    "pid": "#0202",
+    "name": "\u679c\u7136\u7fc1",
+    "type": "\u8d85\u80fd\u529b",
+    "sleep_type": "\u5b89\u7136\u5165\u7761",
     "specialty": "\u6280\u80fd",
-    "berry": "\u6728\u5b50\u679c",
+    "berry": "\u8292\u8292\u679c",
     "berry_quantity": 1,
-    "skill": "\u98df\u6750\u7372\u53d6S",
-    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
-    "base_frequency": "00:41:40",
-    "carry_limit": 15,
-    "friendship_points_needed": 16,
-    "recruit_experience": 286,
-    "recruit_shards": 515,
+    "skill": "\u6d3b\u529b\u7642\u7652S",
+    "skill_description": "\u96a8\u6a5f\u8b93\u81ea\u5df1\u4ee5\u5916\u7684\u5bf6\u53ef\u5922\u56de\u5fa9\u6d3b\u529b14\u3002",
+    "base_frequency": "00:58:20",
+    "carry_limit": 10,
+    "friendship_points_needed": 7,
+    "recruit_experience": 29,
+    "recruit_shards": 31,
     "ingredients": [
-      "\u751c\u751c\u871c",
+      "\u7279\u9078\u860b\u679c",
+      "\u7d14\u7cb9\u6cb9",
       "\u54c1\u9bae\u8611\u83c7"
     ],
     "sleep": [
-      "\u6643\u6643\u89d2\u7761",
-      "\u5446\u7acb\u7761",
-      "\u8214\u871c\u7761"
+      "\u85cf\u5c3e\u5df4\u7761",
+      "\u5fcd\u8010\u7761",
+      "\u62db\u724c\u59ff\u52e2\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -5346,29 +5343,25 @@
     }
   },
   {
-    "pid": "#0228",
-    "name": "\u6234\u9b6f\u6bd4",
-    "type": "\u60e1",
-    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
+    "pid": "#0208",
+    "name": "\u5927\u7db1\u86c7",
+    "type": "\u5730\u9762",
+    "sleep_type": "\u6df1\u6df1\u5165\u7720",
     "specialty": "\u6a39\u679c",
-    "berry": "\u7570\u5947\u679c",
+    "berry": "\u52ff\u82b1\u679c",
     "berry_quantity": 2,
-    "skill": "\u80fd\u91cf\u586b\u5145S",
-    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0400\u3002",
-    "base_frequency": "01:21:40",
-    "carry_limit": 10,
-    "friendship_points_needed": 5,
-    "recruit_experience": 8,
-    "recruit_shards": 17,
-    "ingredients": [
-      "\u706b\u8fa3\u9999\u8349",
-      "\u6696\u6696\u8591",
-      "\u7c97\u679d\u5927\u8525"
-    ],
+    "skill": "\u98df\u6750\u7372\u53d6S",
+    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
+    "base_frequency": "00:50:00",
+    "carry_limit": 25,
+    "friendship_points_needed": 20,
+    "recruit_experience": 998,
+    "recruit_shards": 2109,
+    "ingredients": [],
     "sleep": [
-      "\u9577\u568e\u7761",
-      "\u4f38\u5c55\u7761",
-      "\u809a\u5b50\u671d\u5929\u7761"
+      "\uff1f\uff1f\uff1f\uff1f\u7761",
+      "\uff1f\uff1f\uff1f\uff1f\u7761",
+      "\uff1f\uff1f\uff1f\uff1f\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -5403,6 +5396,99 @@
           "style": 2,
           "level": "\u8d85\u7d1a",
           "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "pid": "#0214",
+    "name": "\u8d6b\u62c9\u514b\u7f85\u65af",
+    "type": "\u87f2",
+    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
+    "specialty": "\u6280\u80fd",
+    "berry": "\u6728\u5b50\u679c",
+    "berry_quantity": 1,
+    "skill": "\u98df\u6750\u7372\u53d6S",
+    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
+    "base_frequency": "00:41:40",
+    "carry_limit": 15,
+    "friendship_points_needed": 16,
+    "recruit_experience": 286,
+    "recruit_shards": 515,
+    "ingredients": [
+      "\u751c\u751c\u871c",
+      "\u54c1\u9bae\u8611\u83c7"
+    ],
+    "sleep": [
+      "\u6643\u6643\u89d2\u7761",
+      "\u5446\u7acb\u7761",
+      "\u8214\u871c\u7761"
+    ],
+    "locations": {}
+  },
+  {
+    "pid": "#0228",
+    "name": "\u6234\u9b6f\u6bd4",
+    "type": "\u60e1",
+    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
+    "specialty": "\u6a39\u679c",
+    "berry": "\u7570\u5947\u679c",
+    "berry_quantity": 2,
+    "skill": "\u80fd\u91cf\u586b\u5145S",
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0400\u3002",
+    "base_frequency": "01:21:40",
+    "carry_limit": 10,
+    "friendship_points_needed": 5,
+    "recruit_experience": 8,
+    "recruit_shards": 17,
+    "ingredients": [
+      "\u706b\u8fa3\u9999\u8349",
+      "\u6696\u6696\u8591",
+      "\u7c97\u679d\u5927\u8525"
+    ],
+    "sleep": [
+      "\u9577\u568e\u7761",
+      "\u4f38\u5c55\u7761",
+      "\u809a\u5b50\u671d\u5929\u7761"
+    ],
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
         },
         {
           "style": 3,
@@ -5437,7 +5523,30 @@
       "\u6490\u5730\u7761",
       "\u5674\u706b\u7761"
     ],
-    "locations": {}
+    "locations": {
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 5
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
   },
   {
     "pid": "#0246",
@@ -5465,43 +5574,26 @@
       "\u5403\u571f\u7761"
     ],
     "locations": {
-      "\u840c\u7da0\u4e4b\u5cf6": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 4
-        },
-        {
-          "style": 1,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 3
-        },
-        {
-          "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 4
-        }
-      ],
       "\u7070\u8910\u6d1e\u7a9f": [
         {
           "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
         },
         {
           "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 4
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
         },
         {
           "style": 2,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 5
+          "level": "\u5927\u5e2b",
+          "subLevel": 16
         },
         {
           "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
+          "level": "\u5927\u5e2b",
+          "subLevel": 11
         }
       ]
     }
@@ -5532,21 +5624,38 @@
       "\u6392\u6c23\u7761"
     ],
     "locations": {
-      "\u7070\u8910\u6d1e\u7a9f": [
+      "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
+          "level": "\u666e\u901a",
+          "subLevel": 2
         },
         {
           "style": 1,
           "level": "\u8d85\u7d1a",
-          "subLevel": 5
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
         },
         {
           "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 1
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
         },
         {
           "style": 3,
@@ -5582,26 +5691,43 @@
       "\u5927\u5b57\u7761"
     ],
     "locations": {
-      "\u7070\u8910\u6d1e\u7a9f": [
+      "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
-          "level": "\u5927\u5e2b",
-          "subLevel": 6
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
         },
         {
           "style": 1,
-          "level": "\u5927\u5e2b",
-          "subLevel": 10
-        },
-        {
-          "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 16
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
         },
         {
           "style": 3,
-          "level": "\u5927\u5e2b",
-          "subLevel": 11
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
         }
       ]
     }
@@ -5635,140 +5761,6 @@
       "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 2
-        },
-        {
-          "style": 1,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
-        },
-        {
-          "style": 3,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 1
-        }
-      ],
-      "\u767d\u82b1\u96ea\u539f": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
-        },
-        {
-          "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 1
-        },
-        {
-          "style": 2,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 2
-        },
-        {
-          "style": 3,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 1
-        }
-      ]
-    }
-  },
-  {
-    "pid": "#0288",
-    "name": "\u904e\u52d5\u733f",
-    "type": "\u4e00\u822c",
-    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
-    "specialty": "\u6a39\u679c",
-    "berry": "\u67ff\u4ed4\u679c",
-    "berry_quantity": 2,
-    "skill": "\u98df\u6750\u7372\u53d6S",
-    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
-    "base_frequency": "00:53:20",
-    "carry_limit": 9,
-    "friendship_points_needed": 12,
-    "recruit_experience": 122,
-    "recruit_shards": 187,
-    "ingredients": [
-      "\u597d\u7720\u756a\u8304",
-      "\u751c\u751c\u871c",
-      "\u7279\u9078\u860b\u679c"
-    ],
-    "sleep": [
-      "\u8822\u8822\u6b32\u52d5\u7761",
-      "\u505a\u9ad4\u64cd\u7761",
-      "\u61f6\u60f0\u7761"
-    ],
-    "locations": {
-      "\u840c\u7da0\u4e4b\u5cf6": [
-        {
-          "style": 0,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 3
-        },
-        {
-          "style": 1,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 2
-        },
-        {
-          "style": 3,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 3
-        }
-      ],
-      "\u767d\u82b1\u96ea\u539f": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 3
-        },
-        {
-          "style": 1,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 2
-        },
-        {
-          "style": 2,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 3
-        },
-        {
-          "style": 3,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 1
-        }
-      ]
-    }
-  },
-  {
-    "pid": "#0289",
-    "name": "\u8acb\u5047\u738b",
-    "type": "\u4e00\u822c",
-    "sleep_type": "\u5b89\u7136\u5165\u7761",
-    "specialty": "\u6a39\u679c",
-    "berry": "\u67ff\u4ed4\u679c",
-    "berry_quantity": 2,
-    "skill": "\u98df\u6750\u7372\u53d6S",
-    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
-    "base_frequency": "01:03:20",
-    "carry_limit": 12,
-    "friendship_points_needed": 22,
-    "recruit_experience": 1108,
-    "recruit_shards": 1196,
-    "ingredients": [
-      "\u597d\u7720\u756a\u8304",
-      "\u751c\u751c\u871c",
-      "\u7279\u9078\u860b\u679c"
-    ],
-    "sleep": [
-      "\u5927\u5b57\u7761",
-      "\u61f6\u6563\u7761",
-      "\u5077\u5403\u7761"
-    ],
-    "locations": {
-      "\u840c\u7da0\u4e4b\u5cf6": [
-        {
-          "style": 0,
           "level": "\u5927\u5e2b",
           "subLevel": 7
         },
@@ -5808,29 +5800,29 @@
     }
   },
   {
-    "pid": "#0302",
-    "name": "\u52fe\u9b42\u773c",
-    "type": "\u60e1",
+    "pid": "#0288",
+    "name": "\u904e\u52d5\u733f",
+    "type": "\u4e00\u822c",
     "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
-    "specialty": "\u6280\u80fd",
-    "berry": "\u7570\u5947\u679c",
-    "berry_quantity": 1,
-    "skill": "\u5922\u4e4b\u788e\u7247\u7372\u53d6S",
-    "skill_description": "\u7372\u5f9744~176\u500b\u5922\u4e4b\u788e\u7247\u3002",
-    "base_frequency": "01:00:00",
-    "carry_limit": 10,
-    "friendship_points_needed": 16,
-    "recruit_experience": 180,
-    "recruit_shards": 465,
+    "specialty": "\u6a39\u679c",
+    "berry": "\u67ff\u4ed4\u679c",
+    "berry_quantity": 2,
+    "skill": "\u98df\u6750\u7372\u53d6S",
+    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
+    "base_frequency": "00:53:20",
+    "carry_limit": 9,
+    "friendship_points_needed": 12,
+    "recruit_experience": 122,
+    "recruit_shards": 187,
     "ingredients": [
-      "\u7d14\u7cb9\u6cb9",
-      "\u54c1\u9bae\u8611\u83c7",
-      "\u653e\u9b06\u53ef\u53ef"
+      "\u597d\u7720\u756a\u8304",
+      "\u751c\u751c\u871c",
+      "\u7279\u9078\u860b\u679c"
     ],
     "sleep": [
-      "\u5927\u5b57\u7761",
-      "\u9707\u9707\u7761",
-      "\u5403\u5bf6\u77f3\u7761"
+      "\u8822\u8822\u6b32\u52d5\u7761",
+      "\u505a\u9ad4\u64cd\u7761",
+      "\u61f6\u60f0\u7761"
     ],
     "locations": {
       "\u7070\u8910\u6d1e\u7a9f": [
@@ -5858,29 +5850,29 @@
     }
   },
   {
-    "pid": "#0316",
-    "name": "\u6eb6\u98df\u7378",
-    "type": "\u6bd2",
-    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
-    "specialty": "\u6280\u80fd",
-    "berry": "\u96f6\u9918\u679c",
-    "berry_quantity": 1,
-    "skill": "\u5922\u4e4b\u788e\u7247\u7372\u53d6S",
-    "skill_description": "\u7372\u5f9744~176\u500b\u5922\u4e4b\u788e\u7247\u3002",
-    "base_frequency": "01:38:20",
-    "carry_limit": 8,
-    "friendship_points_needed": 5,
-    "recruit_experience": 11,
-    "recruit_shards": 12,
+    "pid": "#0289",
+    "name": "\u8acb\u5047\u738b",
+    "type": "\u4e00\u822c",
+    "sleep_type": "\u5b89\u7136\u5165\u7761",
+    "specialty": "\u6a39\u679c",
+    "berry": "\u67ff\u4ed4\u679c",
+    "berry_quantity": 2,
+    "skill": "\u98df\u6750\u7372\u53d6S",
+    "skill_description": "\u96a8\u6a5f\u7372\u5f976\u500b\u98df\u6750\u3002",
+    "base_frequency": "01:03:20",
+    "carry_limit": 12,
+    "friendship_points_needed": 22,
+    "recruit_experience": 1108,
+    "recruit_shards": 1196,
     "ingredients": [
-      "\u840c\u7da0\u5927\u8c46",
-      "\u54c1\u9bae\u8611\u83c7",
-      "\u751c\u751c\u871c"
+      "\u597d\u7720\u756a\u8304",
+      "\u751c\u751c\u871c",
+      "\u7279\u9078\u860b\u679c"
     ],
     "sleep": [
-      "\u6c23\u7403\u7761",
-      "\u9ede\u982d\u7761",
-      "\u5f35\u5927\u5634\u5df4\u7761"
+      "\u5927\u5b57\u7761",
+      "\u61f6\u6563\u7761",
+      "\u5077\u5403\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -5969,29 +5961,29 @@
     }
   },
   {
-    "pid": "#0317",
-    "name": "\u541e\u98df\u7378",
-    "type": "\u6bd2",
+    "pid": "#0302",
+    "name": "\u52fe\u9b42\u773c",
+    "type": "\u60e1",
     "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
     "specialty": "\u6280\u80fd",
-    "berry": "\u96f6\u9918\u679c",
+    "berry": "\u7570\u5947\u679c",
     "berry_quantity": 1,
     "skill": "\u5922\u4e4b\u788e\u7247\u7372\u53d6S",
     "skill_description": "\u7372\u5f9744~176\u500b\u5922\u4e4b\u788e\u7247\u3002",
-    "base_frequency": "00:58:20",
-    "carry_limit": 13,
-    "friendship_points_needed": 12,
-    "recruit_experience": 158,
-    "recruit_shards": 170,
+    "base_frequency": "01:00:00",
+    "carry_limit": 10,
+    "friendship_points_needed": 16,
+    "recruit_experience": 180,
+    "recruit_shards": 465,
     "ingredients": [
-      "\u840c\u7da0\u5927\u8c46",
+      "\u7d14\u7cb9\u6cb9",
       "\u54c1\u9bae\u8611\u83c7",
-      "\u751c\u751c\u871c"
+      "\u653e\u9b06\u53ef\u53ef"
     ],
     "sleep": [
-      "\u5f8c\u4ef0\u7761",
-      "\u9ede\u982d\u7761",
-      "\u5f35\u5927\u5634\u5df4\u7761"
+      "\u5927\u5b57\u7761",
+      "\u9707\u9707\u7761",
+      "\u5403\u5bf6\u77f3\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -6053,6 +6045,123 @@
           "style": 3,
           "level": "\u9ad8\u7d1a",
           "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "pid": "#0316",
+    "name": "\u6eb6\u98df\u7378",
+    "type": "\u6bd2",
+    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
+    "specialty": "\u6280\u80fd",
+    "berry": "\u96f6\u9918\u679c",
+    "berry_quantity": 1,
+    "skill": "\u5922\u4e4b\u788e\u7247\u7372\u53d6S",
+    "skill_description": "\u7372\u5f9744~176\u500b\u5922\u4e4b\u788e\u7247\u3002",
+    "base_frequency": "01:38:20",
+    "carry_limit": 8,
+    "friendship_points_needed": 5,
+    "recruit_experience": 11,
+    "recruit_shards": 12,
+    "ingredients": [
+      "\u840c\u7da0\u5927\u8c46",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u751c\u751c\u871c"
+    ],
+    "sleep": [
+      "\u6c23\u7403\u7761",
+      "\u9ede\u982d\u7761",
+      "\u5f35\u5927\u5634\u5df4\u7761"
+    ],
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "pid": "#0317",
+    "name": "\u541e\u98df\u7378",
+    "type": "\u6bd2",
+    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
+    "specialty": "\u6280\u80fd",
+    "berry": "\u96f6\u9918\u679c",
+    "berry_quantity": 1,
+    "skill": "\u5922\u4e4b\u788e\u7247\u7372\u53d6S",
+    "skill_description": "\u7372\u5f9744~176\u500b\u5922\u4e4b\u788e\u7247\u3002",
+    "base_frequency": "00:58:20",
+    "carry_limit": 13,
+    "friendship_points_needed": 12,
+    "recruit_experience": 158,
+    "recruit_shards": 170,
+    "ingredients": [
+      "\u840c\u7da0\u5927\u8c46",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u751c\u751c\u871c"
+    ],
+    "sleep": [
+      "\u5f8c\u4ef0\u7761",
+      "\u9ede\u982d\u7761",
+      "\u5f35\u5927\u5634\u5df4\u7761"
+    ],
+    "locations": {
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
         }
       ]
     }
@@ -6086,40 +6195,40 @@
       "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
         },
         {
           "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 5
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
         },
         {
           "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
         }
       ],
       "\u767d\u82b1\u96ea\u539f": [
         {
           "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
         },
         {
           "style": 1,
-          "level": "\u666e\u901a",
+          "level": "\u9ad8\u7d1a",
           "subLevel": 1
         },
         {
           "style": 2,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
         },
         {
           "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
         }
       ]
     }
@@ -6148,123 +6257,6 @@
       "\u5305\u5728\u7fbd\u4e2d\u7761",
       "\u7fbd\u68f2\u7761",
       "\u4e00\u6735\u7dbf\u96f2\u7761"
-    ],
-    "locations": {
-      "\u767d\u82b1\u96ea\u539f": [
-        {
-          "style": 0,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 2
-        },
-        {
-          "style": 1,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 1
-        },
-        {
-          "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 2
-        },
-        {
-          "style": 3,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 2
-        }
-      ]
-    }
-  },
-  {
-    "pid": "#0353",
-    "name": "\u6028\u5f71\u5a03\u5a03",
-    "type": "\u5e7d\u9748",
-    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
-    "specialty": "\u6a39\u679c",
-    "berry": "\u58a8\u8393\u679c",
-    "berry_quantity": 2,
-    "skill": "\u80fd\u91cf\u586b\u5145S",
-    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
-    "base_frequency": "01:05:00",
-    "carry_limit": 11,
-    "friendship_points_needed": 5,
-    "recruit_experience": 8,
-    "recruit_shards": 17,
-    "ingredients": [
-      "\u7d14\u7cb9\u6cb9",
-      "\u6696\u6696\u8591",
-      "\u54c1\u9bae\u8611\u83c7"
-    ],
-    "sleep": [
-      "\uff1f\uff1f\uff1f\uff1f\u7761",
-      "\uff1f\uff1f\uff1f\uff1f\u7761",
-      "\uff1f\uff1f\uff1f\uff1f\u7761"
-    ],
-    "locations": {
-      "\u840c\u7da0\u4e4b\u5cf6": [
-        {
-          "style": 0,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 2
-        },
-        {
-          "style": 1,
-          "level": "\u5927\u5e2b",
-          "subLevel": 1
-        },
-        {
-          "style": 3,
-          "level": "\u5927\u5e2b",
-          "subLevel": 2
-        }
-      ],
-      "\u767d\u82b1\u96ea\u539f": [
-        {
-          "style": 0,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 2
-        },
-        {
-          "style": 1,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 1
-        },
-        {
-          "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 2
-        },
-        {
-          "style": 3,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 2
-        }
-      ]
-    }
-  },
-  {
-    "pid": "#0354",
-    "name": "\u8a5b\u5492\u5a03\u5a03",
-    "type": "\u5e7d\u9748",
-    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
-    "specialty": "\u6a39\u679c",
-    "berry": "\u58a8\u8393\u679c",
-    "berry_quantity": 2,
-    "skill": "\u80fd\u91cf\u586b\u5145S",
-    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
-    "base_frequency": "00:43:20",
-    "carry_limit": 19,
-    "friendship_points_needed": 16,
-    "recruit_experience": 186,
-    "recruit_shards": 393,
-    "ingredients": [
-      "\u7d14\u7cb9\u6cb9",
-      "\u6696\u6696\u8591",
-      "\u54c1\u9bae\u8611\u83c7"
-    ],
-    "sleep": [
-      "\uff1f\uff1f\uff1f\uff1f\u7761",
-      "\uff1f\uff1f\uff1f\uff1f\u7761",
-      "\uff1f\uff1f\uff1f\uff1f\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -6331,29 +6323,29 @@
     }
   },
   {
-    "pid": "#0359",
-    "name": "\u963f\u52c3\u68ad\u9b6f",
-    "type": "\u60e1",
+    "pid": "#0353",
+    "name": "\u6028\u5f71\u5a03\u5a03",
+    "type": "\u5e7d\u9748",
     "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
-    "specialty": "\u98df\u6750",
-    "berry": "\u7570\u5947\u679c",
-    "berry_quantity": 1,
+    "specialty": "\u6a39\u679c",
+    "berry": "\u58a8\u8393\u679c",
+    "berry_quantity": 2,
     "skill": "\u80fd\u91cf\u586b\u5145S",
-    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0400\u3002",
-    "base_frequency": "00:51:40",
-    "carry_limit": 14,
-    "friendship_points_needed": 16,
-    "recruit_experience": 263,
-    "recruit_shards": 556,
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
+    "base_frequency": "01:05:00",
+    "carry_limit": 11,
+    "friendship_points_needed": 5,
+    "recruit_experience": 8,
+    "recruit_shards": 17,
     "ingredients": [
-      "\u653e\u9b06\u53ef\u53ef",
-      "\u54c1\u9bae\u8611\u83c7",
-      "\u7279\u9078\u860b\u679c"
+      "\u7d14\u7cb9\u6cb9",
+      "\u6696\u6696\u8591",
+      "\u54c1\u9bae\u8611\u83c7"
     ],
     "sleep": [
-      "\u6536\u624b\u624b\u7761",
-      "\u5371\u96aa\u6e2c\u77e5\u7761",
-      "\u809a\u5b50\u671d\u5929\u7761"
+      "\uff1f\uff1f\uff1f\uff1f\u7761",
+      "\uff1f\uff1f\uff1f\uff1f\u7761",
+      "\uff1f\uff1f\uff1f\uff1f\u7761"
     ],
     "locations": {
       "\u840c\u7da0\u4e4b\u5cf6": [
@@ -6420,6 +6412,106 @@
     }
   },
   {
+    "pid": "#0354",
+    "name": "\u8a5b\u5492\u5a03\u5a03",
+    "type": "\u5e7d\u9748",
+    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
+    "specialty": "\u6a39\u679c",
+    "berry": "\u58a8\u8393\u679c",
+    "berry_quantity": 2,
+    "skill": "\u80fd\u91cf\u586b\u5145S",
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0200~800\u3002",
+    "base_frequency": "00:43:20",
+    "carry_limit": 19,
+    "friendship_points_needed": 16,
+    "recruit_experience": 186,
+    "recruit_shards": 393,
+    "ingredients": [
+      "\u7d14\u7cb9\u6cb9",
+      "\u6696\u6696\u8591",
+      "\u54c1\u9bae\u8611\u83c7"
+    ],
+    "sleep": [
+      "\uff1f\uff1f\uff1f\uff1f\u7761",
+      "\uff1f\uff1f\uff1f\uff1f\u7761",
+      "\uff1f\uff1f\uff1f\uff1f\u7761"
+    ],
+    "locations": {
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "pid": "#0359",
+    "name": "\u963f\u52c3\u68ad\u9b6f",
+    "type": "\u60e1",
+    "sleep_type": "\u6dfa\u6dfa\u5165\u5922",
+    "specialty": "\u98df\u6750",
+    "berry": "\u7570\u5947\u679c",
+    "berry_quantity": 1,
+    "skill": "\u80fd\u91cf\u586b\u5145S",
+    "skill_description": "\u5361\u6bd4\u7378\u7684\u80fd\u91cf\u589e\u52a0400\u3002",
+    "base_frequency": "00:51:40",
+    "carry_limit": 14,
+    "friendship_points_needed": 16,
+    "recruit_experience": 263,
+    "recruit_shards": 556,
+    "ingredients": [
+      "\u653e\u9b06\u53ef\u53ef",
+      "\u54c1\u9bae\u8611\u83c7",
+      "\u7279\u9078\u860b\u679c"
+    ],
+    "sleep": [
+      "\u6536\u624b\u624b\u7761",
+      "\u5371\u96aa\u6e2c\u77e5\u7761",
+      "\u809a\u5b50\u671d\u5929\u7761"
+    ],
+    "locations": {
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
+        }
+      ]
+    }
+  },
+  {
     "pid": "#0360",
     "name": "\u5c0f\u679c\u7136",
     "type": "\u8d85\u80fd\u529b",
@@ -6445,25 +6537,42 @@
       "\u62db\u724c\u59ff\u52e2\u7761"
     ],
     "locations": {
-      "\u767d\u82b1\u96ea\u539f": [
+      "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 5
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
           "level": "\u666e\u901a",
           "subLevel": 2
         },
         {
-          "style": 1,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
-        },
-        {
           "style": 2,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 2
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
         },
         {
           "style": 3,
-          "level": "\u9ad8\u7d1a",
+          "level": "\u8d85\u7d1a",
           "subLevel": 1
         }
       ]
@@ -6495,26 +6604,26 @@
       "\u62cd\u624b\u7761"
     ],
     "locations": {
-      "\u767d\u82b1\u96ea\u539f": [
+      "\u5929\u9752\u6c99\u7058": [
         {
           "style": 0,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 2
-        },
-        {
-          "style": 1,
-          "level": "\u5927\u5e2b",
+          "level": "\u666e\u901a",
           "subLevel": 1
         },
         {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
           "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 7
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
         },
         {
           "style": 3,
-          "level": "\u5927\u5e2b",
-          "subLevel": 2
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
         }
       ]
     }
@@ -6549,12 +6658,34 @@
         {
           "style": 0,
           "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
           "subLevel": 1
         },
         {
           "style": 1,
           "level": "\u666e\u901a",
-          "subLevel": 5
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
         },
         {
           "style": 3,
@@ -6562,7 +6693,7 @@
           "subLevel": 1
         }
       ],
-      "\u5929\u9752\u6c99\u7058": [
+      "\u767d\u82b1\u96ea\u539f": [
         {
           "style": 0,
           "level": "\u666e\u901a",
@@ -6612,26 +6743,26 @@
       "\u63d2\u7360\u7259\u7761"
     ],
     "locations": {
-      "\u5929\u9752\u6c99\u7058": [
+      "\u767d\u82b1\u96ea\u539f": [
         {
           "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
         },
         {
           "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 3
+          "level": "\u5927\u5e2b",
+          "subLevel": 1
         },
         {
           "style": 2,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 4
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
         },
         {
           "style": 3,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 1
+          "level": "\u5927\u5e2b",
+          "subLevel": 2
         }
       ]
     }
@@ -6666,17 +6797,39 @@
         {
           "style": 0,
           "level": "\u666e\u901a",
-          "subLevel": 3
+          "subLevel": 1
         },
         {
           "style": 1,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 2
+          "level": "\u666e\u901a",
+          "subLevel": 5
         },
         {
           "style": 3,
           "level": "\u8d85\u7d1a",
+          "subLevel": 1
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 1
+        },
+        {
+          "style": 1,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u8d85\u7d1a",
           "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 1
         }
       ],
       "\u7070\u8910\u6d1e\u7a9f": [
@@ -6688,12 +6841,12 @@
         {
           "style": 1,
           "level": "\u666e\u901a",
-          "subLevel": 3
+          "subLevel": 1
         },
         {
           "style": 2,
           "level": "\u8d85\u7d1a",
-          "subLevel": 4
+          "subLevel": 2
         },
         {
           "style": 3,
@@ -6710,12 +6863,12 @@
         {
           "style": 1,
           "level": "\u666e\u901a",
-          "subLevel": 2
+          "subLevel": 1
         },
         {
           "style": 2,
           "level": "\u8d85\u7d1a",
-          "subLevel": 3
+          "subLevel": 1
         },
         {
           "style": 3,
@@ -6751,25 +6904,86 @@
       "\u9ed8\u5287\u5e8a\u4e0a\u7761"
     ],
     "locations": {
-      "\u767d\u82b1\u96ea\u539f": [
+      "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
-          "level": "\u9ad8\u7d1a",
+          "level": "\u8d85\u7d1a",
           "subLevel": 2
         },
         {
           "style": 1,
-          "level": "\u5927\u5e2b",
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 1
+        },
+        {
+          "style": 3,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
+        }
+      ],
+      "\u5929\u9752\u6c99\u7058": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 4
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 4
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 4
+        }
+      ],
+      "\u7070\u8910\u6d1e\u7a9f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 2
+        },
+        {
+          "style": 2,
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 3
+        },
+        {
+          "style": 3,
+          "level": "\u8d85\u7d1a",
+          "subLevel": 3
+        }
+      ],
+      "\u767d\u82b1\u96ea\u539f": [
+        {
+          "style": 0,
+          "level": "\u666e\u901a",
+          "subLevel": 2
+        },
+        {
+          "style": 1,
+          "level": "\u8d85\u7d1a",
           "subLevel": 1
         },
         {
           "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 7
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 2
         },
         {
           "style": 3,
-          "level": "\u5927\u5e2b",
+          "level": "\u8d85\u7d1a",
           "subLevel": 2
         }
       ]
@@ -6804,84 +7018,18 @@
       "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
         },
         {
           "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 5
-        },
-        {
-          "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
-        }
-      ],
-      "\u5929\u9752\u6c99\u7058": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
-        },
-        {
-          "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 2
+          "level": "\u5927\u5e2b",
+          "subLevel": 11
         },
         {
           "style": 2,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 3
-        },
-        {
-          "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
-        }
-      ],
-      "\u7070\u8910\u6d1e\u7a9f": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
-        },
-        {
-          "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 1
-        },
-        {
-          "style": 2,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 2
-        },
-        {
-          "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
-        }
-      ],
-      "\u767d\u82b1\u96ea\u539f": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 1
-        },
-        {
-          "style": 1,
-          "level": "\u666e\u901a",
-          "subLevel": 1
-        },
-        {
-          "style": 2,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
-        },
-        {
-          "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
+          "level": "\u5927\u5e2b",
+          "subLevel": 17
         }
       ]
     }
@@ -6915,84 +7063,23 @@
       "\u840c\u7da0\u4e4b\u5cf6": [
         {
           "style": 0,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 2
+          "level": "\u5927\u5e2b",
+          "subLevel": 6
         },
         {
           "style": 1,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 1
-        },
-        {
-          "style": 3,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 2
-        }
-      ],
-      "\u5929\u9752\u6c99\u7058": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 4
-        },
-        {
-          "style": 1,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 3
+          "level": "\u5927\u5e2b",
+          "subLevel": 10
         },
         {
           "style": 2,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 4
+          "level": "\u5927\u5e2b",
+          "subLevel": 16
         },
         {
           "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 4
-        }
-      ],
-      "\u7070\u8910\u6d1e\u7a9f": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 3
-        },
-        {
-          "style": 1,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 2
-        },
-        {
-          "style": 2,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 3
-        },
-        {
-          "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 3
-        }
-      ],
-      "\u767d\u82b1\u96ea\u539f": [
-        {
-          "style": 0,
-          "level": "\u666e\u901a",
-          "subLevel": 2
-        },
-        {
-          "style": 1,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 1
-        },
-        {
-          "style": 2,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 2
-        },
-        {
-          "style": 3,
-          "level": "\u8d85\u7d1a",
-          "subLevel": 2
+          "level": "\u5927\u5e2b",
+          "subLevel": 11
         }
       ]
     }
@@ -7021,25 +7108,7 @@
       "\u81c9\u9830\u9f13\u9f13\u7761",
       "\u62c9\u62c9\u80cc\u7761"
     ],
-    "locations": {
-      "\u840c\u7da0\u4e4b\u5cf6": [
-        {
-          "style": 0,
-          "level": "\u5927\u5e2b",
-          "subLevel": 7
-        },
-        {
-          "style": 1,
-          "level": "\u5927\u5e2b",
-          "subLevel": 11
-        },
-        {
-          "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 17
-        }
-      ]
-    }
+    "locations": {}
   },
   {
     "pid": "#0454",
@@ -7066,26 +7135,26 @@
       "\u6bd2\u56ca\u6795\u7761"
     ],
     "locations": {
-      "\u840c\u7da0\u4e4b\u5cf6": [
+      "\u767d\u82b1\u96ea\u539f": [
         {
           "style": 0,
-          "level": "\u5927\u5e2b",
-          "subLevel": 6
+          "level": "\u9ad8\u7d1a",
+          "subLevel": 5
         },
         {
           "style": 1,
           "level": "\u5927\u5e2b",
-          "subLevel": 10
+          "subLevel": 4
         },
         {
           "style": 2,
           "level": "\u5927\u5e2b",
-          "subLevel": 16
+          "subLevel": 10
         },
         {
           "style": 3,
           "level": "\u5927\u5e2b",
-          "subLevel": 11
+          "subLevel": 5
         }
       ]
     }
@@ -7114,7 +7183,30 @@
       "\u76e3\u8996\u98c4\u98c4\u7761",
       "\u985b\u5012\u98c4\u98c4\u7761"
     ],
-    "locations": {}
+    "locations": {
+      "\u840c\u7da0\u4e4b\u5cf6": [
+        {
+          "style": 0,
+          "level": "\u5927\u5e2b",
+          "subLevel": 3
+        },
+        {
+          "style": 1,
+          "level": "\u5927\u5e2b",
+          "subLevel": 7
+        },
+        {
+          "style": 2,
+          "level": "\u5927\u5e2b",
+          "subLevel": 13
+        },
+        {
+          "style": 3,
+          "level": "\u5927\u5e2b",
+          "subLevel": 8
+        }
+      ]
+    }
   },
   {
     "pid": "#0468",
@@ -7141,30 +7233,7 @@
       "\u7acb\u8457\u63ee\u7fc5\u7761",
       "\u7279\u6280\u98db\u884c\u7761"
     ],
-    "locations": {
-      "\u767d\u82b1\u96ea\u539f": [
-        {
-          "style": 0,
-          "level": "\u9ad8\u7d1a",
-          "subLevel": 5
-        },
-        {
-          "style": 1,
-          "level": "\u5927\u5e2b",
-          "subLevel": 4
-        },
-        {
-          "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 10
-        },
-        {
-          "style": 3,
-          "level": "\u5927\u5e2b",
-          "subLevel": 5
-        }
-      ]
-    }
+    "locations": {}
   },
   {
     "pid": "#0470",
@@ -7191,30 +7260,7 @@
       "\u6490\u5730\u7761",
       "\u6293\u8449\u5b50\u7761"
     ],
-    "locations": {
-      "\u840c\u7da0\u4e4b\u5cf6": [
-        {
-          "style": 0,
-          "level": "\u5927\u5e2b",
-          "subLevel": 3
-        },
-        {
-          "style": 1,
-          "level": "\u5927\u5e2b",
-          "subLevel": 7
-        },
-        {
-          "style": 2,
-          "level": "\u5927\u5e2b",
-          "subLevel": 13
-        },
-        {
-          "style": 3,
-          "level": "\u5927\u5e2b",
-          "subLevel": 8
-        }
-      ]
-    }
+    "locations": {}
   },
   {
     "pid": "#0471",

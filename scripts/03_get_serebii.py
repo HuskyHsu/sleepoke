@@ -115,6 +115,8 @@ list = [
     "sylveon",
     "Shuppet",
     "Banette",
+    "Steelix",
+    "Onix",
 ]
 
 areaMap = {
